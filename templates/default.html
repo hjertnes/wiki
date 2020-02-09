@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Eivind Hjertnes" />
     <title>Hjertnes' Wiki</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
     $for(css)$
       <link rel="stylesheet" href="$css$" />
-    $endfor$
+    $endfor$	   
   </head>
   <body>
     $if(title)$
@@ -32,8 +34,10 @@
         $table-of-contents$
       </nav>
     $endif$
-      <main>
-	$body$
+    <main>
+      $body$
     </main>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <script src="./scroll.js"></script>
   </body>
 </html>
