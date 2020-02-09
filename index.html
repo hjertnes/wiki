@@ -430,9 +430,8 @@
       </section>
       <section id="top-of-my-laptop" class="level2">
       <h2>Top of my laptop</h2>
-      <p>The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.</p>
-      ![](/macbook.png)
-
+      <p>The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera. <img src="./macbook.png" /></p>
+      <p>#+END<sub>export</sub></p>
       </section>
       <section id="why-i-hate-open-source-participation" class="level2">
       <h2>Why I hate Open Source participation</h2>
@@ -897,13 +896,7 @@
       <h2>Emacs packages</h2>
       <section id="emacs-ace-window" class="level3">
       <h3>Emacs: Ace-window</h3>
-      <p>Ace-window is a emacs package that makes it easy to jump between "windows" in Emacs, just like ace-jump is a emacs package that makes it easy to jump in a document. Below is my config, it is set up to always listen no matter how few windows, and to use M-o as keybinding.</p>
-      <pre><code>(use-package 
-        ace-window 
-        :ensure t 
-        :init (setq aw-dispatch-always t) 
-        :config (global-set-key (kbd &quot;M-o&quot;) &#39;ace-window))
-      </code></pre>
+      <p>Ace-window is a emacs package that makes it easy to jump between "windows" in Emacs, just like ace-jump is a emacs package that makes it easy to jump in a document.</p>
       <p>These are all the default commands and keybindings, the way it works is that you press M-o, then a number will be shown in each "window", if you press it focus will be moved to it. And if you for example press x before the number it will instead delete that window.</p>
       <ul>
       <li>x - delete window</li>

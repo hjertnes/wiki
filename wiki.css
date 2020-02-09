@@ -21,6 +21,7 @@ body {
     padding: 5px 5px 5px 5px;
     background-color: var(--white);
     overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 nav {
