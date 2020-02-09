@@ -19,17 +19,48 @@ html{
 body {
     margin: 0 0 0 0;
     padding: 5px 5px 5px 5px;
-    font-size: 1em;
     background-color: var(--white);
     overflow-wrap: break-word;
 }
+
+nav {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
 main{
     font-family: 'Source Code Pro', monospace;
 }
+
 h1, h2, h3, h4, h5, h6, a{
     font-family: sans-serif;
 }
 
 a:link, article a:visited, article a:hover, article a:active {
     color: var(--black);
+}
+
+h1:before {
+    content: "# ";
+}
+
+h2:before {
+    content: "## ";
+}
+
+h3:before {
+    content: "### ";
+}
+
+h4:before {
+    content: "#### ";
+}
+
+h5:before {
+    content: "##### ";
+}
+
+h6:before {
+    content: "###### 
+";
 }
