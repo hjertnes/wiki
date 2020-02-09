@@ -1,0 +1,35 @@
+:root {
+    --white: #FEFEFE;
+    --black: #0A0A0A;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+html{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 1em;
+    background-color: var(--white);
+    overflow-wrap: break-word;
+}
+main{
+    font-family: 'Source Code Pro', monospace;
+}
+h1, h2, h3, h4, h5, h6, a{
+    font-family: sans-serif;
+}
+
+a:link, article a:visited, article a:hover, article a:active {
+    color: var(--black);
+}
