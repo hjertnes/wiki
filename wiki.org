@@ -19,60 +19,6 @@ As I have been adding more stuff and extending this place I think this might rep
 It is made with org-mode, pandoc and netlify
 
 * Personal
-** Malcom Gladwell
-Updated: 2020-03-08 13:03:85
-
-I recently got a Malcom Gladwell Audio Book called "Talking to strangers". And I really loved it. 
-
-I know he isn't that great, or original. But I really enjoy just getting one of his books and wasting a few hours. 
-
-And I always end up with some interesting idea or five out of his books. 
-
-Some people get too hung up in the deatils. Like the 10 000 hours thing. What I took from it was that "most stuff requires a lot of hard work".
-
-** What if I start to listen to podcasts again
-Updated: 2020-03-08 13:03:85
-
-I did not do so when I wrote donw the idea for this blog post, but I did a while after. 
-I re-installed Overcast. Deleted everything in there. And then I subscribed to everything Dan Carlin. But that is just like 3-4 podcasts per year. 
-
-And then I re-subscribed to Two Headed Girl.
-
-That was about it. For a really long time. But when I got into learning myself Go I also subscribed to GoTime a weekly podcast about Go. And a while later Emacs cast. 
-
-At this point only one of them publish weekly or in any way regular. So I kind of just open Overcast once a month and listen if there are anything new.  
-
-I'm not at all back into podcasting. And I have zero interest in re-subscribing to any of the stuff I used to listen to. 
-
-Most of the Apple Tech stuff bore me to death. 
-
-** I work for money
-Updated: 2020-03-08 13:03:85
-
-I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects. 
-
-The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot. 
-
-Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties. 
-
-It would probably be different if I worked in a smaller company. 
-
-** Why I ended the inksmudge
-Updated: 2020-03-08 13:03:85
-
-I have had some kind of a website online since 98 or 99. 
-
-At some point in 2010 or 2011 I decided that I would like to become a better writer, and I just started to write a lot. 
-
-Then I started to blog. 
-
-After trying to write about Apple and Tech for a really long time, I decided to try something different in 2015. So I started the InkSmudge. And after a tweet to Brad Dowdy of the Pen Addict 100 or 1000 times more traffic and subscribes than I ever had on any of my previous attempts. 
-
-Then I freaked out and used years to get comfortable with it. 
-
-For a really long time it made sense to have seperate web sites. But at this point it is just a bunch of extra work for me. And I have just continued writing a bunch of stuff for like a year even though I would have made more sense to combine the sites. 
-
-This means that I am going to write less about stationary stuff. But I'm still going to write some about it. And my overall goal is to continue writing 3 posts a week as I did when I had two different sites. 
 ** Contact
 Updated: 2020-03-08 13:03:85
 
@@ -232,6 +178,24 @@ Updated: 2020-03-08 13:03:85
 The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.
 [[./macbook.png]]
 
+* Articles
+Updated: 2020-03-21 14:03:96
+This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.
+
+** Mastodon
+Updated: 2020-03-22 08:03:66
+
+I played around on Mastodon.Social for a few hours after leaving Micro.blog, and I decided to give it a go so I got a domain and made my own instance on [[https://dog.estate]]. Curretly just me. But reach out if you want an account. 
+
+Here are some of my thoughts after being for a long time on Micro.blog
+
+- I hate re-tweets, boosts or what ever. Most of the time. 
+- It is silly how they have cooked up their own terms for everything twitter
+- If you get a handle from someone like @JoeDouche@Bros.social and you want to check them out on their instance because that will have all of their posts something your instance probably won't. You first need to re-write it to bros.social/@JoeDouch and then back again if you wish to follow him or her. This process should be a lot better.
+- It feels a lot more like twitter. But not as horrible. More like twitter 10 years ago, than twitter 5 years ago. 
+- I feel much more welcome here than Micro.blog
+
+My handle is: @hjertnes@dog.estate.
 ** Why I hate Open Source participation
 Updated: 2020-03-08 13:03:85
 
@@ -374,34 +338,34 @@ This is not something I want to write, but I feel like I have to. And I'm pretty
 
 This is just a collection of my feelings of Micro.blog after using it for multiple years. 
 
-** The people / the community
+*** The people / the community
 Updated: 2020-03-08 13:03:85
 
 Most of the time most of the people I interact with are really nice, and those I don't enjoy I try to not interact with. But one thing that I don't like about the culture is that sometimes people reply to me complaining about my sarcasm, snark etc. I get that all of us should be nice most of the time. There are still a place for snark and other more "rude" or what ever you want to call them forms of communication. And some of us including myself, use this all the time. 
 
-** The native apps
+*** The native apps
 Updated: 2020-03-08 13:03:85
 
 The apps are mostly the same as when I joined. It is as far as I can see mostly a web app wrapepd in some native UI. That was fine in the start. But at this point I expect more. 
 
-** The web interface / service
+*** The web interface / service
 Updated: 2020-03-08 13:03:85
 
 The web interface is not great, and I think it is really weird. You have some parts that are the Micro.blog service and some of it is the hosted Micro.blog service. 
 
 Neither is great. The CMS admin functionality looks like an after thought. And a lot of the web interface is similar to the "apps", but they don't work the same way. Like in the apps you can post to micropub sites but not on the web site. 
 
-** The API
+*** The API
 Updated: 2020-03-08 13:03:85
 
 The API is to a large extent based on Indieweb standards. And that is awesome. But as far as I can see the API does not have a lot of great documentation. I have tried to push Manton towards [[][Open API Specifications]] once. Which I think would be a step in the right direction. But I also think that one should be able to do an app with the same features as the official one (including push notificaitons) with the official API. And it is really ridicolus that a CORS issue with the API have  been open for like forever. This issue makes it impossible to make a web app that interacts with the API's without wrapping the API's in your own service. 
 
-** Open Issues
+*** Open Issues
 Updated: 2020-03-08 13:03:85
 
 In addition to the CORS issue, I have had this 24 hour clock issue with Micro.blog that I sent Manton within the first hour I used Micro.blog. Still not solved, and I suspect there are a lot more of them. 
 
-** Summary
+*** Summary
 Updated: 2020-03-08 13:03:85
 
 I think Micro.blog have become a good service, even though this post is really negative. But I think it is time to stop adding new stuff. And make what is good. And solve existing issues. 
@@ -487,6 +451,61 @@ I enjoy the story as fiction. As a philosophy major I can say that there is no g
 
 But I enjoy it, without seeing anything "great" in there. 
 
+** Malcom Gladwell
+Updated: 2020-03-08 13:03:85
+
+I recently got a Malcom Gladwell Audio Book called "Talking to strangers". And I really loved it. 
+
+I know he isn't that great, or original. But I really enjoy just getting one of his books and wasting a few hours. 
+
+And I always end up with some interesting idea or five out of his books. 
+
+Some people get too hung up in the deatils. Like the 10 000 hours thing. What I took from it was that "most stuff requires a lot of hard work".
+
+** What if I start to listen to podcasts again
+Updated: 2020-03-08 13:03:85
+
+I did not do so when I wrote donw the idea for this blog post, but I did a while after. 
+I re-installed Overcast. Deleted everything in there. And then I subscribed to everything Dan Carlin. But that is just like 3-4 podcasts per year. 
+
+And then I re-subscribed to Two Headed Girl.
+
+That was about it. For a really long time. But when I got into learning myself Go I also subscribed to GoTime a weekly podcast about Go. And a while later Emacs cast. 
+
+At this point only one of them publish weekly or in any way regular. So I kind of just open Overcast once a month and listen if there are anything new.  
+
+I'm not at all back into podcasting. And I have zero interest in re-subscribing to any of the stuff I used to listen to. 
+
+Most of the Apple Tech stuff bore me to death. 
+
+** I work for money
+Updated: 2020-03-08 13:03:85
+
+I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects. 
+
+The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot. 
+
+Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties. 
+
+It would probably be different if I worked in a smaller company. 
+
+** Why I ended the inksmudge
+Updated: 2020-03-08 13:03:85
+
+I have had some kind of a website online since 98 or 99. 
+
+At some point in 2010 or 2011 I decided that I would like to become a better writer, and I just started to write a lot. 
+
+Then I started to blog. 
+
+After trying to write about Apple and Tech for a really long time, I decided to try something different in 2015. So I started the InkSmudge. And after a tweet to Brad Dowdy of the Pen Addict 100 or 1000 times more traffic and subscribes than I ever had on any of my previous attempts. 
+
+Then I freaked out and used years to get comfortable with it. 
+
+For a really long time it made sense to have seperate web sites. But at this point it is just a bunch of extra work for me. And I have just continued writing a bunch of stuff for like a year even though I would have made more sense to combine the sites. 
+
+This means that I am going to write less about stationary stuff. But I'm still going to write some about it. And my overall goal is to continue writing 3 posts a week as I did when I had two different sites. 
+This section is like a blog, just without a rss feed. There are things like this in other parts. But these are stuff that formerly was under Personal. And they may move, but corrently don't have a better room
 * Lists
 ** Wikis
 Updated: 2020-03-08 13:03:85
@@ -1770,12 +1789,6 @@ What makes it great however is that it is made out of an elastic material. This 
 The one I have is still awesome, and I have no plans of getting rid of it. But it is showing some signs of wear. 
 
 They have made a newer model since I got mine, and I'll maybe look into that when I the one I have fall 
-* Links
-Updated: 2020-03-08 13:03:85
-
-This section contain awesome links I reference all the time
-** Web development
-- [[https://www.codetinkerer.com/2015/12/04/choosing-an-http-status-code.html][Http Status Codes]]
 * Journals
 Updated: 2020-03-08 13:03:85
 
@@ -1799,3 +1812,11 @@ I gave TiddlyWiki a serious look. But it honestly isn't for me. Not bad, just no
 
 *** 2020-03-06
 Not sure what I'm going to do when this thing does not scale anymore. One option might be to use something that turns org into json and build something from that. 
+* Workout Routine 
+** From Mid March until current
+- Only hour and a half of dog walking each day. Because CONVID-19
+- I'll get back to the former routine once gyms open again. 
+** From Early 2020 until Mid March
+- Walk the dogs for 1 hour each day
+- 20 minute walk with steep incline at treatmill targeting fatburn heartrate twice a week
+- Yoga twice a week; usually 10 minutes, the goal is 20minutes. Twice a week
