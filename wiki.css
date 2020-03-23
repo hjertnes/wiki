@@ -9,7 +9,7 @@ img{
 }
 
 html{
-    font-family: sans-serif;
+    font-family: 'Source Code Pro', monospace;    
     height: 100%;
     width: 100%;
     margin: 0 0 0 0;
@@ -21,19 +21,6 @@ body {
     padding: 5px 5px 5px 5px;
     background-color: var(--white);
     overflow-wrap: break-word;
-}
-
-nav {
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-main{
-    font-family: 'Source Code Pro', monospace;
-}
-
-h1, h2, h3, h4, h5, h6, a{
-    font-family: sans-serif;
 }
 
 a:link, article a:visited, article a:hover, article a:active {
