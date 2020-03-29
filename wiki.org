@@ -178,10 +178,32 @@ Updated: 2020-03-08 13:03:85
 The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.
 [[./macbook.png]]
 
+* Thinking loud
+** Starting a company
+Updated: 2020-03-29 08:03:58
+I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money. 
 * Articles
 Updated: 2020-03-21 14:03:96
 This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.
+** VPN's
+Updated: 2020-03-28 08:03:58
+I use a VPN service on my iPhone and my MacBook. Mostly because I think it is a good idea, when I'm not on my home network. As a added bonus it also let me access my Mastodon instance on my personal devices at work. For some dumb ass reason they block it.
 
+This is what I think about VPN services
+
+- Free: this is a really bad idea and stay away. It is like if you installed a tracker from Facebook on all your devices. 
+- Paid: mostly the same, some feature varies but they are mostly the same. I used to use Encrypt.me but changed to Nord because they let me pick country I want to VPN through. There are some that are much more secure than the others, but that's not something I care that much about. 
+** xxiivv
+Updated: 2020-03-24
+   There is this guy on [[Mastodon][https://merveilles.town/@neauoire]], and [[here][https://wiki.xxiivv.com/site/home.html]] that really annoy me. At first glance he is a interesting guy who does his website in C to save energy (makes sense?) and lives off the grid on a boat. 
+
+   But I think he is just a poor mans RMS. His off the grid life is not that off the grid when you take into consideration that he makes a living from Patreon supporters. And the energy he saves from writing his website in C instead of something else staticly generated pales when you take into consideration that he use a Mastodon instance
+
+   If you just ignore all his personal flaws and look at RMS's no compromise on privacy and open source it's amazing the lengths he have been willing to go in order to live a Open Source existance without giving up his privacy. 
+
+This guy is just a pale imitation. And most of his views on stuff like eating meat and a like is just plain eco facism that makes the progress to carbon neutral or negative or what ever we need to go much harder. 
+
+I just think people like these are privileged assholes who live off their followers.
 ** Mastodon
 Updated: 2020-03-22 08:03:66
 
@@ -463,255 +485,255 @@ And I always end up with some interesting idea or five out of his books.
 Some people get too hung up in the deatils. Like the 10 000 hours thing. What I took from it was that "most stuff requires a lot of hard work".
 
 ** What if I start to listen to podcasts again
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-I did not do so when I wrote donw the idea for this blog post, but I did a while after. 
-I re-installed Overcast. Deleted everything in there. And then I subscribed to everything Dan Carlin. But that is just like 3-4 podcasts per year. 
+   I did not do so when I wrote donw the idea for this blog post, but I did a while after. 
+   I re-installed Overcast. Deleted everything in there. And then I subscribed to everything Dan Carlin. But that is just like 3-4 podcasts per year. 
 
-And then I re-subscribed to Two Headed Girl.
+   And then I re-subscribed to Two Headed Girl.
 
-That was about it. For a really long time. But when I got into learning myself Go I also subscribed to GoTime a weekly podcast about Go. And a while later Emacs cast. 
+   That was about it. For a really long time. But when I got into learning myself Go I also subscribed to GoTime a weekly podcast about Go. And a while later Emacs cast. 
 
-At this point only one of them publish weekly or in any way regular. So I kind of just open Overcast once a month and listen if there are anything new.  
+   At this point only one of them publish weekly or in any way regular. So I kind of just open Overcast once a month and listen if there are anything new.  
 
-I'm not at all back into podcasting. And I have zero interest in re-subscribing to any of the stuff I used to listen to. 
+   I'm not at all back into podcasting. And I have zero interest in re-subscribing to any of the stuff I used to listen to. 
 
-Most of the Apple Tech stuff bore me to death. 
+   Most of the Apple Tech stuff bore me to death. 
 
 ** I work for money
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects. 
+   I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects. 
 
-The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot. 
+   The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot. 
 
-Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties. 
+   Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties. 
 
-It would probably be different if I worked in a smaller company. 
+   It would probably be different if I worked in a smaller company. 
 
 ** Why I ended the inksmudge
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-I have had some kind of a website online since 98 or 99. 
+   I have had some kind of a website online since 98 or 99. 
 
-At some point in 2010 or 2011 I decided that I would like to become a better writer, and I just started to write a lot. 
+   At some point in 2010 or 2011 I decided that I would like to become a better writer, and I just started to write a lot. 
 
-Then I started to blog. 
+   Then I started to blog. 
 
-After trying to write about Apple and Tech for a really long time, I decided to try something different in 2015. So I started the InkSmudge. And after a tweet to Brad Dowdy of the Pen Addict 100 or 1000 times more traffic and subscribes than I ever had on any of my previous attempts. 
+   After trying to write about Apple and Tech for a really long time, I decided to try something different in 2015. So I started the InkSmudge. And after a tweet to Brad Dowdy of the Pen Addict 100 or 1000 times more traffic and subscribes than I ever had on any of my previous attempts. 
 
-Then I freaked out and used years to get comfortable with it. 
+   Then I freaked out and used years to get comfortable with it. 
 
-For a really long time it made sense to have seperate web sites. But at this point it is just a bunch of extra work for me. And I have just continued writing a bunch of stuff for like a year even though I would have made more sense to combine the sites. 
+   For a really long time it made sense to have seperate web sites. But at this point it is just a bunch of extra work for me. And I have just continued writing a bunch of stuff for like a year even though I would have made more sense to combine the sites. 
 
-This means that I am going to write less about stationary stuff. But I'm still going to write some about it. And my overall goal is to continue writing 3 posts a week as I did when I had two different sites. 
-This section is like a blog, just without a rss feed. There are things like this in other parts. But these are stuff that formerly was under Personal. And they may move, but corrently don't have a better room
+   This means that I am going to write less about stationary stuff. But I'm still going to write some about it. And my overall goal is to continue writing 3 posts a week as I did when I had two different sites. 
+   This section is like a blog, just without a rss feed. There are things like this in other parts. But these are stuff that formerly was under Personal. And they may move, but corrently don't have a better room
 * Lists
 ** Wikis
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-- [[https://rudimentarylathe.org][Jack Baty]]
-- [[https://m.b.wiki.eli.li/][Micro.blog]]
-- [[https://wiki.eli.li][Eli]]
+   - [[https://rudimentarylathe.org][Jack Baty]]
+   - [[https://m.b.wiki.eli.li/][Micro.blog]]
+   - [[https://wiki.eli.li][Eli]]
 
 ** Sites
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-- [[https://hjertnes.blog][Blog]]. My main blog
-- [[https://wiki.hjertnes.blog][Wiki]].
-- [[https://github.com/hjertnes][Github]]
-- [[https://www.flickr.com/people/hjertnes/][Flickr profile]]
+   - [[https://hjertnes.blog][Blog]]. My main blog
+   - [[https://wiki.hjertnes.blog][Wiki]].
+   - [[https://github.com/hjertnes][Github]]
+   - [[https://www.flickr.com/people/hjertnes/][Flickr profile]]
 ** Pen and paper stuff
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-Just a small list of all the pen and paper stuff I currently use
+   Just a small list of all the pen and paper stuff I currently use
 
-- Classroom Firendly Sharpener
-- Blackwings, the regular softest
-- Lamy 2000
-- Pilot Vanishing Point
-- YStudio Portable Fountain Pen
-- Nock.co Pencil Pouch
-- Nock.co Burton
-- LT1917 A5 w/dot grid
-- LT1917 A5 w/lines for long form writing
-- LT1917 A5 Five Year Journal
-- LT1917 A5 sketch book for sketchnoting
-- Field Notes w/ dot grid
-- Bellroy Field Notes Case
-- Rhodia A5 dot pads
+   - Classroom Firendly Sharpener
+   - Blackwings, the regular softest
+   - Lamy 2000
+   - Pilot Vanishing Point
+   - YStudio Portable Fountain Pen
+   - Nock.co Pencil Pouch
+   - Nock.co Burton
+   - LT1917 A5 w/dot grid
+   - LT1917 A5 w/lines for long form writing
+   - LT1917 A5 Five Year Journal
+   - LT1917 A5 sketch book for sketchnoting
+   - Field Notes w/ dot grid
+   - Bellroy Field Notes Case
+   - Rhodia A5 dot pads
 
 ** Watches
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-- Apple Watch Series 1 Space Gray with Black sportsband, red sportsband, and a Natoband
-- Apple Watch Series 3 Space Gray with Black sportsloop. 
-- Seiko Quartz Watch (like [[https://www.amazon.com/Seiko-Titanium-Sapphire-SGG733P1-SGG733P/dp/B003UFT8XC/ref=sxbs_sxwds-stvp?fst=as%3Aoff&pd_rd_i=B003UFT8XC&pd_rd_r=5080ca36-4d23-4b7a-ae0c-beb30408b876&pd_rd_w=OJbGM&pd_rd_wg=xvOsF&pf_rd_p=a6d018ad-f20b-46c9-8920-433972c7d9b7&pf_rd_r=4GF56ZA0ZXV3ES0KGFZV&qid=1560074456&refinements=p_n_feature_three_browse-bin%3A2205662011%2Cp_89%3ASEIKO%2Cp_n_size_four_browse-vebin%3A6896053011%2Cp_n_material_browse%3A379295011&rnid=2205643011&s=apparel][this]] except with silver instead of gold). It's small, light and can take more or less anything. 
+   - Apple Watch Series 1 Space Gray with Black sportsband, red sportsband, and a Natoband
+   - Apple Watch Series 3 Space Gray with Black sportsloop. 
+   - Seiko Quartz Watch (like [[https://www.amazon.com/Seiko-Titanium-Sapphire-SGG733P1-SGG733P/dp/B003UFT8XC/ref=sxbs_sxwds-stvp?fst=as%3Aoff&pd_rd_i=B003UFT8XC&pd_rd_r=5080ca36-4d23-4b7a-ae0c-beb30408b876&pd_rd_w=OJbGM&pd_rd_wg=xvOsF&pf_rd_p=a6d018ad-f20b-46c9-8920-433972c7d9b7&pf_rd_r=4GF56ZA0ZXV3ES0KGFZV&qid=1560074456&refinements=p_n_feature_three_browse-bin%3A2205662011%2Cp_89%3ASEIKO%2Cp_n_size_four_browse-vebin%3A6896053011%2Cp_n_material_browse%3A379295011&rnid=2205643011&s=apparel][this]] except with silver instead of gold). It's small, light and can take more or less anything. 
 
-Currently using the Apple Watch Series 3, but I have gone back and forth between it and the Seiko for for the last six to seven months as of Januar 2020
+   Currently using the Apple Watch Series 3, but I have gone back and forth between it and the Seiko for for the last six to seven months as of Januar 2020
 ** Text Editors
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-- Emacs: I use emacs for everything, and I love writing in it more than anyhting; it is freaking awesome on Mac OS and Linux; worse on Windows, but still great. 
-- Rider: Some .NET development is more convenient in a IDE, for that I use rider. 
-- Drafts: I use it a lot for capture notes and stuff I need to act on
-- iOS: because there are no real emacs for iOS is use a combination of Working Copy (a git client) and beorg on my iPhone.
+   - Emacs: I use emacs for everything, and I love writing in it more than anyhting; it is freaking awesome on Mac OS and Linux; worse on Windows, but still great. 
+   - Rider: Some .NET development is more convenient in a IDE, for that I use rider. 
+   - Drafts: I use it a lot for capture notes and stuff I need to act on
+   - iOS: because there are no real emacs for iOS is use a combination of Working Copy (a git client) and beorg on my iPhone.
 
 ** Comics
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-This is a list of my comics. 
+   This is a list of my comics. 
 
 *** Lunch
-A Norwegian comic
-- Book 1
-- Book 2
-- Book 3
-- Book 4 
-- Book 5
-- Book 6 
-- Book 7
-- Book 8
+    A Norwegian comic
+    - Book 1
+    - Book 2
+    - Book 3
+    - Book 4 
+    - Book 5
+    - Book 6 
+    - Book 7
+    - Book 8
 
 *** Zelda
-A Swedish comic
-- Book 1
-- Book 2
-- Book 3
-- Book 4
-- Book 5
-- Book 6
-- Ryslige førskolan
+    A Swedish comic
+    - Book 1
+    - Book 2
+    - Book 3
+    - Book 4
+    - Book 5
+    - Book 6
+    - Ryslige førskolan
 *** Watchmen
 *** Sex Criminals
-- Big Hard Sex Criminals
-- Volume 1
-- Volume 2
-- Volume 3
-- Volume 4
-- Volume 5
+    - Big Hard Sex Criminals
+    - Volume 1
+    - Volume 2
+    - Volume 3
+    - Volume 4
+    - Volume 5
 *** Umbrella Acadamy
-- Volume 1
-- Volume 2
-- Volume 3
+    - Volume 1
+    - Volume 2
+    - Volume 3
 *** Atomic Blonde
-- The Coldest City
-- The Coldest Winter
+    - The Coldest City
+    - The Coldest Winter
 *** Spider Gwen
-- Edge of the Spiderverse
-- Spider Gwen Most wanted
-- Spider Gwen 1
-- Spider Women
-- Spider Gwen 2
-- Spider Gwen 3
-- Spiderman / Spider Gwen
-- Spider Gwen 4
-- Spider Gwen 5
-- Spider Gwen 6
-- Sider Gwen: Gwen Stacy
-- Spider Gwen Ghost Spider 1
-- Spider Gwen Ghost Spider 2
+    - Edge of the Spiderverse
+    - Spider Gwen Most wanted
+    - Spider Gwen 1
+    - Spider Women
+    - Spider Gwen 2
+    - Spider Gwen 3
+    - Spiderman / Spider Gwen
+    - Spider Gwen 4
+    - Spider Gwen 5
+    - Spider Gwen 6
+    - Sider Gwen: Gwen Stacy
+    - Spider Gwen Ghost Spider 1
+    - Spider Gwen Ghost Spider 2
 *** Harley Quinn
-- Volume 1
-- Volume 2
+    - Volume 1
+    - Volume 2
 *** Dunce
     A Norwegian and English comic I love and have supported on Patreon for a long time. Some of this is in Norwegian and some is in English.
-- Zine 1
-- Zine 2
-- Zine 4
-- Zine 5
-- Dunce Førstebossen
-- Dunce lut og kaldt vatn
+    - Zine 1
+    - Zine 2
+    - Zine 4
+    - Zine 5
+    - Dunce Førstebossen
+    - Dunce lut og kaldt vatn
 *** Other stuff by JensK
-JensK is the creator of Dunce. I have some of his other zies as well
-- Last Breath
-- Cabin Fever
-- Dobbeldog
+    JensK is the creator of Dunce. I have some of his other zies as well
+    - Last Breath
+    - Cabin Fever
+    - Dobbeldog
 *** Kollektivet
-A Norwegian comic I've been reading since forver
-- Julen 2018
+    A Norwegian comic I've been reading since forver
+    - Julen 2018
 *** Calvin and Hobbes
-I have the hilariously expensive and heavy hardcover edition of all the strips. 
+    I have the hilariously expensive and heavy hardcover edition of all the strips. 
 *** Bestris
-A Norwegian comic
-- En venn i nøden
+    A Norwegian comic
+    - En venn i nøden
 *** Intet nytt fra hjemmefronten
-- Intet nytt fra hjemmefronten
+    - Intet nytt fra hjemmefronten
 
 ** Switch games
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-List of all the games I have on my Switch and a few words about them. 
+   List of all the games I have on my Switch and a few words about them. 
 
 *** Inside
-A great game that I first played on my iPhone, good looking and a interesting game play. But it is really hard, and becomes a little bit weird at the end. But still worht it. 
+    A great game that I first played on my iPhone, good looking and a interesting game play. But it is really hard, and becomes a little bit weird at the end. But still worht it. 
 *** Don't Starve
-I played this for a couple of days, it is great, but not really my kind of thing. The basic idea is that you need to collect items to stay alive and you unlock things as you go. 
+    I played this for a couple of days, it is great, but not really my kind of thing. The basic idea is that you need to collect items to stay alive and you unlock things as you go. 
 *** Mario's Odessy
-This is probably the best first game for the Switch, not very hard but a lot of fun. My only issue with it is that it doesn't take that long to complete it. If you liked Mario 64 you'd love it. 
+    This is probably the best first game for the Switch, not very hard but a lot of fun. My only issue with it is that it doesn't take that long to complete it. If you liked Mario 64 you'd love it. 
 *** Celeste
-A fantastic game, but I haven't gotten that far in it because it becomes really difficult. 
+    A fantastic game, but I haven't gotten that far in it because it becomes really difficult. 
 *** Rayman's Legends
-I haven't played this a lot, but I mostly got it because I loved the original. 
+    I haven't played this a lot, but I mostly got it because I loved the original. 
 *** Sonic Mania
-I haven't played this
+    I haven't played this
 *** Sonic Forces
-I haven't played this
+    I haven't played this
 *** Sonic Sega Ages
-I haven't played this.
+    I haven't played this.
 *** Let's Go Pikachu
-I loved this a lot, but it is just a modern version of the original Pokemon. Awesome, but I can't wait for the next real Pokemon. It might work as a good middle ground between Pokemon Go and the real games. 
+    I loved this a lot, but it is just a modern version of the original Pokemon. Awesome, but I can't wait for the next real Pokemon. It might work as a good middle ground between Pokemon Go and the real games. 
 *** Mariokart 8
-I got this to have something to play with Ingri. Not really my thing. 
+    I got this to have something to play with Ingri. Not really my thing. 
 *** Splatoon 2
-This is an awesome game. The game was a lot of fun to play, and the multiplayer is awesome if that's your thing. 
+    This is an awesome game. The game was a lot of fun to play, and the multiplayer is awesome if that's your thing. 
 *** Civ 6
-One of those games I got, but haven't played a lot. 
+    One of those games I got, but haven't played a lot. 
 *** Hallow Knight
-This one looks fantastic, but it becomes very hard very fast. 
+    This one looks fantastic, but it becomes very hard very fast. 
 *** Crash
-I have played through the first and a lot of the second game. I used to really love the first one on PS1, and it is a great game if you want a lot of entertainment for your money. 
+    I have played through the first and a lot of the second game. I used to really love the first one on PS1, and it is a great game if you want a lot of entertainment for your money. 
 *** Donkey Kong
-A great game, but it is very hard or too easy. It would be much better with another level in between. 
+    A great game, but it is very hard or too easy. It would be much better with another level in between. 
 *** Octopath Traveler
-I like this game a lot, haven't played it a lot. But if you like Pokemon it is the perfect game for you. 
+    I like this game a lot, haven't played it a lot. But if you like Pokemon it is the perfect game for you. 
 *** Stardew Valley
-This is the perfect game for just killing time. I have no idea how much commute time I have killed by playing this game. 
+    This is the perfect game for just killing time. I have no idea how much commute time I have killed by playing this game. 
 *** Baba is you
-I haven't played this a lot yet, but it seems like a cool puzzle game.
+    I haven't played this a lot yet, but it seems like a cool puzzle game.
 *** Zelda
-This is the best game on the Switch. It is so open, but it can be very frustrating. Also a fantastic game. 
+    This is the best game on the Switch. It is so open, but it can be very frustrating. Also a fantastic game. 
 *** Mario+Rabids
-This is a very veird and very different Mario game. It is part puzzle, part shooting game. But it is one of the best games I have played in a long time. 
+    This is a very veird and very different Mario game. It is part puzzle, part shooting game. But it is one of the best games I have played in a long time. 
 *** Mario Bros Delux
-This is my favourite Mario game on the Switch. Probably because it is closest to the original Mario games. 
+    This is my favourite Mario game on the Switch. Probably because it is closest to the original Mario games. 
 *** Pode
-A really beautiful indie puzzle game. 
+    A really beautiful indie puzzle game. 
 *** Firewatch
-I have just played it a little, and it looks great, but it feels like the kind of thing that works better on a PC. 
+    I have just played it a little, and it looks great, but it feels like the kind of thing that works better on a PC. 
 *** FF12
-Haven't played it yet
+    Haven't played it yet
 *** Blades of Time
-I haven't played it a lot, but it isn't really my kind of thing. But still a great thing to play just to waste time. 
+    I haven't played it a lot, but it isn't really my kind of thing. But still a great thing to play just to waste time. 
 ** Card games
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-I'm not that into most card games, because they are too serious. But there are two games I think are really awesome, because you can basically just play them laugh and people can walk in and out of them without issues, while finding a new drink or making food. 
+   I'm not that into most card games, because they are too serious. But there are two games I think are really awesome, because you can basically just play them laugh and people can walk in and out of them without issues, while finding a new drink or making food. 
 
-- Cards against humanity
-- Joking Hazard
+   - Cards against humanity
+   - Joking Hazard
 
-CAH are the better of the two, because JH is a little bit more difficult for the jokes to make sense. But both of them are a lot of fun, and a great way to make holidays like christmas survivable 
+   CAH are the better of the two, because JH is a little bit more difficult for the jokes to make sense. But both of them are a lot of fun, and a great way to make holidays like christmas survivable 
 
 * Programming
 ** Notes on ClojureScript Development
-Updated: 2020-03-08 13:03:85
+   Updated: 2020-03-08 13:03:85
 
-Just some notes for myself after spending a great deal of time testing out various things over a few days to see if I can find something in the same ball park as Create React App with Redux. 
+   Just some notes for myself after spending a great deal of time testing out various things over a few days to see if I can find something in the same ball park as Create React App with Redux. 
 
-- Figwheel Main is awesome. But the default settings are weird
-- Rum and Reagent are interesting. But I have a hard time finding anything else than re-frame that seems like a complete solution
-- Reframe is a lot of "stuff" to understand, but it just works, and like you expect. But I'm not a fan of it because it feels very much like a framework. 
+   - Figwheel Main is awesome. But the default settings are weird
+   - Rum and Reagent are interesting. But I have a hard time finding anything else than re-frame that seems like a complete solution
+   - Reframe is a lot of stuff"" to understand, but it just works, and like you expect. But I'm not a fan of it because it feels very much like a framework. 
 
 TODO:
 This is what I should do in order to make ClojureScript work for me
