@@ -45,26 +45,96 @@ Updated: 2020-03-08 13:03:85
 - Working on some hobby projects
 - Coding Golang
 
-** Uses
-Updated: 2020-03-08 13:03:85
+** Using
+Updated: 2020-04-09 16:04:66
 
-This page is a short summary of all the important stuff I use. The idea is that I only mention the stuff I would miss if I lost it(or stopped working for the software stuff).
+WIP: Replacing Uses
 
 *** Hardware
-- MacBook Pro 13\" without Touch Bar; the 2016 model, with 16GB of memory
-  and 512 SSD. /Great machine, but I fucking hate the keyboard/
-- ThinkPad x230, 12"; 256 SSD and 16GB ram; runs Arch Linux and i3.
-- AlphaSmart Neo2; my typewriter.
-- Happy Hacking Keyboard 2; I have one at home and at work.
-- Microsoft Sculpt Ergonomic Mouse; have one at work and one at home
-- Apple Magic Trackpad.
-- LG 4K 27" USB-C screen.
-- iPhone 11, with a twist popsocket
-- Audio Technica ATH-M50x + Fiio Btr3 Bluetooth DAC
-- Analog camera: Nikon FM, with a 50mm F1.8
-- Digital: Fujifilm X-Pro 2. 23/35/50mm F2, and 8mm f2.8; the 23mm is on it most of the time. I have a pile
-  of 8GB memory cards I use with it;
-- Nokia Smart Scale.
+- Kindle
+- Switch
+- MacBook Pro 13" 2016
+- ThinkPad X230
+- iPhone 11 Yellow
+- Apple Watch Series 4
+- LG 27" 4K screen
+- Apple Magic trackpad
+- HHKB2
+- Microsoft Skulpt Ergonomic mouse
+- Fuji X-Pro 2
+  - 23mm f2
+  - 35mm f2
+  - 50mm f2
+  - 8mm f2.8
+- Audio Technica m50x
+- Fiio BTR3
+*** Software
+**** txt
+Instead of using Dropbox I have a git repo with a naive shell script on each machine committing every minute if any changes and pulling and pushing. It contains all my most important text files and some images. 
+
+I use org-journal, and all my most important text files are organized in between 5 and 10 org documents 
+**** Thinkpad
+- Shell: fish
+- Firefox
+- Emacs
+
+**** MacBook
+- 1Password
+- ALfred
+- Arq
+- Bartender
+- Basecamp
+- CleanMyMac
+- Default Folder X
+- DraftsEmacs
+- Firefox
+- ForkLift
+- GitKraken
+- Photos
+- iTerm
+- Keybase
+- Keyboard Maestro
+- Lingon X
+- Music.app
+- OmniFocus
+- Paw
+- Plex
+- Readkit
+- Rocket
+- Soulver
+- Tot
+- Visual Studio Code
+- DataGrip
+- Goland
+- NordVPN
+
+**** iPhone
+- Reminders
+- 1Password
+- Soulver
+- Duiolingo
+- Safari
+- Fantastical
+- NordVPN
+- Shortcuts
+- Tot
+- Drafts
+- Keybase
+- OmniFocus
+- Flickr
+- Mast
+- Basecamp
+- Netflix
+- Audible
+- Instapaper
+- Overcast
+- Music.app
+- Plex
+- 
+*** Social Stuff
+- [[https://dogs,estate/@hjertnes][Mastodon]]
+- [[https://flickr.com/hjertnes][Flickr]]
+
 *** Bags
 - Fjellreven Foldstack No.3 as my man purse.
 - Synik 22. The thing I bring all my "daily carry" stuff to work
@@ -76,7 +146,6 @@ This page is a short summary of all the important stuff I use. The idea is that 
 
 *** Pen and paper stuff
 - Lamy 2000 Medium Nib
-- Pilot Vanishing Point
 - YStudio brass pocket pen
 - Classroom Friendly Sharpener.
 - KUM Longpoint
@@ -88,89 +157,31 @@ This page is a short summary of all the important stuff I use. The idea is that 
 - Blackwings
 
 *** Services
-- Github. /Awesome Git hosting/
-- 1Password. /The best password management solution I know about. Both
-  from a security and UX stand point. Awesome for solo and team use/
+- Github
+- 1Password
 - Instapaper.
 - Apple Music
 - iCloud for photos
 
-*** Social Stuff
-- [[https://dogs,estate/@hjertnes][Mastodon]]
-- [[https://flickr.com/hjertnes][Flickr]]
+
 *** Blogging
 - Hugo
 - Ox hugo
-- FeedPress. /A great service if you want feed stats or want to keep the
-  same feed url no matter if you change CMS or not./
+- FeedPress
 
-*** Coding (apps)
-   
-- Emacs. My go to text editor at the time, it's powerful, I use it for
-  almost everything; including reading email.
-- iTerm 2 /Like terminal.app with better UI and some extra
-  functionality, like splitting both directions./
-- Fish
-- git. /SCM. Don't love it, but better than the rest/
-- Paw. /Awesome GUI app for OS X for interacting with web api's./
-- Homebrew. /The best package manager for OS X/
-- Rider
-
-*** Coding (languages and stack)
-- C# / .NET Core. /Great for developing larger stuff, with a strongly
-  typed language. It's a lot more like Django or Rails than it used to
-  be/
-- React / Redux / Webpack /My favourite way to build Web Apps at the
-  moment. It's easy to write stuff really fast and it scales to larger
-  projects./
-- Golang is my current hobby project language
-
-*** Coding / Server stuff
-- Docker.
-- Nginx
-- PostgreSQL.
-- Redis 
-
-*** Other Mac Apps
-- Drafts
-- Alfred. /My go to launcher, more powerful than Spotlight and easier to
-  get into than the others./
-- Arq. /An app to take backups of your computer, but you control where
-  it's stored./
-- Karabiner Elements *The app I use to re-map my CAPS LOCK to shift.**
-- Amphetamine /A modern version of Caffine. Keeps my Mac from going to
-  sleep/
-- Moom. /My Window manager, I mostly use it to resize windows with
-  keyboard shortcuts./
-
-*** Photography
-- Photos.app. I add JPEG of all my raw files and TIFF scans to Photos.
-  It's great to browse photos.
-
-*** iOS Apps
-This is a summary not of everything on my iPhone, but the stuff I use a lot.
-
-- 1Password
-- Duolingo
-- Photos
-- Messages
-- Safari
-- Music
-- Soulver
-- Shortcuts
-- Fantastical
-- Drafts
-- Due
-- Keybase
-- Plex
-- Audible
-- Instapaper
-- Working Copy
+*** Software development
+- Go
+- Svelte
+- Postgresql
+- Redis
+- Emacs / VS Code / Goland
+- DataGrip for database stuff
 
 ** Homescreen
 Updated: 2020-03-08 13:03:85
 
 This is the homescreen of my iPhone 11. I have the Yellow. As of January 2020.
+
 [[./homescreen.png]]
 ** Top of my laptop
 Updated: 2020-03-08 13:03:85
@@ -178,15 +189,46 @@ Updated: 2020-03-08 13:03:85
 The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.
 [[./macbook.png]]
 
+* Code
+Updated: 2020-04-09 09:04:95
+** Configuration 
+Updated: 2020-04-09 11:04:99
+- [[https://github.com/hjertnes/emacs.d][Emacs.d]] - my emacs config
+- [[https://github.com/hjertnes/dotfiles][DotFiles]] - my "other" config
+- [[https://github.com/hjertnes/usefulshit][UsefulShit]] - various code realted useful config files and snippets
 * Thinking loud
+** Svelte
+Updated: 2020-04-09 15:04:45
+
+- Will spell it as svetle until end of time
+- Sapper is awesome
+- I like how lightweight it is
+- Miss a when props change lifecycle method
 ** Starting a company
-Updated: 2020-03-29 08:03:58
+Updated: 2020-04-09 15:04:45
+
 I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money. 
+
+Thoughts from the process of looking into it:
+- I should wait as long as possible, because every single month it is running costs money
+- It is amazing how something simple like a GitHub subscription affects the number of sales I need to not loose money
+
 * Articles
 Updated: 2020-03-21 14:03:96
+
 This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.
+** I tried to fix a problem with my fish config
+Updated: 2020-04-10 06:04:17
+
+I had a problem with my fish config, that finally had gotten to the point where I had to fix it. I know when it was introduced (now), but didn't then. The result was that I in the process did something I have had on my to do list for a really long time. 
+
+I deleted everything. And re-wrote it. I also in the process got rid of everything I didn't really need that was in there because I thought it was "neat" when I first set up fish. 
+
+The problem was that it took several seconds to start a shell. And the reason this was happening was that in one of my path's I did something dumb that was a really heavy command inside it. 
+
 ** VPN's
 Updated: 2020-03-28 08:03:58
+
 I use a VPN service on my iPhone and my MacBook. Mostly because I think it is a good idea, when I'm not on my home network. As a added bonus it also let me access my Mastodon instance on my personal devices at work. For some dumb ass reason they block it.
 
 This is what I think about VPN services
@@ -194,7 +236,8 @@ This is what I think about VPN services
 - Free: this is a really bad idea and stay away. It is like if you installed a tracker from Facebook on all your devices. 
 - Paid: mostly the same, some feature varies but they are mostly the same. I used to use Encrypt.me but changed to Nord because they let me pick country I want to VPN through. There are some that are much more secure than the others, but that's not something I care that much about. 
 ** xxiivv
-Updated: 2020-03-24
+Updated: 2020-03-24 
+
    There is this guy on [[Mastodon][https://merveilles.town/@neauoire]], and [[here][https://wiki.xxiivv.com/site/home.html]] that really annoy me. At first glance he is a interesting guy who does his website in C to save energy (makes sense?) and lives off the grid on a boat. 
 
    But I think he is just a poor mans RMS. His off the grid life is not that off the grid when you take into consideration that he makes a living from Patreon supporters. And the energy he saves from writing his website in C instead of something else staticly generated pales when you take into consideration that he use a Mastodon instance
@@ -724,8 +767,20 @@ Some people get too hung up in the deatils. Like the 10 000 hours thing. What I 
    - Joking Hazard
 
    CAH are the better of the two, because JH is a little bit more difficult for the jokes to make sense. But both of them are a lot of fun, and a great way to make holidays like christmas survivable 
-
+   
 * Programming
+
+** Golang development tools
+Updated: 2020-03-30 05:03:40
+
+Some notes on the tools I use to do golang dev. 
+
+*** Goland
+A really good IDE, if that is your kind of thing. It works more or less like you expect if you are used to other JetBrains products like Rider or IntelliJ
+*** Emacs
+It works great most of the time, sometimes the autocomplete dies, but that is almost alwasys solved by restarting LSP. And sometimes the source is too screwed up for it to make sense of it. 
+*** VS Code
+Is mostly the same as Emacs. Makes sense since they use the same stuff behind the scenes. 
 ** Notes on ClojureScript Development
    Updated: 2020-03-08 13:03:85
 
@@ -1834,7 +1889,7 @@ I gave TiddlyWiki a serious look. But it honestly isn't for me. Not bad, just no
 
 *** 2020-03-06
 Not sure what I'm going to do when this thing does not scale anymore. One option might be to use something that turns org into json and build something from that. 
-* Workout Routine 
+** Workout Routine 
 ** From Mid March until current
 - Only hour and a half of dog walking each day. Because CONVID-19
 - I'll get back to the former routine once gyms open again. 
@@ -1842,3 +1897,42 @@ Not sure what I'm going to do when this thing does not scale anymore. One option
 - Walk the dogs for 1 hour each day
 - 20 minute walk with steep incline at treatmill targeting fatburn heartrate twice a week
 - Yoga twice a week; usually 10 minutes, the goal is 20minutes. Twice a week
+** Emacs configuration changes
+Updated 2020-04-09 11:04:35
+*** 2020-04-09
+- Re-added projectile and removed the go-to-code function I created to "replace" it.
+- Re-added restart-emacs
+- Fixed some syntax errors after yesterday
+- Disabled package verification again
+*** 2020-04-08
+I started to do a full review of a lot of stuff yesterday, including a full rewrite of my fish config. I removed over 400 lines of stuff I didn't consider "essential" or no longer needed. A summary under.
+
+- Re-enabled package verification
+- Removed font ligatures
+- Removed a lot of commented out code
+- Fixed a bunch of "mistakes" in the org document
+- Removed quelpa
+- Removed support for windows
+- Removed post to Micro.blog
+- Updated font section
+- Removed all my theme stuff and changed to afternoon theme
+- Removed nyan cat
+- Removed projectile
+- Removed docker and k8 stuff
+- Removed restclient
+- Removed C# support
+- Removed everything I don't use from my org config
+- Removed wiki-nav
+- Removed package-lint
+- Added Svelte mode
+- Removed elfeed
+- Removed eshell-z
+- Removed Deft and org-roam
+- Removed mastodon (because its broken)
+- Removed Restart-emacs
+- Added function for going to my "code root directory"
+- Removed git gutter
+- Removed counsel tramp
+- Removed functions and interactive functions no longer in use
+- Removed sp keybindings I don't use
+- Removed re-build and tramp ssh settings I don't need

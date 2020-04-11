@@ -30,31 +30,33 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#family">Family</a></li>
                 <li><a href="#now">Now</a></li>
-                <li><a href="#uses">Uses</a>
+                <li><a href="#using">Using</a>
                 <ul>
                 <li><a href="#hardware">Hardware</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#social-stuff">Social Stuff</a></li>
                 <li><a href="#bags">Bags</a></li>
                 <li><a href="#coffee">Coffee</a></li>
                 <li><a href="#pen-and-paper-stuff">Pen and paper stuff</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#social-stuff">Social Stuff</a></li>
                 <li><a href="#blogging">Blogging</a></li>
-                <li><a href="#coding-apps">Coding (apps)</a></li>
-                <li><a href="#coding-languages-and-stack">Coding (languages and stack)</a></li>
-                <li><a href="#coding-server-stuff">Coding / Server stuff</a></li>
-                <li><a href="#other-mac-apps">Other Mac Apps</a></li>
-                <li><a href="#photography">Photography</a></li>
-                <li><a href="#ios-apps">iOS Apps</a></li>
+                <li><a href="#software-development">Software development</a></li>
                 </ul></li>
                 <li><a href="#homescreen">Homescreen</a></li>
                 <li><a href="#top-of-my-laptop">Top of my laptop</a></li>
                 </ul></li>
+                <li><a href="#code">Code</a>
+                <ul>
+                <li><a href="#configuration">Configuration</a></li>
+                </ul></li>
                 <li><a href="#thinking-loud">Thinking loud</a>
                 <ul>
+                <li><a href="#svelte">Svelte</a></li>
                 <li><a href="#starting-a-company">Starting a company</a></li>
                 </ul></li>
                 <li><a href="#articles">Articles</a>
                 <ul>
+                <li><a href="#i-tried-to-fix-a-problem-with-my-fish-config">I tried to fix a problem with my fish config</a></li>
                 <li><a href="#vpns">VPN's</a></li>
                 <li><a href="#xxiivv">xxiivv</a></li>
                 <li><a href="#mastodon">Mastodon</a></li>
@@ -151,6 +153,12 @@
                 </ul></li>
                 <li><a href="#programming">Programming</a>
                 <ul>
+                <li><a href="#golang-development-tools">Golang development tools</a>
+                <ul>
+                <li><a href="#goland">Goland</a></li>
+                <li><a href="#emacs">Emacs</a></li>
+                <li><a href="#vs-code">VS Code</a></li>
+                </ul></li>
                 <li><a href="#notes-on-clojurescript-development">Notes on ClojureScript Development</a></li>
                 <li><a href="#redux-like-pattern-with-clojurescript-and-reagent">Redux like pattern with ClojureScript and Reagent</a></li>
                 <li><a href="#how-i-code">How I Code</a></li>
@@ -165,13 +173,13 @@
                 <li><a href="#makefiles-and-similar">Makefiles and similar</a></li>
                 <li><a href="#a-retrospective-after-my-clojure-experiment">A retrospective after my Clojure experiment</a></li>
                 </ul></li>
-                <li><a href="#emacs">Emacs</a>
+                <li><a href="#emacs-1">Emacs</a>
                 <ul>
                 <li><a href="#when-emacs-gets-confused-about-packages">When Emacs gets confused about packages</a></li>
                 <li><a href="#updating-packages">Updating Packages</a></li>
                 <li><a href="#lisp-let-and-let">Lisp: let and let*</a></li>
                 <li><a href="#emacsclient">Emacsclient</a></li>
-                <li><a href="#emacs-1">Emacs</a></li>
+                <li><a href="#emacs-2">Emacs</a></li>
                 <li><a href="#starters">Starters</a></li>
                 <li><a href="#cheatsheet">Cheatsheet</a></li>
                 <li><a href="#installing-packages-when-use-package-wont-work">Installing packages when use-package won't work</a></li>
@@ -223,7 +231,7 @@
                 <li><a href="#emacs-undo-tree">Emacs: undo-tree</a></li>
                 </ul></li>
                 </ul></li>
-                <li><a href="#photography-1">Photography</a>
+                <li><a href="#photography">Photography</a>
                 <ul>
                 <li><a href="#photograhy">Photograhy</a></li>
                 <li><a href="#camera">Camera</a></li>
@@ -300,11 +308,14 @@
                 <li><a href="#section">2020-03-05</a></li>
                 <li><a href="#section-1">2020-03-06</a></li>
                 </ul></li>
-                </ul></li>
-                <li><a href="#workout-routine">Workout Routine</a>
-                <ul>
+                <li><a href="#workout-routine">Workout Routine</a></li>
                 <li><a href="#from-mid-march-until-current">From Mid March until current</a></li>
                 <li><a href="#from-early-2020-until-mid-march">From Early 2020 until Mid March</a></li>
+                <li><a href="#emacs-configuration-changes">Emacs configuration changes</a>
+                <ul>
+                <li><a href="#section-2">2020-04-09</a></li>
+                <li><a href="#section-3">2020-04-08</a></li>
+                </ul></li>
                 </ul></li>
                 </ul>
       </nav>
@@ -358,25 +369,109 @@
       <li>Coding Golang</li>
       </ul>
       </section>
-      <section id="uses" class="level2">
-      <h2>Uses</h2>
-      <p>Updated: 2020-03-08 13:03:85</p>
-      <p>This page is a short summary of all the important stuff I use. The idea is that I only mention the stuff I would miss if I lost it(or stopped working for the software stuff).</p>
+      <section id="using" class="level2">
+      <h2>Using</h2>
+      <p>Updated: 2020-04-09 16:04:66</p>
+      <p>WIP: Replacing Uses</p>
       <section id="hardware" class="level3">
       <h3>Hardware</h3>
       <ul>
-      <li>MacBook Pro 13\" without Touch Bar; the 2016 model, with 16GB of memory and 512 SSD. <em>Great machine, but I fucking hate the keyboard</em></li>
-      <li>ThinkPad x230, 12"; 256 SSD and 16GB ram; runs Arch Linux and i3.</li>
-      <li>AlphaSmart Neo2; my typewriter.</li>
-      <li>Happy Hacking Keyboard 2; I have one at home and at work.</li>
-      <li>Microsoft Sculpt Ergonomic Mouse; have one at work and one at home</li>
-      <li>Apple Magic Trackpad.</li>
-      <li>LG 4K 27" USB-C screen.</li>
-      <li>iPhone 11, with a twist popsocket</li>
-      <li>Audio Technica ATH-M50x + Fiio Btr3 Bluetooth DAC</li>
-      <li>Analog camera: Nikon FM, with a 50mm F1.8</li>
-      <li>Digital: Fujifilm X-Pro 2. 23/35/50mm F2, and 8mm f2.8; the 23mm is on it most of the time. I have a pile of 8GB memory cards I use with it;</li>
-      <li>Nokia Smart Scale.</li>
+      <li>Kindle</li>
+      <li>Switch</li>
+      <li>MacBook Pro 13" 2016</li>
+      <li>ThinkPad X230</li>
+      <li>iPhone 11 Yellow</li>
+      <li>Apple Watch Series 4</li>
+      <li>LG 27" 4K screen</li>
+      <li>Apple Magic trackpad</li>
+      <li>HHKB2</li>
+      <li>Microsoft Skulpt Ergonomic mouse</li>
+      <li>Fuji X-Pro 2
+      <ul>
+      <li>23mm f2</li>
+      <li>35mm f2</li>
+      <li>50mm f2</li>
+      <li>8mm f2.8</li>
+      </ul></li>
+      <li>Audio Technica m50x</li>
+      <li>Fiio BTR3</li>
+      </ul>
+      </section>
+      <section id="software" class="level3">
+      <h3>Software</h3>
+      <ol>
+      <li><p>txt</p>
+      <p>Instead of using Dropbox I have a git repo with a naive shell script on each machine committing every minute if any changes and pulling and pushing. It contains all my most important text files and some images.</p>
+      <p>I use org-journal, and all my most important text files are organized in between 5 and 10 org documents</p></li>
+      <li><p>Thinkpad</p>
+      <ul>
+      <li>Shell: fish</li>
+      <li>Firefox</li>
+      <li>Emacs</li>
+      </ul></li>
+      <li><p>MacBook</p>
+      <ul>
+      <li>1Password</li>
+      <li>ALfred</li>
+      <li>Arq</li>
+      <li>Bartender</li>
+      <li>Basecamp</li>
+      <li>CleanMyMac</li>
+      <li>Default Folder X</li>
+      <li>DraftsEmacs</li>
+      <li>Firefox</li>
+      <li>ForkLift</li>
+      <li>GitKraken</li>
+      <li>Photos</li>
+      <li>iTerm</li>
+      <li>Keybase</li>
+      <li>Keyboard Maestro</li>
+      <li>Lingon X</li>
+      <li>Music.app</li>
+      <li>OmniFocus</li>
+      <li>Paw</li>
+      <li>Plex</li>
+      <li>Readkit</li>
+      <li>Rocket</li>
+      <li>Soulver</li>
+      <li>Tot</li>
+      <li>Visual Studio Code</li>
+      <li>DataGrip</li>
+      <li>Goland</li>
+      <li>NordVPN</li>
+      </ul></li>
+      <li><p>iPhone</p>
+      <ul>
+      <li>Reminders</li>
+      <li>1Password</li>
+      <li>Soulver</li>
+      <li>Duiolingo</li>
+      <li>Safari</li>
+      <li>Fantastical</li>
+      <li>NordVPN</li>
+      <li>Shortcuts</li>
+      <li>Tot</li>
+      <li>Drafts</li>
+      <li>Keybase</li>
+      <li>OmniFocus</li>
+      <li>Flickr</li>
+      <li>Mast</li>
+      <li>Basecamp</li>
+      <li>Netflix</li>
+      <li>Audible</li>
+      <li>Instapaper</li>
+      <li>Overcast</li>
+      <li>Music.app</li>
+      <li>Plex</li>
+      <li></li>
+      </ul></li>
+      </ol>
+      </section>
+      <section id="social-stuff" class="level3">
+      <h3>Social Stuff</h3>
+      <ul>
+      <li><a href="https://dogs,estate/@hjertnes">Mastodon</a></li>
+      <li><a href="https://flickr.com/hjertnes">Flickr</a></li>
       </ul>
       </section>
       <section id="bags" class="level3">
@@ -398,7 +493,6 @@
       <h3>Pen and paper stuff</h3>
       <ul>
       <li>Lamy 2000 Medium Nib</li>
-      <li>Pilot Vanishing Point</li>
       <li>YStudio brass pocket pen</li>
       <li>Classroom Friendly Sharpener.</li>
       <li>KUM Longpoint</li>
@@ -413,18 +507,11 @@
       <section id="services" class="level3">
       <h3>Services</h3>
       <ul>
-      <li>Github. <em>Awesome Git hosting</em></li>
-      <li>1Password. <em>The best password management solution I know about. Both from a security and UX stand point. Awesome for solo and team use</em></li>
+      <li>Github</li>
+      <li>1Password</li>
       <li>Instapaper.</li>
       <li>Apple Music</li>
       <li>iCloud for photos</li>
-      </ul>
-      </section>
-      <section id="social-stuff" class="level3">
-      <h3>Social Stuff</h3>
-      <ul>
-      <li><a href="https://dogs,estate/@hjertnes">Mastodon</a></li>
-      <li><a href="https://flickr.com/hjertnes">Flickr</a></li>
       </ul>
       </section>
       <section id="blogging" class="level3">
@@ -432,82 +519,26 @@
       <ul>
       <li>Hugo</li>
       <li>Ox hugo</li>
-      <li>FeedPress. <em>A great service if you want feed stats or want to keep the same feed url no matter if you change CMS or not.</em></li>
+      <li>FeedPress</li>
       </ul>
       </section>
-      <section id="coding-apps" class="level3">
-      <h3>Coding (apps)</h3>
+      <section id="software-development" class="level3">
+      <h3>Software development</h3>
       <ul>
-      <li>Emacs. My go to text editor at the time, it's powerful, I use it for almost everything; including reading email.</li>
-      <li>iTerm 2 <em>Like terminal.app with better UI and some extra functionality, like splitting both directions.</em></li>
-      <li>Fish</li>
-      <li>git. <em>SCM. Don't love it, but better than the rest</em></li>
-      <li>Paw. <em>Awesome GUI app for OS X for interacting with web api's.</em></li>
-      <li>Homebrew. <em>The best package manager for OS X</em></li>
-      <li>Rider</li>
-      </ul>
-      </section>
-      <section id="coding-languages-and-stack" class="level3">
-      <h3>Coding (languages and stack)</h3>
-      <ul>
-      <li>C# / .NET Core. /Great for developing larger stuff, with a strongly typed language. It's a lot more like Django or Rails than it used to be/</li>
-      <li>React / Redux / Webpack /My favourite way to build Web Apps at the moment. It's easy to write stuff really fast and it scales to larger projects./</li>
-      <li>Golang is my current hobby project language</li>
-      </ul>
-      </section>
-      <section id="coding-server-stuff" class="level3">
-      <h3>Coding / Server stuff</h3>
-      <ul>
-      <li>Docker.</li>
-      <li>Nginx</li>
-      <li>PostgreSQL.</li>
+      <li>Go</li>
+      <li>Svelte</li>
+      <li>Postgresql</li>
       <li>Redis</li>
-      </ul>
-      </section>
-      <section id="other-mac-apps" class="level3">
-      <h3>Other Mac Apps</h3>
-      <ul>
-      <li>Drafts</li>
-      <li>Alfred. <em>My go to launcher, more powerful than Spotlight and easier to get into than the others.</em></li>
-      <li>Arq. <em>An app to take backups of your computer, but you control where it's stored.</em></li>
-      <li>Karabiner Elements <strong>The app I use to re-map my CAPS LOCK to shift.*</strong></li>
-      <li>Amphetamine <em>A modern version of Caffine. Keeps my Mac from going to sleep</em></li>
-      <li>Moom. <em>My Window manager, I mostly use it to resize windows with keyboard shortcuts.</em></li>
-      </ul>
-      </section>
-      <section id="photography" class="level3">
-      <h3>Photography</h3>
-      <ul>
-      <li>Photos.app. I add JPEG of all my raw files and TIFF scans to Photos. It's great to browse photos.</li>
-      </ul>
-      </section>
-      <section id="ios-apps" class="level3">
-      <h3>iOS Apps</h3>
-      <p>This is a summary not of everything on my iPhone, but the stuff I use a lot.</p>
-      <ul>
-      <li>1Password</li>
-      <li>Duolingo</li>
-      <li>Photos</li>
-      <li>Messages</li>
-      <li>Safari</li>
-      <li>Music</li>
-      <li>Soulver</li>
-      <li>Shortcuts</li>
-      <li>Fantastical</li>
-      <li>Drafts</li>
-      <li>Due</li>
-      <li>Keybase</li>
-      <li>Plex</li>
-      <li>Audible</li>
-      <li>Instapaper</li>
-      <li>Working Copy</li>
+      <li>Emacs / VS Code / Goland</li>
+      <li>DataGrip for database stuff</li>
       </ul>
       </section>
       </section>
       <section id="homescreen" class="level2">
       <h2>Homescreen</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
-      <p>This is the homescreen of my iPhone 11. I have the Yellow. As of January 2020. <img src="./homescreen.png" /></p>
+      <p>This is the homescreen of my iPhone 11. I have the Yellow. As of January 2020.</p>
+      <p><img src="./homescreen.png" /></p>
       </section>
       <section id="top-of-my-laptop" class="level2">
       <h2>Top of my laptop</h2>
@@ -515,19 +546,57 @@
       <p>The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera. <img src="./macbook.png" /></p>
       </section>
       </section>
+      <section id="code" class="level1">
+      <h1>Code</h1>
+      <p>Updated: 2020-04-09 09:04:95</p>
+      <section id="configuration" class="level2">
+      <h2>Configuration</h2>
+      <p>Updated: 2020-04-09 11:04:99</p>
+      <ul>
+      <li><a href="https://github.com/hjertnes/emacs.d">Emacs.d</a> - my emacs config</li>
+      <li><a href="https://github.com/hjertnes/dotfiles">DotFiles</a> - my "other" config</li>
+      <li><a href="https://github.com/hjertnes/usefulshit">UsefulShit</a> - various code realted useful config files and snippets</li>
+      </ul>
+      </section>
+      </section>
       <section id="thinking-loud" class="level1">
       <h1>Thinking loud</h1>
+      <section id="svelte" class="level2">
+      <h2>Svelte</h2>
+      <p>Updated: 2020-04-09 15:04:45</p>
+      <ul>
+      <li>Will spell it as svetle until end of time</li>
+      <li>Sapper is awesome</li>
+      <li>I like how lightweight it is</li>
+      <li>Miss a when props change lifecycle method</li>
+      </ul>
+      </section>
       <section id="starting-a-company" class="level2">
       <h2>Starting a company</h2>
-      <p>Updated: 2020-03-29 08:03:58 I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money.</p>
+      <p>Updated: 2020-04-09 15:04:45</p>
+      <p>I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money.</p>
+      <p>Thoughts from the process of looking into it:</p>
+      <ul>
+      <li>I should wait as long as possible, because every single month it is running costs money</li>
+      <li>It is amazing how something simple like a GitHub subscription affects the number of sales I need to not loose money</li>
+      </ul>
       </section>
       </section>
       <section id="articles" class="level1">
       <h1>Articles</h1>
-      <p>Updated: 2020-03-21 14:03:96 This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.</p>
+      <p>Updated: 2020-03-21 14:03:96</p>
+      <p>This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.</p>
+      <section id="i-tried-to-fix-a-problem-with-my-fish-config" class="level2">
+      <h2>I tried to fix a problem with my fish config</h2>
+      <p>Updated: 2020-04-10 06:04:17</p>
+      <p>I had a problem with my fish config, that finally had gotten to the point where I had to fix it. I know when it was introduced (now), but didn't then. The result was that I in the process did something I have had on my to do list for a really long time.</p>
+      <p>I deleted everything. And re-wrote it. I also in the process got rid of everything I didn't really need that was in there because I thought it was "neat" when I first set up fish.</p>
+      <p>The problem was that it took several seconds to start a shell. And the reason this was happening was that in one of my path's I did something dumb that was a really heavy command inside it.</p>
+      </section>
       <section id="vpns" class="level2">
       <h2>VPN's</h2>
-      <p>Updated: 2020-03-28 08:03:58 I use a VPN service on my iPhone and my MacBook. Mostly because I think it is a good idea, when I'm not on my home network. As a added bonus it also let me access my Mastodon instance on my personal devices at work. For some dumb ass reason they block it.</p>
+      <p>Updated: 2020-03-28 08:03:58</p>
+      <p>I use a VPN service on my iPhone and my MacBook. Mostly because I think it is a good idea, when I'm not on my home network. As a added bonus it also let me access my Mastodon instance on my personal devices at work. For some dumb ass reason they block it.</p>
       <p>This is what I think about VPN services</p>
       <ul>
       <li>Free: this is a really bad idea and stay away. It is like if you installed a tracker from Facebook on all your devices.</li>
@@ -536,7 +605,8 @@
       </section>
       <section id="xxiivv" class="level2">
       <h2>xxiivv</h2>
-      <p>Updated: 2020-03-24 There is this guy on <em><a href="https://merveilles.town/@neauoire">https://merveilles.town/@neauoire</a></em>, and <em><a href="https://wiki.xxiivv.com/site/home.html">https://wiki.xxiivv.com/site/home.html</a></em> that really annoy me. At first glance he is a interesting guy who does his website in C to save energy (makes sense?) and lives off the grid on a boat.</p>
+      <p>Updated: 2020-03-24</p>
+      <p>There is this guy on <em><a href="https://merveilles.town/@neauoire">https://merveilles.town/@neauoire</a></em>, and <em><a href="https://wiki.xxiivv.com/site/home.html">https://wiki.xxiivv.com/site/home.html</a></em> that really annoy me. At first glance he is a interesting guy who does his website in C to save energy (makes sense?) and lives off the grid on a boat.</p>
       <p>But I think he is just a poor mans RMS. His off the grid life is not that off the grid when you take into consideration that he makes a living from Patreon supporters. And the energy he saves from writing his website in C instead of something else staticly generated pales when you take into consideration that he use a Mastodon instance</p>
       <p>If you just ignore all his personal flaws and look at RMS's no compromise on privacy and open source it's amazing the lengths he have been willing to go in order to live a Open Source existance without giving up his privacy.</p>
       <p>This guy is just a pale imitation. And most of his views on stuff like eating meat and a like is just plain eco facism that makes the progress to carbon neutral or negative or what ever we need to go much harder.</p>
@@ -1108,6 +1178,23 @@
       </section>
       <section id="programming" class="level1">
       <h1>Programming</h1>
+      <section id="golang-development-tools" class="level2">
+      <h2>Golang development tools</h2>
+      <p>Updated: 2020-03-30 05:03:40</p>
+      <p>Some notes on the tools I use to do golang dev.</p>
+      <section id="goland" class="level3">
+      <h3>Goland</h3>
+      <p>A really good IDE, if that is your kind of thing. It works more or less like you expect if you are used to other JetBrains products like Rider or IntelliJ</p>
+      </section>
+      <section id="emacs" class="level3">
+      <h3>Emacs</h3>
+      <p>It works great most of the time, sometimes the autocomplete dies, but that is almost alwasys solved by restarting LSP. And sometimes the source is too screwed up for it to make sense of it.</p>
+      </section>
+      <section id="vs-code" class="level3">
+      <h3>VS Code</h3>
+      <p>Is mostly the same as Emacs. Makes sense since they use the same stuff behind the scenes.</p>
+      </section>
+      </section>
       <section id="notes-on-clojurescript-development" class="level2">
       <h2>Notes on ClojureScript Development</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
@@ -1238,7 +1325,7 @@
       <p>Again. I love the language, and I think it has some great ideas. But for me at this point, it isn't a good fit. Because I'd rather make stuff than to fight tooling and bullshit that should be solved out of te box.</p>
       </section>
       </section>
-      <section id="emacs" class="level1">
+      <section id="emacs-1" class="level1">
       <h1>Emacs</h1>
       <section id="when-emacs-gets-confused-about-packages" class="level2">
       <h2>When Emacs gets confused about packages</h2>
@@ -1273,7 +1360,7 @@
       <p>Emacsclient is a command that lets you send a file to a running instance of Emacs. This is really useful because most realy world configurations of Emacs takes some time to start. The only thing you need is to run M-x start-server or enable server-mode, and you can run "emacsclient" instead of emacs.</p>
       <p>In my configs I have aliased emacs and a bunch of other editor command to it. I think it works great.</p>
       </section>
-      <section id="emacs-1" class="level2">
+      <section id="emacs-2" class="level2">
       <h2>Emacs</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
       <p>Emacs is my go to editor these days, and have been for a couple of years at this point. I don't really imagine going to back to anything else at this point. I started out using Spacemacs with evil, before I finally moved over to Doom and then after a while ended up rolling my own configuration. And then finally I ditched evil and started learning proper emacs keybinding one year into it. My personal configuration is on <a href="https://github.com/hjertnes/emacs.d">Github</a>. It contains some basic information, and I change it a lot. If I see something cool I add it, and if I don't use it I just remove it.</p>
@@ -1674,7 +1761,7 @@
       </section>
       </section>
       </section>
-      <section id="photography-1" class="level1">
+      <section id="photography" class="level1">
       <h1>Photography</h1>
       <section id="photograhy" class="level2">
       <h2>Photograhy</h2>
@@ -2133,9 +2220,9 @@
       <p>Not sure what I'm going to do when this thing does not scale anymore. One option might be to use something that turns org into json and build something from that.</p>
       </section>
       </section>
+      <section id="workout-routine" class="level2">
+      <h2>Workout Routine</h2>
       </section>
-      <section id="workout-routine" class="level1">
-      <h1>Workout Routine</h1>
       <section id="from-mid-march-until-current" class="level2">
       <h2>From Mid March until current</h2>
       <ul>
@@ -2150,6 +2237,54 @@
       <li>20 minute walk with steep incline at treatmill targeting fatburn heartrate twice a week</li>
       <li>Yoga twice a week; usually 10 minutes, the goal is 20minutes. Twice a week</li>
       </ul>
+      </section>
+      <section id="emacs-configuration-changes" class="level2">
+      <h2>Emacs configuration changes</h2>
+      <p>Updated 2020-04-09 11:04:35</p>
+      <section id="section-2" class="level3">
+      <h3>2020-04-09</h3>
+      <ul>
+      <li>Re-added projectile and removed the go-to-code function I created to "replace" it.</li>
+      <li>Re-added restart-emacs</li>
+      <li>Fixed some syntax errors after yesterday</li>
+      <li>Disabled package verification again</li>
+      </ul>
+      </section>
+      <section id="section-3" class="level3">
+      <h3>2020-04-08</h3>
+      <p>I started to do a full review of a lot of stuff yesterday, including a full rewrite of my fish config. I removed over 400 lines of stuff I didn't consider "essential" or no longer needed. A summary under.</p>
+      <ul>
+      <li>Re-enabled package verification</li>
+      <li>Removed font ligatures</li>
+      <li>Removed a lot of commented out code</li>
+      <li>Fixed a bunch of "mistakes" in the org document</li>
+      <li>Removed quelpa</li>
+      <li>Removed support for windows</li>
+      <li>Removed post to Micro.blog</li>
+      <li>Updated font section</li>
+      <li>Removed all my theme stuff and changed to afternoon theme</li>
+      <li>Removed nyan cat</li>
+      <li>Removed projectile</li>
+      <li>Removed docker and k8 stuff</li>
+      <li>Removed restclient</li>
+      <li>Removed C# support</li>
+      <li>Removed everything I don't use from my org config</li>
+      <li>Removed wiki-nav</li>
+      <li>Removed package-lint</li>
+      <li>Added Svelte mode</li>
+      <li>Removed elfeed</li>
+      <li>Removed eshell-z</li>
+      <li>Removed Deft and org-roam</li>
+      <li>Removed mastodon (because its broken)</li>
+      <li>Removed Restart-emacs</li>
+      <li>Added function for going to my "code root directory"</li>
+      <li>Removed git gutter</li>
+      <li>Removed counsel tramp</li>
+      <li>Removed functions and interactive functions no longer in use</li>
+      <li>Removed sp keybindings I don't use</li>
+      <li>Removed re-build and tramp ssh settings I don't need</li>
+      </ul>
+      </section>
       </section>
       </section>
     </main>
