@@ -48,8 +48,6 @@ Updated: 2020-03-08 13:03:85
 ** Using
 Updated: 2020-04-09 16:04:66
 
-WIP: Replacing Uses
-
 *** Hardware
 - Kindle
 - Switch
@@ -372,10 +370,6 @@ And I love using the time I previously used on podcasts to listen to audioboks a
 
 I have started to really expolore genres I previously didn't have much exposure to (by choice). I don't really expose myself to TV, radio or anything the rest of the world are following. 
 
-** Disable OSX icons
-Updated: 2020-03-08 13:03:85
-
-http://osxdaily.com/2009/09/23/hide-all-desktop-icons-in-mac-os-x/
 ** Rant about iOS keyboards
 Updated: 2020-03-08 13:03:85
 
@@ -771,12 +765,12 @@ Some people get too hung up in the deatils. Like the 10 000 hours thing. What I 
 * Programming
 
 ** Golang development tools
-Updated: 2020-03-30 05:03:40
+Updated: 2020-04-16 18:04:28
 
 Some notes on the tools I use to do golang dev. 
 
 *** Goland
-A really good IDE, if that is your kind of thing. It works more or less like you expect if you are used to other JetBrains products like Rider or IntelliJ
+With the 2020.1 release, Goland feels like the better option for Go development. It feels more or less the same level of quality as IntelliJ or Rider.
 *** Emacs
 It works great most of the time, sometimes the autocomplete dies, but that is almost alwasys solved by restarting LSP. And sometimes the source is too screwed up for it to make sense of it. 
 *** VS Code
@@ -1221,7 +1215,7 @@ I started with Spacemacs and slowly ended up with my custom init.el file that I 
 I recommend just starting with a init.el file where the basic package management and use package have been set up and start from there. If yo have the time. But if this seems like a stopper and something that will keep you from going for it I recommend going for a starter project. 
 
 ** Emacs packages
-*** Emacs: Ace-window 
+*** Ace-window 
 Updated: 2020-03-08 13:03:85
 
 Ace-window is a emacs package that makes it easy to jump between "windows" in Emacs, just like ace-jump is a emacs package that makes it easy to jump in a document. 
@@ -1240,12 +1234,12 @@ These are all the default commands and keybindings, the way it works is that you
 - b - split window horizontally
 - o - maximize current window
 - ? - show these command bindings
-*** Emacs: projectile 
+*** projectile 
 Updated: 2020-03-08 13:03:85
 
 Projectile is a emacs package for juggling multiple projects in emacs. Think of a project as a git repository. You configure it to search for new project in a path; on my systems it is in ~/Code, and then you give it a shortcut; mine i M-p. Then you can for example git M-p p to switch project or M-p SPC to search for a file in the current project. Projectile can do a lot of other stuff as well, and there are many different other stuff that integrate into it.
 
-*** Emacs: ivy 
+*** ivy 
 Updated: 2020-03-08 13:03:85
 
 If you know what Helm is, you also know what Ivy is: it is more or less the same thing. Except that helm is much more complete, while ivy is smaller and faster. Ivy is a incremental completion library. If you type C-x C-f to open a file or M-x to run a command in stock emacs you get some tab completion but that's it, or if you type C-x C-b you just get a list of buffers and that's it. 
@@ -1253,11 +1247,11 @@ If you know what Helm is, you also know what Ivy is: it is more or less the same
 When you set up something like Ivy you can get a much nicer version of them. When I type C-x C-f I get a list of all the files and folders in the current directory and a box to type it in. If I type M-x I first get a list of the most recent commands I have used, and auto completion as I type stuff. And if I type C-x C-b I can search in all the open and recent buffers. 
 
 Note, the part of Ivy I'm talking about here is actually called Counsel. 
-*** Emacs: counsel-projectile 
+*** counsel-projectile 
 Updated: 2020-03-08 13:03:85
 
 If you're a projectile user and a ivy / counsel user. You probably also want to use counsel for projectile stuff. This package enable just that; if you type M-p p with it on you get a ivy version of. 
-*** Emacs: deft 
+*** deft 
 Updated: 2020-03-08 13:03:85
 
 I'm not using this at the moment, but I have used it a lot in the past. Deft is a emacs package that adds functionality that is more or less like nvAlt. For those who don't know what that is:
@@ -1270,7 +1264,7 @@ I'm not using this at the moment, but I have used it a lot in the past. Deft is 
 
 Most of my notes these days are larger org files instead of a lot of tiny text files. But if this is your thing I recommend checking it out. But you should also look at the [[https://jblevins.org/projects/deft/][website]] because there are a lot of information about how to configure it there. 
 
-*** Emacs: treemacs 
+*** treemacs 
 Updated: 2020-03-08 13:03:85
 
 Treemacs is a emacs package that adds this interesting file browser view on the left of your emacs frame. Kind of like how you get with neotree or what you have in Visual Studio Code or Sublime Text or most other editors. 
@@ -1280,7 +1274,7 @@ I was never a fan of Neotree for a number of reasons. Mainly because when I use 
 The way treemacs works on the other hand is that you have a similar project explorer on the left. But instead of just being one folder you can add projects to it, so if you can you manage it how ever you like it. It works great, if this is your kind of thing. 
 
 I usually don't use it. But sometimes I do. And when I do I love it. Because it is just this thing on the left that keeps up with what ever project the currently active file is a part of.  The one thing I don't like about it is that the default configuration is rather big. 
-*** Emacs: smartparens 
+*** smartparens 
 Updated: 2020-03-08 13:03:85
 
 Smartparens is this crazy emacs package that helps you deal with parens pairs. In programming you have various "stuff" you put arround expressions, in lisps they are mostly (), but also "", '' etc. And in other languages you also have {}, [] etc. Smartparens adds these intelligent commands to work with them. You can move, wrap, unwrap, delete etc. It even has a strict mode that tries to keep you from ending up with code that is unbalanced (more closing or opening than the other)
@@ -1288,23 +1282,23 @@ Smartparens is this crazy emacs package that helps you deal with parens pairs. I
 I can't really git it justice here, check out the [[https://github.com/Fuco1/smartparens][website]]. 
 
 This isn't that straightforward to install with use-package, so check out my emacs [[https://github.com/hjertnes/emacs.d][config]] for details. The TLDR is that I install it outside use-package together with use-package and request and then I load it with use-package later. 
-*** Emacs: neotree 
+*** neotree 
 Updated: 2020-03-08 13:03:85
 
 Neotree a emacs package I'm not a huge fan of. It is fine, but I never liked it a lot. It is basically a port of a vim plugin called Nerdtree. If you're looking for a simple show a directly structure file explorer I guess it is fine. But I would recommend looking into [[/emacs/treemacs][treemacs]]instead, because it is a LOT better. 
 
-*** Emacs: golden-ratio 
+*** golden-ratio 
 Updated: 2020-03-08 13:03:85
 
 Another package I don't use at the moment because it doesn't work that great together with treemacs, but it is really interesting. The basic idea is that it will automaticly resize according to the golden ratio to make the active one as readable as possible. 
-*** Emacs: ace-jump 
+*** ace-jump 
 Updated: 2020-03-08 13:03:85
 
 Ace jump mode is this weird mode everyone should learn. Mine is set up to trigger on C-c SPC. So the basic idea is that you hit the keyboard command and a character. Then each place that character is you see a character starting from a. Then you hit the character representing where you want to go and wolla. You're there. 
 
 It is very simple, and awesome. Also: it seems like most people have it installed. 
 
-*** Emacs: yasnippet 
+*** yasnippet 
 Updated: 2020-03-08 13:03:85
 
 I used to have my own snippet system implemented as a series of emacs interactive functions. And then I thought about it and started to replace it with something a little bit less hacky. I ended up with yasnippet. It is great, but it has some things I don't like about it. 
@@ -1315,7 +1309,7 @@ You install the yasnippet package, configure where it should look for snippets a
 
 The snippets work like this: you make a folder inside the locaiton for your snip for each mode, and then you add a file for each snippet inside them. There is a lot of information about all of this on the yasnippet website. But you can kind of fix this by adding a .yas-parents file; read more about it [[http://joaotavora.github.io/yasnippet/snippet-organization.html#org7468fa9][here]].
 
-*** Emacs: no-easy-keys 
+*** no-easy-keys 
 Updated: 2020-03-08 13:03:85
 
 So, I love this package: no-easy-keys. It is the package that really got me into learning the emacs way of life. The short version is that there are keybindings in emacs that make it work as much as you expect it would from other programs like arrow keys etc. And then you have the emacs way of life. Like like C-b for moving backwards or C-f for forward. 
@@ -1325,23 +1319,23 @@ It sounds weird, but it is a lot better once you get used to it.
 So there is this package called no-easy-keys that just disable them. It was really useful for me to get all the emacs stuff into my fingers when I started out learning emacs keybindings. 
 
 I strongly recommend it if you're starting out learning. 
-*** Emacs: smex 
+*** smex 
 Updated: 2020-03-08 13:03:85
 
 Smex is this little package that gives you one killer feature in the ivy/counsel M-x command: above everything else you see the commands you used last. 
 
-*** Emacs: rainbow 
+*** rainbow 
 Updated: 2020-03-08 13:03:85
 
 I use two different emacs packages called rainbow-identifiers and rainbow-delimiters to colorize two different things in Emacs to make code more readable.
 
 - identifiers gives different identifiers like variables, functions or operators different colors so you can easier to distinguish between them and see where something is used. 
 - delimiters on the other hands makes sure that deliminers like (), [], {} have different colors. This can be very useful in a number of sitations, especially in lips where you often see a lot of them. And it makes it possible with a glance to identify where an expression starts and ends. 
-*** Emacs: ident-guide 
+*** ident-guide 
 Updated: 2020-03-08 13:03:85
 
 This is another package that makes the act of writing code a *lot* better for me. What ident-guide does is to place visual marker for each ident level when you are coding. It isn't super important, but it is one of those things that make it easier to orient yourself.
-*** Emacs: company-mode 
+*** company-mode 
 Updated: 2020-03-08 13:03:85
 
 There are many different completion modes for emacs, but I think company mode is one of the major ones. It did at least seem like the standard when I started out. I still use it today, because I can't see that any of the others are any better. 
@@ -1350,7 +1344,7 @@ Company is a mode that give you dropdowns that complete works or code as you wri
 
 I have packages installed that does this for Javascript/node, C# and Clojure to mention a few. 
 
-*** Emacs: flycheck 
+*** flycheck 
 Updated: 2020-03-08 13:03:85
 
 Flycheck is a generic mode for validating the buffer your're working on. It comes with a lot of stuff built in, and you can also install additional ones if you need to. What you use flycheck for is to run some kind of "check" or validation or linter on a buffer to show errors. 
@@ -1359,34 +1353,34 @@ It is a great way to show errors as you work, to catch them early instead of end
 
 Note: it can be slow as fuck on windows, especially together with javascript and eslint. 
 
-*** Emacs: exec-path-from-shell 
+*** exec-path-from-shell 
 Updated: 2020-03-08 13:03:85
 
 There is this awesome emacs package called exec-path-from-shell, it solves some issues you see a lot of on OS X, but I have also seen some of them on Linux in some situations. What it does is that it tries to extract enviornment variables from your default shell and use them in Emacs. 
 
 This matters because let's say some emacs mode expect the command foobar to be available, but you have installed in a weird location, and added it to your path in your shell of choice. This packages solves that. 
-*** Emacs: magit 
+*** magit 
 Updated: 2020-03-08 13:03:85
 
 Magit is a git client for emacs. It is really great. It is one of a few git apps I think is good. It just let you do your job, and everything you expect to be there is available without any issues. You should check it out, even if you are one of us git on the command line die hards. 
-*** Emacs: ox-hugo 
-Updated: 2020-03-08 13:03:85
+*** ox-hugo 
+Upd: 2020-03-08 13:03:85
 
 OX-hugo is a emacs package that lets you write your website as this large org file or multiple large org files and it exports it all to markdown files that hugo understands how to work with(or you can wrangle it to work with more or less anything that use markdwn frontmatter files like jekyll etc). 
 
 All of my sites are powered by it, and I think it is awesome. 
 
 The reason I love it is that it takes care of one thing I always thought was a realy pain in the ass with all the static site systems, and that was to name the file in the right way. With ox-hugo I just define it as a property that mostly gets autofilled by yasnippet. I just expand, write and export followed by a git commit and push. 
-*** Emacs: hl-todo 
+*** hl-todo 
 Updated: 2020-03-08 13:03:85
 
 This is another really dumb one that I love a lot. It does something really simple, it highlight TODO commends in code. I think it is really useful because then I fix them as I see them when it is possible to do. 
-*** Emacs: dired 
+*** dired 
 Updated: 2020-03-08 13:03:85
 
 Emacs has a bunch of shit in it that is freaking awesome, and how awesome it is only comes to light as you start see how they work together. Dired is a file manager in emacs. You can start it with C-x d. I use it all the time to do stuff I previously used to do with terminal. Like moving and deleting files. 
 
-*** Emacs: tramp 
+*** tramp 
 Updated: 2020-03-08 13:03:85
 
 Tramp enables you to do some awesome stuff in emacs. It is a way that enables any part of emacs to do "stuff" through protocols like SSH, or files you don't have access to through su or sudo and even inside docker containers with some third party packages. 
@@ -1394,11 +1388,11 @@ Tramp enables you to do some awesome stuff in emacs. It is a way that enables an
 I use it all the time together with dired. 
 
 More [[https://www.emacswiki.org/emacs/TrampMode][info]]
-*** Emacs: helm  
+*** helm  
 Updated: 2020-03-08 13:03:85
 
 Helm is very similar to Ivy. The big difference is that Helm came first, and that Helm is more like you install it and activate a global mode and that's more or less it. It is really great. But I prefer Ivy because its faster and can be customized more.  
-*** Emacs: undo-tree 
+*** undo-tree 
 Updated: 2020-03-08 13:03:85
 
 Undo in emacs are just this ring or long list of changes per buffer. It can be a little bit confusing to understand because a lot of really minor details. The short version is that every time you remove something it is added to the kill ring, and that data can at any point within its configurable limits be brought back.
@@ -1406,6 +1400,17 @@ Undo in emacs are just this ring or long list of changes per buffer. It can be a
 While I understand how it works, I have never gotten used to it. So I use undo-tree instead. Instead of it just being this list or ringe of changes it breaks it down into a tree. And it even have this visualization thing you run go into, where you can move along the changes and see the buffer update in real time. And let's say you have a buffer with 10 changes, and you go back two changes, and then start to change that, it will branch out from the main one. 
 
 You may be fine with the regular kill ring implementation, but undo-tree works a hell of a lot better for me.
+
+*** multicursor
+Multiple cursors is a emacs package that gives you the option to use the feature popularized by Sublime Text. It is to instead of using search and replace to search for something and just place a cursor at each place and edit it directly. 
+*** restart-emacs
+This is a emacs package I can't live without when I'm changing a lot in my config, because then I restart a lot to make sure it works. It just add a interactive function that restarts emacs. 
+
+*** aggressive-indent
+Makes emacs ident work more like you expect
+
+*** git-gutter
+Shows git status inline
 
 * Photography
 ** Photograhy
@@ -1693,17 +1698,42 @@ I have used many different content management systems in the past, Wordpress on 
 - All my sites are hugo sites.
 - And I use ox hugo to generate frontmatter markdown from a org file.
 
-** My pile of Instapaper automation hacks
-Updated: 2020-03-08 13:03:85
+** My link sharing workflow
+Updated: 2020-04-20 16:04:21
+All links I see online I want to read or check out are sent to Instapaper. Then at some later point I read it, and mark it with a "like" if this is something I want to share and add it to drafts(and later OmniFocus) if I want to do something with it like buy it or learn it etc. I share up to 50 likes every friday, so I have this constant flow of stuff. 
 
-I try to automate stuff in my life to remove friction. One of these areas are sharing cool or interesting links I've read. The way I do this is that I mark them with a heart in Instapaper, then I copy the links out and post it before I remove the heart and start over. This would be a really simple task to automate through their API, if they'd bother to answer my request for an token.
+This is how I do it, and it is not a pretty workflow because I have no access to the Instapaper API
 
-The result is that I wrote [[https://github.com/hjertnes/likes][this]] script. It is on NPM and you can run it with something like =npx @hjertnes/likes= ./pathToFile.csv. The way it works is that you download a CSV export from Instapaper, point the script at the file and it puts the links as a list of markdown links on your pasteboard. Then I paste it into a markdown file and publish it.
+My likes that have not been shared yet are stored in a list of links in a file named likes.org, when there are less than 50 lines in it I do the following
+- I download a CSV export from Instapaper
+- I run [[https://github.com/hjertnes/instapaper2org][this]] go program and paste the output into my org document
+- I run a M-x command to sort the lines and remove duplicates 
+- Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed
+#+BEGIN_SRC javascript
+Object.values($(".action_link.star_toggle.starred")).map(x => $.get(x.href).then(y => {}))
+#+END_SRC
 
-Then I paste this =Object.values($(".action_link.star_toggle.starred")).map(x => $.get(x.href).then(y => {}))= piece of Javascript in the console in the browser with the Likes section of the Instapaper website open, then I refresh and repeat until it's empty.
+** Text Editor Fonts
+These are my goto text editor fonts, that I actually stick with in the long term.
+** JetBrains Mono
+** Source Code Pro
 
-That's it. All of it would be a hell of a lot faster, cleaner if I got access to a proper API.
+Source Code Pro was my go to, with a few others in between since I started to use a non default font in 2017. And I have now used the JetBrains font since it came out.
+** Text Editor Themes
+*** Dracula
+*** Solarized Dark
+*** Afternoon (current)
+** Window Management on OSX 
+Updated 2020-04-20 16:04:68
+I think Window Management on OS X are very much optimized for how most people use a computer, either full screen or piled on top of each other. The default window sized are mostly good for people who don't care that much. And if you take into consideration that most people have a 13" MacBook of some sort and the kind of resoution it has from factory I think it is fine. 
 
+But that is not me. Or that is how I do it when I use the built in screen. 
+
+I use moom, I have tried counless alternatives but moom works the best for me. You can do a lot with Moom. My use of it is very simple, I use the five default size optionsm, and I have added four more (resizing it to 1/4 of the screen).
+
+If I use my MacBook as a laptop I either use the entire screen of a space or I run it in fullscreen mode. And if I'm using my 27" 4K screen I resize most apps most of the time to use 1/4 of the screen. sometimes I use Goland in fullscreen, but that is rare. 
+
+Moom makes this resize process really fast, I just hover click click on each window and the whole process is over in seconds per space.
 * Commandline stuff
 ** Bulk converting images with ImageMagick. 
 Updated: 2020-03-08 13:03:85
@@ -1936,3 +1966,18 @@ I started to do a full review of a lot of stuff yesterday, including a full rewr
 - Removed functions and interactive functions no longer in use
 - Removed sp keybindings I don't use
 - Removed re-build and tramp ssh settings I don't need
+* Tricks
+** OSX
+** Hide Dock
+Updated: 2020-04-16 15:04:05
+#+BEGIN_SRC bash
+defaults write com.apple.dock tilesize -integer 1 && killall Dock
+#+END_SRC
+
+** Disable OSX icons
+Updated: 2020-04-16 15:04:05
+#+BEGIN_SRC bash
+defaults write com.apple.finder CreateDesktop -bool false && killall Dock
+#+END_SRC
+
+
