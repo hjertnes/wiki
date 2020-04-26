@@ -3,7 +3,7 @@
 ** Me
 Updated: 2020-03-08 13:03:85
 
-I'm Eivind, and this is my personal website and blog. You'll also find all my social media stuff here. It is syndicated to [[https://micro.blog/hjertnes][Micro.blog]], check it out if you're into a social media thing that is based on blogs. It feels a lot more like how Twitter was in the old days. 
+I'm Eivind, this is my wiki. Here is by [[https://hjertnes.blog][blog]] and this is my only social media thing [[https://dog.estate/@hjertnes][@hjertnes]]. 
 
 I live at Stanghelle, right outside Bergen, Norway with my dogs and fiancè.
 
@@ -18,11 +18,15 @@ As I have been adding more stuff and extending this place I think this might rep
 
 It is made with org-mode, pandoc and netlify
 
+It is generated from [[https://github.com/hjertnes/wiki/blob/master/wiki.org][this]] org-file
+
 * Personal
 ** Contact
 Updated: 2020-03-08 13:03:85
 
-I'm [@hjertnes](https://micro.blog/hjertnes) on Micro.blog, hjertnes on Keybase and you can reach me by e-mail: me at hjertnes dot me.
+- Keybase: hjertnes
+- Email: me at hjertnes dot me
+- Mastodon [[https://dog.estate/@hjertnes]]
 
 ** Family
 Updated: 2020-03-08 13:03:85
@@ -151,7 +155,7 @@ I use org-journal, and all my most important text files are organized in between
 - Pilot Iroshizuku inks
 - Field Notes
 - LT1917: lined for writing and dotgrid for Bullet journaling; plus a five year journal.
-- Rhodia dotpads
+- Field Notes DotGrid
 - Blackwings
 
 *** Services
@@ -212,9 +216,33 @@ Thoughts from the process of looking into it:
 - It is amazing how something simple like a GitHub subscription affects the number of sales I need to not loose money
 
 * Articles
-Updated: 2020-03-21 14:03:96
+Updated: 2020-04-26 19:04:64
 
 This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.
+** Golang inheritance trick
+Updated: 2020-04-26 19:04:64
+
+Golang isn't OOP, but one type can inherit from another, for example to extend it properties. It is for example used to have your own custom context in the router I use called Echo. 
+
+The way you usually set properties on types when you do this when TypeB inherit from TypeA is something like &TypeB{typeAValue}. But sometimes you need to specify the properties. Then you need to do it like this &TypeB{TypeA: typeAValue}. 
+
+Took me way too long to figure this out, 
+
+** Enviornment variables
+Updated: 2020-04-26 19:04:64
+
+A enviornment variable is a variable managed my the OS. It is my favourite way to configure stuff like docker containers etc. The reason it is awesome is that it is way easier to manage than files for stuff that vary in environments. Config files are fine for stuff that are always the fine, but I kind of think it is better to just hardcode it unless you'll actually change it. ]
+
+And the best thing about them is that they work on all languages etc. 
+** Coffee stuff
+Updated: 2020-04-26 19:04:64
+
+I've been into coffee stuff for a long time. Almost ten years at this point. I don't do that much fancy stuff at the moment. Mostly just making the best possible coffee with good but inexpensive coffee from the store. Usually with a Moccamaster. 
+
+When I did more fancy stuff I used to do a lot of V60 at the end, before that I often did a lot of Aeropress or Moccapot. 
+
+The most important thing when it comes to coffee however is not the gear, but the coffee itself. Figure out what style you prefer and get gear that makes the best of that coffee. I'd get a good grinder, but my experience is that grinders usually either make good medium or good fine grained. The other gear are usually very inexpensive. 
+
 ** I tried to fix a problem with my fish config
 Updated: 2020-04-10 06:04:17
 
@@ -763,6 +791,54 @@ Some people get too hung up in the deatils. Like the 10 000 hours thing. What I 
    CAH are the better of the two, because JH is a little bit more difficult for the jokes to make sense. But both of them are a lot of fun, and a great way to make holidays like christmas survivable 
    
 * Programming
+** Literate programming using Org-mode and Emacs-lisp
+I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated [[https://github.com/hjertnes/wiki/blob/master/wiki.org][from]] to see everything. 
+
+The way this works is that we give the input data the name "students", then this is passed into our emacs lisp code as a list of lists. One list for the row, and it contains a list of the columns. Then the data that function returns show up as a table below. 
+
+You can use a bunch of other languages than emacs-lisp like ruby, python, bash or javascript
+
+*** Links
+- [[https://orgmode.org/worg/org-contrib/babel/intro.html#source-code-blocks]]
+- [[https://orgmode.org/manual/Extracting-Source-Code.html#Header-arguments]]
+- [[https://orgmode.org/manual/Noweb-Reference-Syntax.html#Noweb-Reference-Syntax]]
+- [[http://cachestocaches.com/2018/6/org-literate-programming/]]
+- [[https://orgmode.org/worg/org-contrib/babel/how-to-use-Org-Babel-for-R.html]]
+- [[https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode]]
+- [[https://caiorss.github.io/Emacs-Elisp-Programming/Org-mode-recipes.html]]
+*** Example
+
+
+#+NAME: students
+| Name   | Mark |
+|--------+------|
+| Alice  |   79 |
+| Bob    |   19 |
+| Claire |   50 |
+| Dave   |   49 |
+| Eve    |   87 |
+| Frank  |   73 |
+
+
+#+BEGIN_SRC emacs-lisp :var students=students :exports both
+(mapcar 
+ (lambda(x) 
+   (list 
+    (car x) 
+    (if (>= (car (cdr x)) 50)
+	"Pass"
+      "Fail"))) students)
+
+#+END_SRC
+
+#+RESULTS:
+| Alice  | Pass |
+| Bob    | Fail |
+| Claire | Pass |
+| Dave   | Fail |
+| Eve    | Pass |
+| Frank  | Pass |
+
 
 ** Golang development tools
 Updated: 2020-04-16 18:04:28
@@ -925,6 +1001,16 @@ If you compare it to Go, .Net Core or React the three things I have spent the mo
 Again. I love the language, and I think it has some great ideas. But for me at this point, it isn't a good fit. Because I'd rather make stuff than to fight tooling and bullshit that should be solved out of te box. 
 
 * Emacs
+** Helm and ivy
+Updated: 2020-04-26 19:04:86
+
+Helm and ivy are two very popular emacs packages, that for the most part does the same thing. They provide partical completion / search stuff. Like for example when you tyype M-x. Helm is bigger, heavier and slower. But it works out of the box, and the initial setup is much easier. Ivy on the other hand feels much faster, but requires more config. Most people probably start with Helm. I used it for a long time, but once I got into it and figured out the config I greatly prefer Ivy because of how snappy it is
+** Why not deft?
+Updated: 2020-04-26 19:04:86
+
+Okay. So most of my shit is oriented through different git repositories. And the most important part of that workflow is projectile M-p p to switch project or M-p SPC to search for a file. 
+
+Because of this, it is much more natural for me to use projectile than something like deft. And I prefer having a few larger org documents instead of the a million different files concept that deft, roam and more use. It was popularized by notational velocity.
 ** When Emacs gets confused about packages 
 Updated: 2020-03-08 13:03:85
 
@@ -1966,18 +2052,36 @@ I started to do a full review of a lot of stuff yesterday, including a full rewr
 - Removed functions and interactive functions no longer in use
 - Removed sp keybindings I don't use
 - Removed re-build and tramp ssh settings I don't need
+** iOS Homescreen layout
+Updated: 2020-04-22 13:54:02
+
+*** 2020-04-22
+Moved all the except the first one, into folders, all kept on page two. While the first continues to serve as a place for all the stuff I use a lot. 
+*** Early April
+Changed from a couple of folders on one screen to many different pages and no folders
 * Tricks
 ** OSX
-** Hide Dock
+*** Hide Dock
 Updated: 2020-04-16 15:04:05
 #+BEGIN_SRC bash
 defaults write com.apple.dock tilesize -integer 1 && killall Dock
 #+END_SRC
 
-** Disable OSX icons
+*** Disable OSX icons
 Updated: 2020-04-16 15:04:05
 #+BEGIN_SRC bash
 defaults write com.apple.finder CreateDesktop -bool false && killall Dock
 #+END_SRC
 
 
+*** If Emacs can't read some of your folder
+Updated: 2020-04-21 13:04:95
+
+If you run OS X, and you for some reason struggle with opening files in some of the folders in your home folder, it is because of some dumb ass OS X security crap. The short reason is that Ruby is involved somehwere in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full Disk Access. Makes a lot of sense? Not for me either, but it works. 
+
+If you don't figure out how to do this:
+
+- Open a terminal
+- cd /usr/bin
+- open .
+- Drag ruby to the full disk access list

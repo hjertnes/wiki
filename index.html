@@ -56,6 +56,9 @@
                 </ul></li>
                 <li><a href="#articles">Articles</a>
                 <ul>
+                <li><a href="#golang-inheritance-trick">Golang inheritance trick</a></li>
+                <li><a href="#enviornment-variables">Enviornment variables</a></li>
+                <li><a href="#coffee-stuff">Coffee stuff</a></li>
                 <li><a href="#i-tried-to-fix-a-problem-with-my-fish-config">I tried to fix a problem with my fish config</a></li>
                 <li><a href="#vpns">VPN's</a></li>
                 <li><a href="#xxiivv">xxiivv</a></li>
@@ -152,6 +155,11 @@
                 </ul></li>
                 <li><a href="#programming">Programming</a>
                 <ul>
+                <li><a href="#literate-programming-using-org-mode-and-emacs-lisp">Literate programming using Org-mode and Emacs-lisp</a>
+                <ul>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#example">Example</a></li>
+                </ul></li>
                 <li><a href="#golang-development-tools">Golang development tools</a>
                 <ul>
                 <li><a href="#goland">Goland</a></li>
@@ -174,6 +182,8 @@
                 </ul></li>
                 <li><a href="#emacs-1">Emacs</a>
                 <ul>
+                <li><a href="#helm-and-ivy">Helm and ivy</a></li>
+                <li><a href="#why-not-deft">Why not deft?</a></li>
                 <li><a href="#when-emacs-gets-confused-about-packages">When Emacs gets confused about packages</a></li>
                 <li><a href="#updating-packages">Updating Packages</a></li>
                 <li><a href="#lisp-let-and-let">Lisp: let and let*</a></li>
@@ -329,12 +339,20 @@
                 <li><a href="#section-2">2020-04-09</a></li>
                 <li><a href="#section-3">2020-04-08</a></li>
                 </ul></li>
+                <li><a href="#ios-homescreen-layout">iOS Homescreen layout</a>
+                <ul>
+                <li><a href="#section-4">2020-04-22</a></li>
+                <li><a href="#early-april">Early April</a></li>
+                </ul></li>
                 </ul></li>
                 <li><a href="#tricks">Tricks</a>
                 <ul>
-                <li><a href="#osx-1">OSX</a></li>
+                <li><a href="#osx-1">OSX</a>
+                <ul>
                 <li><a href="#hide-dock">Hide Dock</a></li>
                 <li><a href="#disable-osx-icons">Disable OSX icons</a></li>
+                <li><a href="#if-emacs-cant-read-some-of-your-folder">If Emacs can't read some of your folder</a></li>
+                </ul></li>
                 </ul></li>
                 </ul>
       </nav>
@@ -344,7 +362,7 @@
       <section id="me" class="level2">
       <h2>Me</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
-      <p>I'm Eivind, and this is my personal website and blog. You'll also find all my social media stuff here. It is syndicated to <a href="https://micro.blog/hjertnes">Micro.blog</a>, check it out if you're into a social media thing that is based on blogs. It feels a lot more like how Twitter was in the old days.</p>
+      <p>I'm Eivind, this is my wiki. Here is by <a href="https://hjertnes.blog">blog</a> and this is my only social media thing <a href="https://dog.estate/@hjertnes"><span class="citation" data-cites="hjertnes">@hjertnes</span></a>.</p>
       <p>I live at Stanghelle, right outside Bergen, Norway with my dogs and fiancè.</p>
       <p>I currently work as a web developer, mostly using JavaScript, React and C#; in the past I have done a lot of PHP and Python. These days I mostly do Golang for fun. I have also done other kinds of work in past, mainly fundraising, bartending and IT work.</p>
       </section>
@@ -354,6 +372,7 @@
       <p>I'm not sure what I am doing here. Anyways. I thought the <a href="https://rudimentarylathe.org/">one</a> <a href="https://micro.blog/jack"><span class="citation" data-cites="jack">@jack</span></a> have was very cool. The basic idea is that I'll just fill up this wiki with interesting stuff. Everything that isn't a blog post will probably end up here.</p>
       <p>As I have been adding more stuff and extending this place I think this might replace my blog for a lot of stuff. Instead of writing blog posts this will probably turned into a nested structure of notes I do some extent keep updated.</p>
       <p>It is made with org-mode, pandoc and netlify</p>
+      <p>It is generated from <a href="https://github.com/hjertnes/wiki/blob/master/wiki.org">this</a> org-file</p>
       </section>
       </section>
       <section id="personal" class="level1">
@@ -361,7 +380,11 @@
       <section id="contact" class="level2">
       <h2>Contact</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
-      <p>I'm <span class="citation" data-cites="hjertnes">[@hjertnes]</span>(<a href="https://micro.blog/hjertnes">https://micro.blog/hjertnes</a>) on Micro.blog, hjertnes on Keybase and you can reach me by e-mail: me at hjertnes dot me.</p>
+      <ul>
+      <li>Keybase: hjertnes</li>
+      <li>Email: me at hjertnes dot me</li>
+      <li>Mastodon <a href="https://dog.estate/@hjertnes">https://dog.estate/@hjertnes</a></li>
+      </ul>
       </section>
       <section id="family" class="level2">
       <h2>Family</h2>
@@ -518,7 +541,7 @@
       <li>Pilot Iroshizuku inks</li>
       <li>Field Notes</li>
       <li>LT1917: lined for writing and dotgrid for Bullet journaling; plus a five year journal.</li>
-      <li>Rhodia dotpads</li>
+      <li>Field Notes DotGrid</li>
       <li>Blackwings</li>
       </ul>
       </section>
@@ -602,8 +625,28 @@
       </section>
       <section id="articles" class="level1">
       <h1>Articles</h1>
-      <p>Updated: 2020-03-21 14:03:96</p>
+      <p>Updated: 2020-04-26 19:04:64</p>
       <p>This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.</p>
+      <section id="golang-inheritance-trick" class="level2">
+      <h2>Golang inheritance trick</h2>
+      <p>Updated: 2020-04-26 19:04:64</p>
+      <p>Golang isn't OOP, but one type can inherit from another, for example to extend it properties. It is for example used to have your own custom context in the router I use called Echo.</p>
+      <p>The way you usually set properties on types when you do this when TypeB inherit from TypeA is something like &amp;TypeB{typeAValue}. But sometimes you need to specify the properties. Then you need to do it like this &amp;TypeB{TypeA: typeAValue}.</p>
+      <p>Took me way too long to figure this out,</p>
+      </section>
+      <section id="enviornment-variables" class="level2">
+      <h2>Enviornment variables</h2>
+      <p>Updated: 2020-04-26 19:04:64</p>
+      <p>A enviornment variable is a variable managed my the OS. It is my favourite way to configure stuff like docker containers etc. The reason it is awesome is that it is way easier to manage than files for stuff that vary in environments. Config files are fine for stuff that are always the fine, but I kind of think it is better to just hardcode it unless you'll actually change it. ]</p>
+      <p>And the best thing about them is that they work on all languages etc.</p>
+      </section>
+      <section id="coffee-stuff" class="level2">
+      <h2>Coffee stuff</h2>
+      <p>Updated: 2020-04-26 19:04:64</p>
+      <p>I've been into coffee stuff for a long time. Almost ten years at this point. I don't do that much fancy stuff at the moment. Mostly just making the best possible coffee with good but inexpensive coffee from the store. Usually with a Moccamaster.</p>
+      <p>When I did more fancy stuff I used to do a lot of V60 at the end, before that I often did a lot of Aeropress or Moccapot.</p>
+      <p>The most important thing when it comes to coffee however is not the gear, but the coffee itself. Figure out what style you prefer and get gear that makes the best of that coffee. I'd get a good grinder, but my experience is that grinders usually either make good medium or good fine grained. The other gear are usually very inexpensive.</p>
+      </section>
       <section id="i-tried-to-fix-a-problem-with-my-fish-config" class="level2">
       <h2>I tried to fix a problem with my fish config</h2>
       <p>Updated: 2020-04-10 06:04:17</p>
@@ -1191,6 +1234,99 @@
       </section>
       <section id="programming" class="level1">
       <h1>Programming</h1>
+      <section id="literate-programming-using-org-mode-and-emacs-lisp" class="level2">
+      <h2>Literate programming using Org-mode and Emacs-lisp</h2>
+      <p>I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated <a href="https://github.com/hjertnes/wiki/blob/master/wiki.org">from</a> to see everything.</p>
+      <p>The way this works is that we give the input data the name "students", then this is passed into our emacs lisp code as a list of lists. One list for the row, and it contains a list of the columns. Then the data that function returns show up as a table below.</p>
+      <p>You can use a bunch of other languages than emacs-lisp like ruby, python, bash or javascript</p>
+      <section id="links" class="level3">
+      <h3>Links</h3>
+      <ul>
+      <li><a href="https://orgmode.org/worg/org-contrib/babel/intro.html#source-code-blocks">https://orgmode.org/worg/org-contrib/babel/intro.html#source-code-blocks</a></li>
+      <li><a href="https://orgmode.org/manual/Extracting-Source-Code.html#Header-arguments">https://orgmode.org/manual/Extracting-Source-Code.html#Header-arguments</a></li>
+      <li><a href="https://orgmode.org/manual/Noweb-Reference-Syntax.html#Noweb-Reference-Syntax">https://orgmode.org/manual/Noweb-Reference-Syntax.html#Noweb-Reference-Syntax</a></li>
+      <li><a href="http://cachestocaches.com/2018/6/org-literate-programming/">http://cachestocaches.com/2018/6/org-literate-programming/</a></li>
+      <li><a href="https://orgmode.org/worg/org-contrib/babel/how-to-use-Org-Babel-for-R.html">https://orgmode.org/worg/org-contrib/babel/how-to-use-Org-Babel-for-R.html</a></li>
+      <li><a href="https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode">https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode</a></li>
+      <li><a href="https://caiorss.github.io/Emacs-Elisp-Programming/Org-mode-recipes.html">https://caiorss.github.io/Emacs-Elisp-Programming/Org-mode-recipes.html</a></li>
+      </ul>
+      </section>
+      <section id="example" class="level3">
+      <h3>Example</h3>
+      <div id="students">
+      <table>
+      <thead>
+      <tr class="header">
+      <th>Name</th>
+      <th>Mark</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="odd">
+      <td>Alice</td>
+      <td>79</td>
+      </tr>
+      <tr class="even">
+      <td>Bob</td>
+      <td>19</td>
+      </tr>
+      <tr class="odd">
+      <td>Claire</td>
+      <td>50</td>
+      </tr>
+      <tr class="even">
+      <td>Dave</td>
+      <td>49</td>
+      </tr>
+      <tr class="odd">
+      <td>Eve</td>
+      <td>87</td>
+      </tr>
+      <tr class="even">
+      <td>Frank</td>
+      <td>73</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1"></a>(<span class="kw">mapcar</span> </span>
+      <span id="cb1-2"><a href="#cb1-2"></a> (<span class="kw">lambda</span>(x) </span>
+      <span id="cb1-3"><a href="#cb1-3"></a>   (<span class="kw">list</span> </span>
+      <span id="cb1-4"><a href="#cb1-4"></a>    (<span class="kw">car</span> x) </span>
+      <span id="cb1-5"><a href="#cb1-5"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
+      <span id="cb1-6"><a href="#cb1-6"></a>    <span class="st">&quot;Pass&quot;</span></span>
+      <span id="cb1-7"><a href="#cb1-7"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
+      <span id="cb1-8"><a href="#cb1-8"></a></span></code></pre></div>
+      <table>
+      <tbody>
+      <tr class="odd">
+      <td>Alice</td>
+      <td>Pass</td>
+      </tr>
+      <tr class="even">
+      <td>Bob</td>
+      <td>Fail</td>
+      </tr>
+      <tr class="odd">
+      <td>Claire</td>
+      <td>Pass</td>
+      </tr>
+      <tr class="even">
+      <td>Dave</td>
+      <td>Fail</td>
+      </tr>
+      <tr class="odd">
+      <td>Eve</td>
+      <td>Pass</td>
+      </tr>
+      <tr class="even">
+      <td>Frank</td>
+      <td>Pass</td>
+      </tr>
+      </tbody>
+      </table>
+      </section>
+      </section>
       <section id="golang-development-tools" class="level2">
       <h2>Golang development tools</h2>
       <p>Updated: 2020-04-16 18:04:28</p>
@@ -1340,6 +1476,17 @@
       </section>
       <section id="emacs-1" class="level1">
       <h1>Emacs</h1>
+      <section id="helm-and-ivy" class="level2">
+      <h2>Helm and ivy</h2>
+      <p>Updated: 2020-04-26 19:04:86</p>
+      <p>Helm and ivy are two very popular emacs packages, that for the most part does the same thing. They provide partical completion / search stuff. Like for example when you tyype M-x. Helm is bigger, heavier and slower. But it works out of the box, and the initial setup is much easier. Ivy on the other hand feels much faster, but requires more config. Most people probably start with Helm. I used it for a long time, but once I got into it and figured out the config I greatly prefer Ivy because of how snappy it is</p>
+      </section>
+      <section id="why-not-deft" class="level2">
+      <h2>Why not deft?</h2>
+      <p>Updated: 2020-04-26 19:04:86</p>
+      <p>Okay. So most of my shit is oriented through different git repositories. And the most important part of that workflow is projectile M-p p to switch project or M-p SPC to search for a file.</p>
+      <p>Because of this, it is much more natural for me to use projectile than something like deft. And I prefer having a few larger org documents instead of the a million different files concept that deft, roam and more use. It was popularized by notational velocity.</p>
+      </section>
       <section id="when-emacs-gets-confused-about-packages" class="level2">
       <h2>When Emacs gets confused about packages</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
@@ -2086,7 +2233,7 @@
       <li>I run a M-x command to sort the lines and remove duplicates</li>
       <li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
       </ul>
-      <div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
       </section>
       <section id="text-editor-fonts" class="level2">
       <h2>Text Editor Fonts</h2>
@@ -2351,21 +2498,45 @@
       </ul>
       </section>
       </section>
+      <section id="ios-homescreen-layout" class="level2">
+      <h2>iOS Homescreen layout</h2>
+      <p>Updated: 2020-04-22 13:54:02</p>
+      <section id="section-4" class="level3">
+      <h3>2020-04-22</h3>
+      <p>Moved all the except the first one, into folders, all kept on page two. While the first continues to serve as a place for all the stuff I use a lot.</p>
+      </section>
+      <section id="early-april" class="level3">
+      <h3>Early April</h3>
+      <p>Changed from a couple of folders on one screen to many different pages and no folders</p>
+      </section>
+      </section>
       </section>
       <section id="tricks" class="level1">
       <h1>Tricks</h1>
       <section id="osx-1" class="level2">
       <h2>OSX</h2>
-      </section>
-      <section id="hide-dock" class="level2">
-      <h2>Hide Dock</h2>
+      <section id="hide-dock" class="level3">
+      <h3>Hide Dock</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
-      <section id="disable-osx-icons" class="level2">
-      <h2>Disable OSX icons</h2>
+      <section id="disable-osx-icons" class="level3">
+      <h3>Disable OSX icons</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      </section>
+      <section id="if-emacs-cant-read-some-of-your-folder" class="level3">
+      <h3>If Emacs can't read some of your folder</h3>
+      <p>Updated: 2020-04-21 13:04:95</p>
+      <p>If you run OS X, and you for some reason struggle with opening files in some of the folders in your home folder, it is because of some dumb ass OS X security crap. The short reason is that Ruby is involved somehwere in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full Disk Access. Makes a lot of sense? Not for me either, but it works.</p>
+      <p>If you don't figure out how to do this:</p>
+      <ul>
+      <li>Open a terminal</li>
+      <li>cd /usr/bin</li>
+      <li>open .</li>
+      <li>Drag ruby to the full disk access list</li>
+      </ul>
+      </section>
       </section>
       </section>
     </main>
