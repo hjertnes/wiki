@@ -56,8 +56,6 @@
                 </ul></li>
                 <li><a href="#articles">Articles</a>
                 <ul>
-                <li><a href="#golang-inheritance-trick">Golang inheritance trick</a></li>
-                <li><a href="#enviornment-variables">Enviornment variables</a></li>
                 <li><a href="#coffee-stuff">Coffee stuff</a></li>
                 <li><a href="#i-tried-to-fix-a-problem-with-my-fish-config">I tried to fix a problem with my fish config</a></li>
                 <li><a href="#vpns">VPN's</a></li>
@@ -98,6 +96,8 @@
                 <li><a href="#what-if-i-start-to-listen-to-podcasts-again">What if I start to listen to podcasts again</a></li>
                 <li><a href="#i-work-for-money">I work for money</a></li>
                 <li><a href="#why-i-ended-the-inksmudge">Why I ended the inksmudge</a></li>
+                <li><a href="#digital-hoarding">Digital hoarding</a></li>
+                <li><a href="#ordering-with-intention">Ordering with intention</a></li>
                 </ul></li>
                 <li><a href="#lists">Lists</a>
                 <ul>
@@ -155,6 +155,8 @@
                 </ul></li>
                 <li><a href="#programming">Programming</a>
                 <ul>
+                <li><a href="#golang-inheritance-trick">Golang inheritance trick</a></li>
+                <li><a href="#enviornment-variables">Enviornment variables</a></li>
                 <li><a href="#literate-programming-using-org-mode-and-emacs-lisp">Literate programming using Org-mode and Emacs-lisp</a>
                 <ul>
                 <li><a href="#links">Links</a></li>
@@ -627,19 +629,6 @@
       <h1>Articles</h1>
       <p>Updated: 2020-04-26 19:04:64</p>
       <p>This section is intended to be a place to put blog like posts that I don't have a better place for yet. Most of them may or may mot move in the future.</p>
-      <section id="golang-inheritance-trick" class="level2">
-      <h2>Golang inheritance trick</h2>
-      <p>Updated: 2020-04-26 19:04:64</p>
-      <p>Golang isn't OOP, but one type can inherit from another, for example to extend it properties. It is for example used to have your own custom context in the router I use called Echo.</p>
-      <p>The way you usually set properties on types when you do this when TypeB inherit from TypeA is something like &amp;TypeB{typeAValue}. But sometimes you need to specify the properties. Then you need to do it like this &amp;TypeB{TypeA: typeAValue}.</p>
-      <p>Took me way too long to figure this out,</p>
-      </section>
-      <section id="enviornment-variables" class="level2">
-      <h2>Enviornment variables</h2>
-      <p>Updated: 2020-04-26 19:04:64</p>
-      <p>A enviornment variable is a variable managed my the OS. It is my favourite way to configure stuff like docker containers etc. The reason it is awesome is that it is way easier to manage than files for stuff that vary in environments. Config files are fine for stuff that are always the fine, but I kind of think it is better to just hardcode it unless you'll actually change it. ]</p>
-      <p>And the best thing about them is that they work on all languages etc.</p>
-      </section>
       <section id="coffee-stuff" class="level2">
       <h2>Coffee stuff</h2>
       <p>Updated: 2020-04-26 19:04:64</p>
@@ -921,6 +910,21 @@
       <p>Then I freaked out and used years to get comfortable with it.</p>
       <p>For a really long time it made sense to have seperate web sites. But at this point it is just a bunch of extra work for me. And I have just continued writing a bunch of stuff for like a year even though I would have made more sense to combine the sites.</p>
       <p>This means that I am going to write less about stationary stuff. But I'm still going to write some about it. And my overall goal is to continue writing 3 posts a week as I did when I had two different sites. This section is like a blog, just without a rss feed. There are things like this in other parts. But these are stuff that formerly was under Personal. And they may move, but corrently don't have a better room</p>
+      </section>
+      <section id="digital-hoarding" class="level2">
+      <h2>Digital hoarding</h2>
+      <p>Updated: 2020-05-01 15:00:00</p>
+      <p>I hate having stuff, just for having them. So in order to make the footprint of my "stuff" as small as possible, I try to review it often. On a regular basis I look over my apps, my files etc and I get rid of everything I don't use or need.</p>
+      <p>Old stuff fill up your disks, make your backups larger and may also expose you to security problems.</p>
+      <p>Just because you don't use something does not mean it may not expose you.</p>
+      </section>
+      <section id="ordering-with-intention" class="level2">
+      <h2>Ordering with intention</h2>
+      <p>Updated: 2020-05-01 15:00:00</p>
+      <p>There are a lot of stuff around no matter what your hobby is that you could buy. I usually don't buy that many things that end up not working out for me.</p>
+      <p>The reason is that I have a really slow process that keeps me from buying most stuff. When I see something interesting I add it to a list I keep of all the shit I want to get. Then later I look over all of it and remove the stuff I didn't find interesting, and the rest are moved to another list. That one I also look at sometimes, and before I buy something (the exception here is entertainment) I need to find a place for it. If I can't find something I want to use it for, and a reason for not using something I already own (if anything is usable for it) I don't get it.</p>
+      <p>Like I said it is really slow, and most stuff are just ignored.</p>
+      <p>But it keeps me from wasting money on stuff.</p>
       </section>
       </section>
       <section id="lists" class="level1">
@@ -1234,6 +1238,19 @@
       </section>
       <section id="programming" class="level1">
       <h1>Programming</h1>
+      <section id="golang-inheritance-trick" class="level2">
+      <h2>Golang inheritance trick</h2>
+      <p>Updated: 2020-04-26 19:04:64</p>
+      <p>Golang isn't OOP, but one type can inherit from another, for example to extend it properties. It is for example used to have your own custom context in the router I use called Echo.</p>
+      <p>The way you usually set properties on types when you do this when TypeB inherit from TypeA is something like &amp;TypeB{typeAValue}. But sometimes you need to specify the properties. Then you need to do it like this &amp;TypeB{TypeA: typeAValue}.</p>
+      <p>Took me way too long to figure this out,</p>
+      </section>
+      <section id="enviornment-variables" class="level2">
+      <h2>Enviornment variables</h2>
+      <p>Updated: 2020-04-26 19:04:64</p>
+      <p>A enviornment variable is a variable managed my the OS. It is my favourite way to configure stuff like docker containers etc. The reason it is awesome is that it is way easier to manage than files for stuff that vary in environments. Config files are fine for stuff that are always the fine, but I kind of think it is better to just hardcode it unless you'll actually change it. ]</p>
+      <p>And the best thing about them is that they work on all languages etc.</p>
+      </section>
       <section id="literate-programming-using-org-mode-and-emacs-lisp" class="level2">
       <h2>Literate programming using Org-mode and Emacs-lisp</h2>
       <p>I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated <a href="https://github.com/hjertnes/wiki/blob/master/wiki.org">from</a> to see everything.</p>
