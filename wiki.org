@@ -598,6 +598,28 @@ Like I said it is really slow, and most stuff are just ignored.
 
 But it keeps me from wasting money on stuff.
 
+** X-Pro 2
+Updated: 2020-05-21 08:05:26
+
+I have been using my X-Pro 2 for close to three years now. The 3 have have some cool features that I'd like, but I'm not getting it before this one breaks.
+
+I love it as a camera, and I am never going back to a SLR style camera if I have a choice. 
+
+I enjoy shooting with it, and I love the photos I get out of it without any editing. The one thing I miss is better battery life. Not a huge issue, and it can be solved by carry and a few of them. 
+  
+** Minimalism
+Updated: 2020-05-21 08:05:26
+
+Minimalism is something I think most people don't understand. 
+
+A lot of people think of it as having nothing. But that is not true. Minimalism is about having as little as possible. To get rid of everything that isn't essential. 
+
+The way I go about it is to try to get rid of everything that doesn't improve my life. 
+
+We all have a lot of stuff, that is just stuff. Doesn't improve our lives at all. That is the stuff to get rid of. 
+
+For me, minimalism is more about the practise of questioning everything rather than the act of having little stuff. ``
+
 * Lists
 ** Wikis
    Updated: 2020-03-08 13:03:85
@@ -1516,6 +1538,30 @@ Makes emacs ident work more like you expect
 *** git-gutter
 Shows git status inline
 
+* Tmux
+Updated: 2020-05-11 17:05:95
+
+This is something I should have gotten into YEARS ago. And I have tried before. 
+
+Config: [[https://github.com/hjertnes/DotFiles/blob/master/tmux.conf]]
+
+Prefix key: C-b
+** Window
+- Next / Prev Window:  /
+- Next: C-b n
+- Prev: C-b p
+
+** Pane
+- Change pane: arrows 
+- Split vertically: C-b %
+- Split horizontally: C-b "
+
+** Copy mode
+- Enter: C-b [
+- Exit: Esc
+- Copy: C-w
+- Copy: C-b [
+
 * Photography
 ** Photograhy
 Updated: 2020-03-08 13:03:85
@@ -1763,6 +1809,46 @@ Updated: 2020-03-08 13:03:85
 - [[https://www.gouletpens.com/products/goulet-bulb-syringe?variant=11884649873451][Bulb Syringe]]. Awsome for pusing a lot of water through a pen fast, to clean it
 - [[https://www.gouletpens.com/products/goulet-5ml-ink-syringes?variant=11884650168363][Syringe]]. I use these syringes to fill my converters because it enables me to fill them all the way to the top. 
 
+** Inks I have used
+Updated: 2020-05-21 08:05:26
+
+- Pilot caridges
+- Lamy cartidges
+- Lamy black
+- Noodlers ben black
+- Iroshizuku
+  - Tsuki yo
+  - Murasak-shibu
+  - Shin ryou
+  - Fuyo gaki
+** Pens no longer use
+Updated: 2020-05-21 08:05:26
+
+- Retro 51
+- Pilot G2
+- Pilot Metro
+- TWSBI Eco
+- TWSBI 580AL
+- Pilot Metal Falcon
+- Pilot Vanishing Point
+** Bad Paper
+Updated: 2020-05-21 08:05:26
+
+The common thing about al bad paper is that it kind of soaks up the ink instead of drying on top of it. A lot of people hate how it looks, and this is called feathering. 
+
+Bad paper can either be think causing things like fountain pens to bleed through multiple pages or have thicker paper where that usually don't happen. 
+
+I used to use bad thicker paper for a long time as my go to. The reason was that it was easy to buy locally and it dired way faster than better paper. 
+** Paper
+Updated: 2020-05-21 08:05:26
+
+Good paper let the ink dry on top of the pages, while bad paper soaks it up.
+
+Good paper has the advantage that it can be really think and not bleed through the page. While bad paper usually dries way faster. 
+
+That is the compromise. Most paper are somewhere between. LT1917 and Rhodia are two brands that do this very well, and manages to be very good and have very short dry time. They are kind of my go to paper. 
+
+In the past my go to have been "bad" paper with thick pages because of how fast it dries. Moleskine is a typical example of really bad paper. And Tomoe River is on the complete other side of the scale. The latter is great, but takes forever to dry and is because of that useless to me. 
 * Setup
 ** About
 Updated: 2020-03-08 13:03:85
@@ -2024,10 +2110,10 @@ I gave TiddlyWiki a serious look. But it honestly isn't for me. Not bad, just no
 *** 2020-03-06
 Not sure what I'm going to do when this thing does not scale anymore. One option might be to use something that turns org into json and build something from that. 
 ** Workout Routine 
-** From Mid March until current
+*** From Mid March until current
 - Only hour and a half of dog walking each day. Because CONVID-19
 - I'll get back to the former routine once gyms open again. 
-** From Early 2020 until Mid March
+*** From Early 2020 until Mid March
 - Walk the dogs for 1 hour each day
 - 20 minute walk with steep incline at treatmill targeting fatburn heartrate twice a week
 - Yoga twice a week; usually 10 minutes, the goal is 20minutes. Twice a week
