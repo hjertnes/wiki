@@ -21,6 +21,8 @@ It is made with org-mode, pandoc and netlify
 It is generated from [[https://github.com/hjertnes/wiki/blob/master/wiki.org][this]] org-file
 
 * Personal
+** Support
+I have a [[https://github.com/sponsors/hjertnes/][github sponsors]] if you want to support me. 
 ** Contact
 Updated: 2020-03-08 13:03:85
 
