@@ -383,6 +383,15 @@
                 <ul>
                 <li><a href="#sausage-toppings">Sausage toppings</a></li>
                 </ul></li>
+                <li><a href="#music">Music</a>
+                <ul>
+                <li><a href="#nirvana">Nirvana</a></li>
+                </ul></li>
+                <li><a href="#firefox">Firefox</a>
+                <ul>
+                <li><a href="#setup-1">Setup:</a></li>
+                <li><a href="#extentions">Extentions</a></li>
+                </ul></li>
                 </ul>
       </nav>
         <main>
@@ -1353,14 +1362,14 @@
       </tbody>
       </table>
       </div>
-      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1"></a>(<span class="kw">mapcar</span> </span>
-      <span id="cb1-2"><a href="#cb1-2"></a> (<span class="kw">lambda</span>(x) </span>
-      <span id="cb1-3"><a href="#cb1-3"></a>   (<span class="kw">list</span> </span>
-      <span id="cb1-4"><a href="#cb1-4"></a>    (<span class="kw">car</span> x) </span>
-      <span id="cb1-5"><a href="#cb1-5"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
-      <span id="cb1-6"><a href="#cb1-6"></a>    <span class="st">&quot;Pass&quot;</span></span>
-      <span id="cb1-7"><a href="#cb1-7"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
-      <span id="cb1-8"><a href="#cb1-8"></a></span></code></pre></div>
+      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>(<span class="kw">mapcar</span> </span>
+      <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a> (<span class="kw">lambda</span>(x) </span>
+      <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>   (<span class="kw">list</span> </span>
+      <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    (<span class="kw">car</span> x) </span>
+      <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
+      <span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>    <span class="st">&quot;Pass&quot;</span></span>
+      <span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
+      <span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a></span></code></pre></div>
       <table>
       <tbody>
       <tr class="odd">
@@ -2374,7 +2383,7 @@
       <li>I run a M-x command to sort the lines and remove duplicates</li>
       <li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
       </ul>
-      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
       </section>
       <section id="text-editor-fonts" class="level2">
       <h2>Text Editor Fonts</h2>
@@ -2659,12 +2668,12 @@
       <section id="hide-dock" class="level3">
       <h3>Hide Dock</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="disable-osx-icons" class="level3">
       <h3>Disable OSX icons</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="if-emacs-cant-read-some-of-your-folder" class="level3">
       <h3>If Emacs can't read some of your folder</h3>
@@ -2715,6 +2724,43 @@
       <li>Crispy onion</li>
       <li>Mayo</li>
       <li>Sriracha</li>
+      </ul>
+      </section>
+      </section>
+      <section id="music" class="level1">
+      <h1>Music</h1>
+      <section id="nirvana" class="level2">
+      <h2>Nirvana</h2>
+      <p>Updated: 2020-06-13 15:06:85</p>
+      <p>Will always be special to me. The scream of Kurt Cobain will always cancel out what ever going on in my head and have a meditative effect on my mind</p>
+      </section>
+      </section>
+      <section id="firefox" class="level1">
+      <h1>Firefox</h1>
+      <p>Updated: 2020-06-13 15:06:85</p>
+      <p>I use Firefox because I believe in a free internet.</p>
+      <section id="setup-1" class="level2">
+      <h2>Setup:</h2>
+      <ul>
+      <li>I use the built in settings sync stuff</li>
+      <li>Restore Previous Session</li>
+      <li>Homepage: <a href="https://home.hjertnes.blog/">https://home.hjertnes.blog/</a></li>
+      <li>Use the Chrome style layout (one input field)</li>
+      <li>DuckDuckGo instead of Google</li>
+      <li>Strict Privacy Settings</li>
+      </ul>
+      </section>
+      <section id="extentions" class="level2">
+      <h2>Extentions</h2>
+      <ul>
+      <li>1Password X</li>
+      <li>Copy as markdown</li>
+      <li>Firefox Color</li>
+      <li>HTTP Everywhere</li>
+      <li>Instapaper</li>
+      <li>React DevTools</li>
+      <li>Redux DevTools</li>
+      <li>uBlock Origin</li>
       </ul>
       </section>
       </section>

@@ -2215,3 +2215,31 @@ Updated: 2020-05-31
 - Crispy onion
 - Mayo
 - Sriracha
+* Music
+** Nirvana
+Updated: 2020-06-13 15:06:85
+
+Will always be special to me. The scream of Kurt Cobain will always cancel out what ever going on in my head and have a meditative effect on my mind
+
+* Firefox
+Updated: 2020-06-13 15:06:85
+
+I use Firefox because I believe in a free internet. 
+** Setup:
+- I use the built in settings sync stuff
+- Restore Previous Session
+- Homepage: https://home.hjertnes.blog/
+- Use the Chrome style layout (one input field)
+- DuckDuckGo instead of Google
+- Strict Privacy Settings 
+
+** Extentions 
+- 1Password X
+- Copy as markdown
+- Firefox Color
+- HTTP Everywhere
+- Instapaper
+- React DevTools
+- Redux DevTools
+- uBlock Origin
+
