@@ -5,7 +5,7 @@ Updated: 2020-03-08 13:03:85
 
 I'm Eivind, this is my wiki. Here is by [[https://hjertnes.blog][blog]] and this is my only social media thing [[https://dog.estate/@hjertnes][@hjertnes]]. 
 
-I live at Stanghelle, right outside Bergen, Norway with my dogs and fiancè.
+I live at Stanghelle, right outside Bergen, Norway with my dogs, daughter and fiancè.
 
 I currently work as a web developer, mostly using JavaScript, React and C#; in the past I have done a lot of PHP and Python. These days I mostly do Golang for fun. I have also done other kinds of work in  past, mainly fundraising, bartending and IT work.
 
@@ -29,6 +29,7 @@ Updated: 2020-03-08 13:03:85
 - Keybase: hjertnes
 - Email: me at hjertnes dot me
 - Mastodon [[https://dog.estate/@hjertnes]]
+- Twtxt [[https://hjertnes.social/twtxt.txt]]
 
 ** Family
 Updated: 2020-03-08 13:03:85
@@ -674,7 +675,7 @@ For me, minimalism is more about the practise of questioning everything rather t
    - iOS: because there are no real emacs for iOS is use a combination of Working Copy (a git client) and beorg on my iPhone.
 
 ** Comics
-   Updated: 2020-03-08 13:03:85
+   Updated: 2020-06-28
 
    This is a list of my comics. 
 
@@ -753,7 +754,10 @@ For me, minimalism is more about the practise of questioning everything rather t
     - En venn i nøden
 *** Intet nytt fra hjemmefronten
     - Intet nytt fra hjemmefronten
-
+*** Snotgirl
+    - Vol 1
+    - Vol 2
+    - Vol 3
 ** Switch games
    Updated: 2020-03-08 13:03:85
 
@@ -1043,6 +1047,25 @@ If you compare it to Go, .Net Core or React the three things I have spent the mo
 Again. I love the language, and I think it has some great ideas. But for me at this point, it isn't a good fit. Because I'd rather make stuff than to fight tooling and bullshit that should be solved out of te box. 
 
 * Emacs
+** Coming to Emacs 27
+Updated: 2020-07-01
+
+Did a "live blog" as I was reading the [[https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.27][news file]] yesterday. In my [[https://hjertnes.social/twtxt.txt][twtxt]].
+
+Here is a more blog posty version, and a little bit longer version of that. Aka a summary of some of the stuff I saw in Emacs 27 that I really look forward to.
+
+*** make-empty-file
+There is a new elisp-function called make-empty-file that makes it really easy to make a empty file. This will be really useful for a lot of people for a bunch of stuff. For me it will make my emacs config more resillient. There are two files in my emacs config that isn't a part of the git repo (because they are local to that system, and should not be shared) that I today need to manually create for it to work. (personal.el for overriding config on that machine, and custom.el)
+*** jsx support
+This will make react development and web dev that use a similar HTML and JavaScript at the same time syntax much better in Emacs. 
+
+*** Tabs!
+
+There is two kinds, one for having multiple window setups, and one more like regular tabs where it is a bunch of buffers in a tab-bar. 
+
+*** ISO 8601 date parsing
+There is a new package making is much easier to parse ISO 8601 stuff. 
+
 ** Helm and ivy
 Updated: 2020-04-26 19:04:86
 
@@ -1297,7 +1320,7 @@ If something is a keyboard shortcut, it will amost always also be available from
 
 This is where you see the immense power of Emacs. And when you understand that you could in a few seconds write a lisp function, and evaulate it and have it avilable in M-x you see the insane flexibility of it. 
 
-** Conclusion* Elfeed
+** Elfeed
 Updated: 2020-03-08 13:03:85
 
 I started to use elfeed as an experiment, because I was very much not sure about it. But I'm going to continue with it because I really like how easy it is to manage everything. And it have gotten me out of the "can't miss a post" phase. me a double. And I usually give 5 or 6 pages to the daily log collection at a time. 
@@ -1707,7 +1730,6 @@ Updated: 2020-03-08 13:03:85
   in not too long.
 
 ** Bag reviews for bags I use
-
 *** Tom Bihn Pilot
 Updated: 2020-03-08 13:03:85
 
@@ -1823,6 +1845,7 @@ Updated: 2020-05-21 08:05:26
   - Murasak-shibu
   - Shin ryou
   - Fuyo gaki
+  - Shin Kai
 ** Pens no longer use
 Updated: 2020-05-21 08:05:26
 
@@ -1907,8 +1930,8 @@ Object.values($(".action_link.star_toggle.starred")).map(x => $.get(x.href).then
 
 ** Text Editor Fonts
 These are my goto text editor fonts, that I actually stick with in the long term.
-** JetBrains Mono
-** Source Code Pro
+*** JetBrains Mono
+*** Source Code Pro
 
 Source Code Pro was my go to, with a few others in between since I started to use a non default font in 2017. And I have now used the JetBrains font since it came out.
 ** Text Editor Themes
@@ -1953,7 +1976,7 @@ Updated: 2020-03-08 13:03:85
 
 - [[https://magit.vc/manual/magit/][Magit]]: a git app for emacs that is really great.
 - [[https://www.gitkraken.com/][Gitkraken]]: works on Windows, Mac and Linux. It is awesome, makes almost everything I do with git easier. Like it's conflict resolution UI is AWESOME.
-
+  
 * Reviews
 ** iPhone 11 first impressions
 Updated: 2020-03-08 13:03:85
@@ -2243,3 +2266,25 @@ I use Firefox because I believe in a free internet.
 - Redux DevTools
 - uBlock Origin
 
+* Podcasts
+Updated: 2020-07-03
+
+I don't do much "tech" podcasts anymore. Used to listen to a million of them. Got sick of the echo chamber made by a bunch of rich white dudes. 
+
+Here is what I listen to: 
+
+- Two Headed Girl
+- Top Four
+- Pragmatic
+- Go Time
+- Emacs Cast
+- Hardcore History
+- Hardcore History Addendum
+- Common Sense
+- Causality
+- Analytical
+- Revolutions
+- Reconcilable Differences
+- Literature and history
+- The History of Rome
+- The History of Ancient Greece 

@@ -125,6 +125,7 @@
                 <li><a href="#calvin-and-hobbes">Calvin and Hobbes</a></li>
                 <li><a href="#bestris">Bestris</a></li>
                 <li><a href="#intet-nytt-fra-hjemmefronten">Intet nytt fra hjemmefronten</a></li>
+                <li><a href="#snotgirl">Snotgirl</a></li>
                 </ul></li>
                 <li><a href="#switch-games">Switch games</a>
                 <ul>
@@ -187,6 +188,13 @@
                 </ul></li>
                 <li><a href="#emacs-1">Emacs</a>
                 <ul>
+                <li><a href="#coming-to-emacs-27">Coming to Emacs 27</a>
+                <ul>
+                <li><a href="#make-empty-file">make-empty-file</a></li>
+                <li><a href="#jsx-support">jsx support</a></li>
+                <li><a href="#tabs">Tabs!</a></li>
+                <li><a href="#iso-8601-date-parsing">ISO 8601 date parsing</a></li>
+                </ul></li>
                 <li><a href="#helm-and-ivy">Helm and ivy</a></li>
                 <li><a href="#why-not-deft">Why not deft?</a></li>
                 <li><a href="#when-emacs-gets-confused-about-packages">When Emacs gets confused about packages</a></li>
@@ -212,7 +220,7 @@
                 <li><a href="#osx">OSX</a></li>
                 <li><a href="#emacs-config-as-a-org-document.">Emacs Config as a org document.</a></li>
                 <li><a href="#m-x-the-true-power-of-emacs.">M-x: the true power of Emacs.</a></li>
-                <li><a href="#conclusion-elfeed">Conclusion* Elfeed</a></li>
+                <li><a href="#elfeed">Elfeed</a></li>
                 <li><a href="#why-emacs-is-a-great-file-manager">Why Emacs is a great file manager</a></li>
                 <li><a href="#emacs-memory-usage">Emacs memory usage</a></li>
                 <li><a href="#how-does-one-even-start-with-emacs">How does one even start with Emacs?</a></li>
@@ -300,9 +308,11 @@
                 <li><a href="#browser">Browser</a></li>
                 <li><a href="#how-i-website">How I website</a></li>
                 <li><a href="#my-link-sharing-workflow">My link sharing workflow</a></li>
-                <li><a href="#text-editor-fonts">Text Editor Fonts</a></li>
+                <li><a href="#text-editor-fonts">Text Editor Fonts</a>
+                <ul>
                 <li><a href="#jetbrains-mono">JetBrains Mono</a></li>
                 <li><a href="#source-code-pro">Source Code Pro</a></li>
+                </ul></li>
                 <li><a href="#text-editor-themes">Text Editor Themes</a>
                 <ul>
                 <li><a href="#dracula">Dracula</a></li>
@@ -392,6 +402,7 @@
                 <li><a href="#setup-1">Setup:</a></li>
                 <li><a href="#extentions">Extentions</a></li>
                 </ul></li>
+                <li><a href="#podcasts">Podcasts</a></li>
                 </ul>
       </nav>
         <main>
@@ -401,7 +412,7 @@
       <h2>Me</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
       <p>I'm Eivind, this is my wiki. Here is by <a href="https://hjertnes.blog">blog</a> and this is my only social media thing <a href="https://dog.estate/@hjertnes"><span class="citation" data-cites="hjertnes">@hjertnes</span></a>.</p>
-      <p>I live at Stanghelle, right outside Bergen, Norway with my dogs and fiancè.</p>
+      <p>I live at Stanghelle, right outside Bergen, Norway with my dogs, daughter and fiancè.</p>
       <p>I currently work as a web developer, mostly using JavaScript, React and C#; in the past I have done a lot of PHP and Python. These days I mostly do Golang for fun. I have also done other kinds of work in past, mainly fundraising, bartending and IT work.</p>
       </section>
       <section id="wiki-1" class="level2">
@@ -426,6 +437,7 @@
       <li>Keybase: hjertnes</li>
       <li>Email: me at hjertnes dot me</li>
       <li>Mastodon <a href="https://dog.estate/@hjertnes">https://dog.estate/@hjertnes</a></li>
+      <li>Twtxt <a href="https://hjertnes.social/twtxt.txt">https://hjertnes.social/twtxt.txt</a></li>
       </ul>
       </section>
       <section id="family" class="level2">
@@ -1047,7 +1059,7 @@
       </section>
       <section id="comics" class="level2">
       <h2>Comics</h2>
-      <p>Updated: 2020-03-08 13:03:85</p>
+      <p>Updated: 2020-06-28</p>
       <p>This is a list of my comics.</p>
       <section id="lunch" class="level3">
       <h3>Lunch</h3>
@@ -1173,6 +1185,14 @@
       <h3>Intet nytt fra hjemmefronten</h3>
       <ul>
       <li>Intet nytt fra hjemmefronten</li>
+      </ul>
+      </section>
+      <section id="snotgirl" class="level3">
+      <h3>Snotgirl</h3>
+      <ul>
+      <li>Vol 1</li>
+      <li>Vol 2</li>
+      <li>Vol 3</li>
       </ul>
       </section>
       </section>
@@ -1362,14 +1382,14 @@
       </tbody>
       </table>
       </div>
-      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>(<span class="kw">mapcar</span> </span>
-      <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a> (<span class="kw">lambda</span>(x) </span>
-      <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>   (<span class="kw">list</span> </span>
-      <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    (<span class="kw">car</span> x) </span>
-      <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
-      <span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>    <span class="st">&quot;Pass&quot;</span></span>
-      <span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
-      <span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a></span></code></pre></div>
+      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1"></a>(<span class="kw">mapcar</span> </span>
+      <span id="cb1-2"><a href="#cb1-2"></a> (<span class="kw">lambda</span>(x) </span>
+      <span id="cb1-3"><a href="#cb1-3"></a>   (<span class="kw">list</span> </span>
+      <span id="cb1-4"><a href="#cb1-4"></a>    (<span class="kw">car</span> x) </span>
+      <span id="cb1-5"><a href="#cb1-5"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
+      <span id="cb1-6"><a href="#cb1-6"></a>    <span class="st">&quot;Pass&quot;</span></span>
+      <span id="cb1-7"><a href="#cb1-7"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
+      <span id="cb1-8"><a href="#cb1-8"></a></span></code></pre></div>
       <table>
       <tbody>
       <tr class="odd">
@@ -1549,6 +1569,28 @@
       </section>
       <section id="emacs-1" class="level1">
       <h1>Emacs</h1>
+      <section id="coming-to-emacs-27" class="level2">
+      <h2>Coming to Emacs 27</h2>
+      <p>Updated: 2020-07-01</p>
+      <p>Did a "live blog" as I was reading the <a href="https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.27">news file</a> yesterday. In my <a href="https://hjertnes.social/twtxt.txt">twtxt</a>.</p>
+      <p>Here is a more blog posty version, and a little bit longer version of that. Aka a summary of some of the stuff I saw in Emacs 27 that I really look forward to.</p>
+      <section id="make-empty-file" class="level3">
+      <h3>make-empty-file</h3>
+      <p>There is a new elisp-function called make-empty-file that makes it really easy to make a empty file. This will be really useful for a lot of people for a bunch of stuff. For me it will make my emacs config more resillient. There are two files in my emacs config that isn't a part of the git repo (because they are local to that system, and should not be shared) that I today need to manually create for it to work. (personal.el for overriding config on that machine, and custom.el)</p>
+      </section>
+      <section id="jsx-support" class="level3">
+      <h3>jsx support</h3>
+      <p>This will make react development and web dev that use a similar HTML and JavaScript at the same time syntax much better in Emacs.</p>
+      </section>
+      <section id="tabs" class="level3">
+      <h3>Tabs!</h3>
+      <p>There is two kinds, one for having multiple window setups, and one more like regular tabs where it is a bunch of buffers in a tab-bar.</p>
+      </section>
+      <section id="iso-8601-date-parsing" class="level3">
+      <h3>ISO 8601 date parsing</h3>
+      <p>There is a new package making is much easier to parse ISO 8601 stuff.</p>
+      </section>
+      </section>
       <section id="helm-and-ivy" class="level2">
       <h2>Helm and ivy</h2>
       <p>Updated: 2020-04-26 19:04:86</p>
@@ -1781,8 +1823,8 @@
       <p>If something is a keyboard shortcut, it will amost always also be available from M-x. When I don't remember how to do something or don't know how to do something I start searching M-x.</p>
       <p>This is where you see the immense power of Emacs. And when you understand that you could in a few seconds write a lisp function, and evaulate it and have it avilable in M-x you see the insane flexibility of it.</p>
       </section>
-      <section id="conclusion-elfeed" class="level2">
-      <h2>Conclusion* Elfeed</h2>
+      <section id="elfeed" class="level2">
+      <h2>Elfeed</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
       <p>I started to use elfeed as an experiment, because I was very much not sure about it. But I'm going to continue with it because I really like how easy it is to manage everything. And it have gotten me out of the "can't miss a post" phase. me a double. And I usually give 5 or 6 pages to the daily log collection at a time.</p>
       <p>This system is a lot more work than something like OmniFocus would be. But the work gives me a lot of natural opertunities to review things and it is easy to experiment and figure out what stuff works and does not. And my favourite thing about it is that it works for me.</p>
@@ -2299,6 +2341,7 @@
       <li>Murasak-shibu</li>
       <li>Shin ryou</li>
       <li>Fuyo gaki</li>
+      <li>Shin Kai</li>
       </ul></li>
       </ul>
       </section>
@@ -2383,18 +2426,18 @@
       <li>I run a M-x command to sort the lines and remove duplicates</li>
       <li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
       </ul>
-      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
       </section>
       <section id="text-editor-fonts" class="level2">
       <h2>Text Editor Fonts</h2>
       <p>These are my goto text editor fonts, that I actually stick with in the long term.</p>
+      <section id="jetbrains-mono" class="level3">
+      <h3>JetBrains Mono</h3>
       </section>
-      <section id="jetbrains-mono" class="level2">
-      <h2>JetBrains Mono</h2>
-      </section>
-      <section id="source-code-pro" class="level2">
-      <h2>Source Code Pro</h2>
+      <section id="source-code-pro" class="level3">
+      <h3>Source Code Pro</h3>
       <p>Source Code Pro was my go to, with a few others in between since I started to use a non default font in 2017. And I have now used the JetBrains font since it came out.</p>
+      </section>
       </section>
       <section id="text-editor-themes" class="level2">
       <h2>Text Editor Themes</h2>
@@ -2668,12 +2711,12 @@
       <section id="hide-dock" class="level3">
       <h3>Hide Dock</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="disable-osx-icons" class="level3">
       <h3>Disable OSX icons</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="if-emacs-cant-read-some-of-your-folder" class="level3">
       <h3>If Emacs can't read some of your folder</h3>
@@ -2763,6 +2806,29 @@
       <li>uBlock Origin</li>
       </ul>
       </section>
+      </section>
+      <section id="podcasts" class="level1">
+      <h1>Podcasts</h1>
+      <p>Updated: 2020-07-03</p>
+      <p>I don't do much "tech" podcasts anymore. Used to listen to a million of them. Got sick of the echo chamber made by a bunch of rich white dudes.</p>
+      <p>Here is what I listen to:</p>
+      <ul>
+      <li>Two Headed Girl</li>
+      <li>Top Four</li>
+      <li>Pragmatic</li>
+      <li>Go Time</li>
+      <li>Emacs Cast</li>
+      <li>Hardcore History</li>
+      <li>Hardcore History Addendum</li>
+      <li>Common Sense</li>
+      <li>Causality</li>
+      <li>Analytical</li>
+      <li>Revolutions</li>
+      <li>Reconcilable Differences</li>
+      <li>Literature and history</li>
+      <li>The History of Rome</li>
+      <li>The History of Ancient Greece</li>
+      </ul>
       </section>
     </main>
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
