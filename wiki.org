@@ -18,11 +18,11 @@ As I have been adding more stuff and extending this place I think this might rep
 
 It is made with org-mode, pandoc and netlify
 
-It is generated from [[https://github.com/hjertnes/wiki/blob/master/wiki.org][this]] org-file
+It is generated from [[https://git.sr.ht/~hjertnes/wiki/tree/master/wiki.org][this]] org-file
 
-* Personal
+* Personal info
 ** Support
-I have a [[https://github.com/sponsors/hjertnes/][github sponsors]] if you want to support me. 
+[[https://www.buymeacoffee.com/hjertnes]]
 ** Contact
 Updated: 2020-03-08 13:03:85
 
@@ -198,9 +198,9 @@ The top of my MacBook Escape as of January 2020. The photo is horrible, I'll pro
 Updated: 2020-04-09 09:04:95
 ** Configuration 
 Updated: 2020-04-09 11:04:99
-- [[https://github.com/hjertnes/emacs.d][Emacs.d]] - my emacs config
-- [[https://github.com/hjertnes/dotfiles][DotFiles]] - my "other" config
-- [[https://github.com/hjertnes/usefulshit][UsefulShit]] - various code realted useful config files and snippets
+- [[https://git.sr.ht/~hjertnes/emacs.d][Emacs.d]] - my emacs config
+- [[https://git.sr.ht/~hjertnes/dotfiles][DotFiles]] - my "other" config
+- [[https://git.sr.ht/~hjertnes/usefulshit][UsefulShit]] - various code realted useful config files and snippets
 * Thinking loud
 ** Svelte
 Updated: 2020-04-09 15:04:45
@@ -636,7 +636,7 @@ For me, minimalism is more about the practise of questioning everything rather t
 
    - [[https://hjertnes.blog][Blog]]. My main blog
    - [[https://wiki.hjertnes.blog][Wiki]].
-   - [[https://github.com/hjertnes][Github]]
+   - [[https://git.sr.ht/~hjertnes][Github]]
    - [[https://www.flickr.com/people/hjertnes/][Flickr profile]]
 ** Pen and paper stuff
    Updated: 2020-03-08 13:03:85
@@ -839,7 +839,7 @@ A enviornment variable is a variable managed my the OS. It is my favourite way t
 
 And the best thing about them is that they work on all languages etc. 
 ** Literate programming using Org-mode and Emacs-lisp
-I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated [[https://github.com/hjertnes/wiki/blob/master/wiki.org][from]] to see everything. 
+I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated [[https://git.sr.ht/~hjertnes/wiki/tree/master/wiki.org][from]] to see everything. 
 
 The way this works is that we give the input data the name "students", then this is passed into our emacs lisp code as a list of lists. One list for the row, and it contains a list of the columns. Then the data that function returns show up as a table below. 
 
@@ -1125,14 +1125,14 @@ to it. I think it works great.
 ** Emacs
 Updated: 2020-03-08 13:03:85
 
-Emacs is my go to editor these days, and have been for a couple of years at this point. I don't really imagine going to back to anything else at this point. I started out using Spacemacs with evil, before I finally moved over to Doom and then after a while ended up rolling my own configuration. And then finally I ditched evil and started learning proper emacs keybinding one year into it. My personal configuration is on [[https://github.com/hjertnes/emacs.d][Github]]. It contains some basic information, and I change it a lot. If I see something cool I add it, and if I don't use it I just remove it. 
+Emacs is my go to editor these days, and have been for a couple of years at this point. I don't really imagine going to back to anything else at this point. I started out using Spacemacs with evil, before I finally moved over to Doom and then after a while ended up rolling my own configuration. And then finally I ditched evil and started learning proper emacs keybinding one year into it. My personal configuration is on [[https://git.sr.ht/~hjertnes/emacs.d][Github]]. It contains some basic information, and I change it a lot. If I see something cool I add it, and if I don't use it I just remove it. 
 
 I have added some pages with information about emacs packages, but my goal is that I add a page about all the packages I use in time. If you want a place to start look at my list of starter [[/emacs/starters][projects]]. All the emacs related pages on this wiki start with Emacs:. And all of them should also be tagged with Emacs and be in this [[/tags/emacs][list]] or if you just want the [[/tags/emacspackage][packages]]
 
 ** Starters 
 Updated: 2020-03-08 13:03:85
 
-- I have made one based on my own setup [[https://github.com/hjertnes/emacs-starter]]
+- I have made one based on my own setup [[https://git.sr.ht/~hjertnes/emacs-starter]]
 - [[http://spacemacs.org/]]
 - [[https://github.com/hlissner/doom-emacs]]
 - [[https://github.com/purcell/emacs.d]]
@@ -1165,7 +1165,7 @@ When you use something like (use-package foobar :ensure t) it only works if the 
 
 I have three packages in my emacs configuration that is installed outside use-package for various reasons. There are some ways to get around it, either by nesting things. All of them are messy, and all of them sucks. 
 
-You can see both ways in my personal emacs [[https://github.com/hjertnes/emacs.d][config]]. Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful. 
+You can see both ways in my personal emacs [[https://git.sr.ht/~hjertnes/emacs.d][config]]. Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful. 
 
 I do the nesting with smartparens, while I install org-plus-contrib, request and use-package in my package-manager module. The reason I do that is for different reasons. Use-package because it have to be there before I use it, request because it makes things simpler and org-plus-contrib because it is the only good way to do it. I could nest it, but I hate it as much. 
 ** Escape rope 
@@ -1432,7 +1432,7 @@ Smartparens is this crazy emacs package that helps you deal with parens pairs. I
 
 I can't really git it justice here, check out the [[https://github.com/Fuco1/smartparens][website]]. 
 
-This isn't that straightforward to install with use-package, so check out my emacs [[https://github.com/hjertnes/emacs.d][config]] for details. The TLDR is that I install it outside use-package together with use-package and request and then I load it with use-package later. 
+This isn't that straightforward to install with use-package, so check out my emacs [[https://git.sr.ht/~hjertnes/emacs.d][config]] for details. The TLDR is that I install it outside use-package together with use-package and request and then I load it with use-package later. 
 *** neotree 
 Updated: 2020-03-08 13:03:85
 
@@ -1568,7 +1568,7 @@ Updated: 2020-05-11 17:05:95
 
 This is something I should have gotten into YEARS ago. And I have tried before. 
 
-Config: [[https://github.com/hjertnes/DotFiles/blob/master/tmux.conf]]
+Config: [[https://git.sr.ht/~hjertnes/DotFiles/tree/master/tmux.conf]]
 
 Prefix key: C-b
 ** Window
@@ -1921,7 +1921,7 @@ This is how I do it, and it is not a pretty workflow because I have no access to
 
 My likes that have not been shared yet are stored in a list of links in a file named likes.org, when there are less than 50 lines in it I do the following
 - I download a CSV export from Instapaper
-- I run [[https://github.com/hjertnes/instapaper2org][this]] go program and paste the output into my org document
+- I run [[https://git.sr.ht/~hjertnes/instapaper2org][this]] go program and paste the output into my org document
 - I run a M-x command to sort the lines and remove duplicates 
 - Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed
 #+BEGIN_SRC javascript
@@ -2288,3 +2288,32 @@ Here is what I listen to:
 - Literature and history
 - The History of Rome
 - The History of Ancient Greece 
+
+* Personal
+** Luna
+Updated: 2020-07-19
+18th of May 2016 - 16th of July 2020; we first met her 16th of July 2016.
+
+
+We drove all the way from the west coast of Norway to eastern Sweden to pick her up. And on the way back the clutch died like an hour after leaving. So Ingri, I, Luna and another puppy we were bringing back spent 12 hours ouside a un-manned gas station. After a bunch of stuff we were home Monday morning instead of Sunday afternoon. 
+
+Luna had a great life, except for the issues that lead to us having to make the hardest choice possible. 
+
+We haven't done almost anything over the last four years where we couldn't bring her, and if we didn't we always made sure to not stay too long because she was at home. 
+
+In retrospect I realize that she always have had some issues, and things may have turned out differently if we had dealth with them earlier. That is so easy to say now. 
+
+She was always really uncomfortable with me not being around, that slowly turned into her panicing when I left or was somewhere else in the house. And what started out as being a little bit scared slowly turned into agression at the end. After using countless hours on trying to solve it by training a lot(and getting help from dog trainers). Things were getting better for a while, and then it didn't anymore. We decided the best thing for everyone was to put her down. 
+
+We tried everything we could, until I was so tired I couldn't take it anymore. It broke me and my heart. I had to let my best friend die. 
+
+I am writing this the day after, and things is better. I'm less stressed. And our other dog seems to be more calm and relaxed. 
+
+We decided to give Luna the best day possible. I made some waffels for her the day before. And we went on a long walk in the morning, before we went up to Ingri's parents where she got to run out in their yard with Molly and their dog. Before we went down to the area with the vet and walked with her and gave her way too much waffles, before our apointment at the vet. 
+
+We went in, and petted her while crying as she got the first shot. And continued doing that until she fell asleep. Then Ingri left me as they gave Luna the final shot while I continued to pet her way past where she had left us. 
+
+It is really hard, but I know it is for the better. Everything reminds me of her. I guess I would have felt like this no matter when; but the thing I think is the sadest is that I could not make it work until she was of a age where I feel less terrible about it. 
+
+I lost my best friend, I'm completly crushed, and really sad. But everything feels easier now, and I have more time and energy to spend on our other dog and our daughter. 
+

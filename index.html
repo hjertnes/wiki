@@ -25,7 +25,7 @@
                 <li><a href="#me">Me</a></li>
                 <li><a href="#wiki-1">Wiki</a></li>
                 </ul></li>
-                <li><a href="#personal">Personal</a>
+                <li><a href="#personal-info">Personal info</a>
                 <ul>
                 <li><a href="#support">Support</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -403,6 +403,10 @@
                 <li><a href="#extentions">Extentions</a></li>
                 </ul></li>
                 <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#personal">Personal</a>
+                <ul>
+                <li><a href="#luna">Luna</a></li>
+                </ul></li>
                 </ul>
       </nav>
         <main>
@@ -421,14 +425,14 @@
       <p>I'm not sure what I am doing here. Anyways. I thought the <a href="https://rudimentarylathe.org/">one</a> <a href="https://micro.blog/jack"><span class="citation" data-cites="jack">@jack</span></a> have was very cool. The basic idea is that I'll just fill up this wiki with interesting stuff. Everything that isn't a blog post will probably end up here.</p>
       <p>As I have been adding more stuff and extending this place I think this might replace my blog for a lot of stuff. Instead of writing blog posts this will probably turned into a nested structure of notes I do some extent keep updated.</p>
       <p>It is made with org-mode, pandoc and netlify</p>
-      <p>It is generated from <a href="https://github.com/hjertnes/wiki/blob/master/wiki.org">this</a> org-file</p>
+      <p>It is generated from <a href="https://git.sr.ht/~hjertnes/wiki/tree/master/wiki.org">this</a> org-file</p>
       </section>
       </section>
-      <section id="personal" class="level1">
-      <h1>Personal</h1>
+      <section id="personal-info" class="level1">
+      <h1>Personal info</h1>
       <section id="support" class="level2">
       <h2>Support</h2>
-      <p>I have a <a href="https://github.com/sponsors/hjertnes/">github sponsors</a> if you want to support me.</p>
+      <p><a href="https://www.buymeacoffee.com/hjertnes">https://www.buymeacoffee.com/hjertnes</a></p>
       </section>
       <section id="contact" class="level2">
       <h2>Contact</h2>
@@ -648,9 +652,9 @@
       <h2>Configuration</h2>
       <p>Updated: 2020-04-09 11:04:99</p>
       <ul>
-      <li><a href="https://github.com/hjertnes/emacs.d">Emacs.d</a> - my emacs config</li>
-      <li><a href="https://github.com/hjertnes/dotfiles">DotFiles</a> - my "other" config</li>
-      <li><a href="https://github.com/hjertnes/usefulshit">UsefulShit</a> - various code realted useful config files and snippets</li>
+      <li><a href="https://git.sr.ht/~hjertnes/emacs.d">Emacs.d</a> - my emacs config</li>
+      <li><a href="https://git.sr.ht/~hjertnes/dotfiles">DotFiles</a> - my "other" config</li>
+      <li><a href="https://git.sr.ht/~hjertnes/usefulshit">UsefulShit</a> - various code realted useful config files and snippets</li>
       </ul>
       </section>
       </section>
@@ -1012,7 +1016,7 @@
       <ul>
       <li><a href="https://hjertnes.blog">Blog</a>. My main blog</li>
       <li><a href="https://wiki.hjertnes.blog">Wiki</a>.</li>
-      <li><a href="https://github.com/hjertnes">Github</a></li>
+      <li><a href="https://git.sr.ht/~hjertnes">Github</a></li>
       <li><a href="https://www.flickr.com/people/hjertnes/">Flickr profile</a></li>
       </ul>
       </section>
@@ -1329,7 +1333,7 @@
       </section>
       <section id="literate-programming-using-org-mode-and-emacs-lisp" class="level2">
       <h2>Literate programming using Org-mode and Emacs-lisp</h2>
-      <p>I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated <a href="https://github.com/hjertnes/wiki/blob/master/wiki.org">from</a> to see everything.</p>
+      <p>I decided to get more into literate programming using org-mode. What I will be doing here is to take the first table, run it through the code in the middle to show fail and pass based on if the mark is 50 or higher. Because the way org exporting works, you have to look in the org file this have been generated <a href="https://git.sr.ht/~hjertnes/wiki/tree/master/wiki.org">from</a> to see everything.</p>
       <p>The way this works is that we give the input data the name "students", then this is passed into our emacs lisp code as a list of lists. One list for the row, and it contains a list of the columns. Then the data that function returns show up as a table below.</p>
       <p>You can use a bunch of other languages than emacs-lisp like ruby, python, bash or javascript</p>
       <section id="links" class="level3">
@@ -1382,14 +1386,14 @@
       </tbody>
       </table>
       </div>
-      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1"></a>(<span class="kw">mapcar</span> </span>
-      <span id="cb1-2"><a href="#cb1-2"></a> (<span class="kw">lambda</span>(x) </span>
-      <span id="cb1-3"><a href="#cb1-3"></a>   (<span class="kw">list</span> </span>
-      <span id="cb1-4"><a href="#cb1-4"></a>    (<span class="kw">car</span> x) </span>
-      <span id="cb1-5"><a href="#cb1-5"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
-      <span id="cb1-6"><a href="#cb1-6"></a>    <span class="st">&quot;Pass&quot;</span></span>
-      <span id="cb1-7"><a href="#cb1-7"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
-      <span id="cb1-8"><a href="#cb1-8"></a></span></code></pre></div>
+      <div class="sourceCode" id="cb1" data-org-language="emacs-lisp" data-var="students=students" data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>(<span class="kw">mapcar</span> </span>
+      <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a> (<span class="kw">lambda</span>(x) </span>
+      <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>   (<span class="kw">list</span> </span>
+      <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    (<span class="kw">car</span> x) </span>
+      <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    (<span class="kw">if</span> (<span class="op">&gt;=</span> (<span class="kw">car</span> (<span class="kw">cdr</span> x)) <span class="dv">50</span>)</span>
+      <span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>    <span class="st">&quot;Pass&quot;</span></span>
+      <span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>      <span class="st">&quot;Fail&quot;</span>))) students)</span>
+      <span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a></span></code></pre></div>
       <table>
       <tbody>
       <tr class="odd">
@@ -1638,14 +1642,14 @@
       <section id="emacs-2" class="level2">
       <h2>Emacs</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
-      <p>Emacs is my go to editor these days, and have been for a couple of years at this point. I don't really imagine going to back to anything else at this point. I started out using Spacemacs with evil, before I finally moved over to Doom and then after a while ended up rolling my own configuration. And then finally I ditched evil and started learning proper emacs keybinding one year into it. My personal configuration is on <a href="https://github.com/hjertnes/emacs.d">Github</a>. It contains some basic information, and I change it a lot. If I see something cool I add it, and if I don't use it I just remove it.</p>
+      <p>Emacs is my go to editor these days, and have been for a couple of years at this point. I don't really imagine going to back to anything else at this point. I started out using Spacemacs with evil, before I finally moved over to Doom and then after a while ended up rolling my own configuration. And then finally I ditched evil and started learning proper emacs keybinding one year into it. My personal configuration is on <a href="https://git.sr.ht/~hjertnes/emacs.d">Github</a>. It contains some basic information, and I change it a lot. If I see something cool I add it, and if I don't use it I just remove it.</p>
       <p>I have added some pages with information about emacs packages, but my goal is that I add a page about all the packages I use in time. If you want a place to start look at my list of starter <a href="file:///emacs/starters">projects</a>. All the emacs related pages on this wiki start with Emacs:. And all of them should also be tagged with Emacs and be in this <a href="file:///tags/emacs">list</a> or if you just want the <a href="file:///tags/emacspackage">packages</a></p>
       </section>
       <section id="starters" class="level2">
       <h2>Starters</h2>
       <p>Updated: 2020-03-08 13:03:85</p>
       <ul>
-      <li>I have made one based on my own setup <a href="https://github.com/hjertnes/emacs-starter">https://github.com/hjertnes/emacs-starter</a></li>
+      <li>I have made one based on my own setup <a href="https://git.sr.ht/~hjertnes/emacs-starter">https://git.sr.ht/~hjertnes/emacs-starter</a></li>
       <li><a href="http://spacemacs.org/">http://spacemacs.org/</a></li>
       <li><a href="https://github.com/hlissner/doom-emacs">https://github.com/hlissner/doom-emacs</a></li>
       <li><a href="https://github.com/purcell/emacs.d">https://github.com/purcell/emacs.d</a></li>
@@ -1678,7 +1682,7 @@
       <p>Updated: 2020-03-08 13:03:85</p>
       <p>When you use something like (use-package foobar :ensure t) it only works if the package you want to load and the name of it on the melpa or what ever is the same. And while that is the case most of the time, it isn't always. Or somethimes you just want to install something before everything else.</p>
       <p>I have three packages in my emacs configuration that is installed outside use-package for various reasons. There are some ways to get around it, either by nesting things. All of them are messy, and all of them sucks.</p>
-      <p>You can see both ways in my personal emacs <a href="https://github.com/hjertnes/emacs.d">config</a>. Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful.</p>
+      <p>You can see both ways in my personal emacs <a href="https://git.sr.ht/~hjertnes/emacs.d">config</a>. Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful.</p>
       <p>I do the nesting with smartparens, while I install org-plus-contrib, request and use-package in my package-manager module. The reason I do that is for different reasons. Use-package because it have to be there before I use it, request because it makes things simpler and org-plus-contrib because it is the only good way to do it. I could nest it, but I hate it as much.</p>
       </section>
       <section id="escape-rope" class="level2">
@@ -1920,7 +1924,7 @@
       <p>Updated: 2020-03-08 13:03:85</p>
       <p>Smartparens is this crazy emacs package that helps you deal with parens pairs. In programming you have various "stuff" you put arround expressions, in lisps they are mostly (), but also "", '' etc. And in other languages you also have {}, [] etc. Smartparens adds these intelligent commands to work with them. You can move, wrap, unwrap, delete etc. It even has a strict mode that tries to keep you from ending up with code that is unbalanced (more closing or opening than the other)</p>
       <p>I can't really git it justice here, check out the <a href="https://github.com/Fuco1/smartparens">website</a>.</p>
-      <p>This isn't that straightforward to install with use-package, so check out my emacs <a href="https://github.com/hjertnes/emacs.d">config</a> for details. The TLDR is that I install it outside use-package together with use-package and request and then I load it with use-package later.</p>
+      <p>This isn't that straightforward to install with use-package, so check out my emacs <a href="https://git.sr.ht/~hjertnes/emacs.d">config</a> for details. The TLDR is that I install it outside use-package together with use-package and request and then I load it with use-package later.</p>
       </section>
       <section id="neotree" class="level3">
       <h3>neotree</h3>
@@ -2056,7 +2060,7 @@
       <h1>Tmux</h1>
       <p>Updated: 2020-05-11 17:05:95</p>
       <p>This is something I should have gotten into YEARS ago. And I have tried before.</p>
-      <p>Config: <a href="https://github.com/hjertnes/DotFiles/blob/master/tmux.conf">https://github.com/hjertnes/DotFiles/blob/master/tmux.conf</a></p>
+      <p>Config: <a href="https://git.sr.ht/~hjertnes/DotFiles/tree/master/tmux.conf">https://git.sr.ht/~hjertnes/DotFiles/tree/master/tmux.conf</a></p>
       <p>Prefix key: C-b</p>
       <section id="window" class="level2">
       <h2>Window</h2>
@@ -2422,11 +2426,11 @@
       <p>My likes that have not been shared yet are stored in a list of links in a file named likes.org, when there are less than 50 lines in it I do the following</p>
       <ul>
       <li>I download a CSV export from Instapaper</li>
-      <li>I run <a href="https://github.com/hjertnes/instapaper2org">this</a> go program and paste the output into my org document</li>
+      <li>I run <a href="https://git.sr.ht/~hjertnes/instapaper2org">this</a> go program and paste the output into my org document</li>
       <li>I run a M-x command to sort the lines and remove duplicates</li>
       <li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
       </ul>
-      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>($(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+      <div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(<span class="fu">$</span>(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
       </section>
       <section id="text-editor-fonts" class="level2">
       <h2>Text Editor Fonts</h2>
@@ -2711,12 +2715,12 @@
       <section id="hide-dock" class="level3">
       <h3>Hide Dock</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="disable-osx-icons" class="level3">
       <h3>Disable OSX icons</h3>
       <p>Updated: 2020-04-16 15:04:05</p>
-      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+      <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
       </section>
       <section id="if-emacs-cant-read-some-of-your-folder" class="level3">
       <h3>If Emacs can't read some of your folder</h3>
@@ -2829,6 +2833,24 @@
       <li>The History of Rome</li>
       <li>The History of Ancient Greece</li>
       </ul>
+      </section>
+      <section id="personal" class="level1">
+      <h1>Personal</h1>
+      <section id="luna" class="level2">
+      <h2>Luna</h2>
+      <p>Updated: 2020-07-19 18th of May 2016 - 16th of July 2020; we first met her 16th of July 2016.</p>
+      <p>We drove all the way from the west coast of Norway to eastern Sweden to pick her up. And on the way back the clutch died like an hour after leaving. So Ingri, I, Luna and another puppy we were bringing back spent 12 hours ouside a un-manned gas station. After a bunch of stuff we were home Monday morning instead of Sunday afternoon.</p>
+      <p>Luna had a great life, except for the issues that lead to us having to make the hardest choice possible.</p>
+      <p>We haven't done almost anything over the last four years where we couldn't bring her, and if we didn't we always made sure to not stay too long because she was at home.</p>
+      <p>In retrospect I realize that she always have had some issues, and things may have turned out differently if we had dealth with them earlier. That is so easy to say now.</p>
+      <p>She was always really uncomfortable with me not being around, that slowly turned into her panicing when I left or was somewhere else in the house. And what started out as being a little bit scared slowly turned into agression at the end. After using countless hours on trying to solve it by training a lot(and getting help from dog trainers). Things were getting better for a while, and then it didn't anymore. We decided the best thing for everyone was to put her down.</p>
+      <p>We tried everything we could, until I was so tired I couldn't take it anymore. It broke me and my heart. I had to let my best friend die.</p>
+      <p>I am writing this the day after, and things is better. I'm less stressed. And our other dog seems to be more calm and relaxed.</p>
+      <p>We decided to give Luna the best day possible. I made some waffels for her the day before. And we went on a long walk in the morning, before we went up to Ingri's parents where she got to run out in their yard with Molly and their dog. Before we went down to the area with the vet and walked with her and gave her way too much waffles, before our apointment at the vet.</p>
+      <p>We went in, and petted her while crying as she got the first shot. And continued doing that until she fell asleep. Then Ingri left me as they gave Luna the final shot while I continued to pet her way past where she had left us.</p>
+      <p>It is really hard, but I know it is for the better. Everything reminds me of her. I guess I would have felt like this no matter when; but the thing I think is the sadest is that I could not make it work until she was of a age where I feel less terrible about it.</p>
+      <p>I lost my best friend, I'm completly crushed, and really sad. But everything feels easier now, and I have more time and energy to spend on our other dog and our daughter.</p>
+      </section>
       </section>
     </main>
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
