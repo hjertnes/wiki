@@ -1,0 +1,11 @@
+{{ range .Sections }}   
+   {{ partial "title.html" . }}
+   {{ .Content }}   
+   {{ partial "postlist.html" . }}
+{{ end }}
+
+{{ range .RegularPages }}
+   {{ partial "title.html" . }}  
+   {{ .Content }}
+   {{ partial "postlist.html" . }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{ $level := .Dir | split "/" | len }}
+
+{{ if eq $level 1 }}
+  <h2>
+    <a href={{ .Permalink }}> {{ .Title }} </a>
+  </h2>   
+{{ end }}
+
+{{ if eq $level 2 }}
+  <h3>
+    <a href={{ .Permalink }}> {{ .Title }} </a>
+  </h3>   
+{{ end }}   
+
+{{ if eq $level 3 }}
+  <h4>
+    <a href={{ .Permalink }}> {{ .Title }} </a>
+  </h4>   
+{{ end }}

@@ -8,7 +8,7 @@
       
 {{ end }}
 
-{{ range .RegularPages }}
+{{ range where .RegularPages ".Layout" "!=" "all" }}
 		<li>
          <a href={{ .Permalink }}> {{ .Title }} </a>
       </li>
