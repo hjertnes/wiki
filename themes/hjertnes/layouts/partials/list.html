@@ -1,0 +1,19 @@
+{{ range .Sections }}
+		<li>
+         <a href={{ .Permalink }}> {{ .Title }} </a>
+      </li>
+      <ul>
+         {{ partial "list.html" . }}
+      </ul>
+      
+{{ end }}
+
+{{ range .RegularPages }}
+		<li>
+         <a href={{ .Permalink }}> {{ .Title }} </a>
+      </li>
+      <ul>
+         {{ partial "list.html" . }}
+      </ul>
+      
+{{ end }}

@@ -1,0 +1,11 @@
+---
+title: "OSX and scheduling"
+author: ["Eivind Hjertnes"]
+draft: false
+---
+
+Some stuff have gotten harder and harder to do on OSX in more recent versions of OS X. One of them is using cron to schedule tasks. For those who don't know, cron is a standard way on all UNIX systems to run a command at a given interval defined my a standard way.
+
+There are different versions, and the differences between doesn't matter a lot. But what makes cron great is that if you go to a unix system you could rely on it being there and you could just copy over your scripts and config and call it a day. It is for example the heart of my git based dropbox replacement.
+
+Today I gave up on using cron on OS X. Instead I found a great app for defining launchd daemons(because Apple's formats are no near as elegant as a crontab is) called [Lingon](https://www.peterborgapps.com/lingon/). It was 15 bucks, but it took me less than a minute to get what I wanted.
