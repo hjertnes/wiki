@@ -4,12 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ .Site.Title}} | {{ .Title }}</title>		
+	<title>{{ .Site.Title }}</title>		
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="alternate" type="application/rss+xml" title="Hjertnes.blog RSS Feed" href="https://feedpress.me/hjertnes" >
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 	{{ hugo.Generator }}
-	<link rel="me" href="https://dog.estate/@hjertnes"/>
 </head>
 <body>
