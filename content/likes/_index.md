@@ -1640,11 +1640,7 @@ Here is like since last week.
     Code theme](https://github.com/robb0wen/synthwave-vscode)
 -   [Dimes'
     Blog](https://dimes.github.io/blog/compile-time-di-vs-run-time-di.html)
--   [[<https://www.nytimes.com/2019/04/30/opinion/contributors/learning-french-in-middle-age.html>][Opinion
-
-    |                                                  |
-    |--------------------------------------------------|
-    | Why It's So Hard to Learn French in Middle Age]] |
+-   [Opinion Why It's So Hard to Learn French in Middle Age](https://www.nytimes.com/2019/04/30/opinion/contributors/learning-french-in-middle-age.html)
 -   [Burger
     King is rolling out meatless Impossible Whoppers nationwide](https://www.theverge.com/2019/4/29/18522637/burger-king-impossible-whopper-nationwide-rollout-meatless-vegetarian)
 -   [quinesnake](https://github.com/taylorconor/quinesnake)
@@ -1683,11 +1679,7 @@ Here is like since last week.
     with Overcast -- Marco.org](https://marco.org/2019/04/27/overcast-clip-sharing)
 -   [Old
     Photos Are Not Worth Anything - Missy Mwac - Jack Baty's Weblog](https://www.baty.blog/2019/old-photos-are-not-worth-anything-missy-mwac)
--   [[<https://www.nytimes.com/2019/04/26/opinion/facebook-fine-ftc.html>][Opinion
-
-    |                                                             |
-    |-------------------------------------------------------------|
-    | How Do You Stop Facebook When $5 Billion Is Chump Change?]] |
+-   [Opinion How Do You Stop Facebook When $5 Billion Is Chump Change?](https://www.nytimes.com/2019/04/26/opinion/facebook-fine-ftc.html)
 -   [Faster and more feature-rich
     internationalization APIs · V8](https://v8.dev/blog/intl)
 -   [JavaScript... by Reg

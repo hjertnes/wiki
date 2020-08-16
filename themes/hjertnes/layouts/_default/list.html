@@ -1,8 +1,16 @@
 {{ partial "header.html" . }}
 {{ partial "head.html" . }}
-<h2> {{ .Title }}</h2>
-	<main>
-		<ul>
+
+<main>
+		<article>
+		  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1 />
+		  		<ul>
 			{{ partial "list.html" . }}
 		</ul>
+			<div>
+				{{ .Content }}
+			</div>
+		</article>  
+
+
 	</main>
