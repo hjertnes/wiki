@@ -8,6 +8,6 @@ I'm not sure what I am doing here. Anyways. I thought the [one](https://rudiment
 
 As I have been adding more stuff and extending this place I think this might replace my blog for a lot of stuff. Instead of writing blog posts this will probably turned into a nested structure of notes I do some extent keep updated.
 
-It is made with org-mode, pandoc and netlify
+It is made with org-mode, ox-hugo, hugo and hosted on Linode behind Caddy.
 
-It is generated from [this](https://git.sr.ht/~hjertnes/wiki/tree/master/wiki.org) org-file
+It is generated from [this](https://git.sr.ht/~hjertnes/wiki/tree/master/static/wiki.org) org-file.
