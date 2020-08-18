@@ -1,14 +1,4 @@
-{{ range .Sections }}
-		<li>
-         <a href={{ .Permalink }}> {{ .Title }} </a>
-      </li>
-      <ul>
-         {{ partial "list.html" . }}
-      </ul>
-      
-{{ end }}
-
-{{ range where .Pages ".Layout" "!=" "all" }}
+{{ range .Pages }}
 		<li>
          <a href={{ .Permalink }}> {{ .Title }} </a>
       </li>
