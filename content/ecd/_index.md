@@ -4,17 +4,6 @@ author: ["Eivind Hjertnes"]
 draft: false
 ---
 
-## 24H Bottle sports lid. {#24h-bottle-sports-lid-dot}
-
-24 Bottle came out with a sportslid not too long ago. And I finally got around to ordering one.
-
-It is plastic, but the quality is great and it works fantastic. With two minor comments there someimes are some condensation on it after a while and sometimes you need to bump it to get the water flowing out. Probably because of vaccum or something.
-
-The regular lid is way better, but the sports lid is way more useful.
-
-And I kind of broke mine after a couple of months by dropping it in the street outside my house.
-
-
 ## 24h Bottle Caps {#24h-bottle-caps}
 
 I'm a huge fan of 24H, we have two their bottles. And I'm probably buy one of their coffee cups soon.
@@ -28,6 +17,25 @@ And then they have a sports lid. It is made out of plastic. Instead of having to
 I have used both. One of the time I dropped my bottle, it was with the sportslid and it split in two. But up until that it was great.
 
 It is way moe convenient, but it isn't as good as the regular one. There is some condensation on it, and it broke.
+
+
+## 24H Bottle sports lid. {#24h-bottle-sports-lid-dot}
+
+24 Bottle came out with a sportslid not too long ago. And I finally got around to ordering one.
+
+It is plastic, but the quality is great and it works fantastic. With two minor comments there someimes are some condensation on it after a while and sometimes you need to bump it to get the water flowing out. Probably because of vaccum or something.
+
+The regular lid is way better, but the sports lid is way more useful.
+
+And I kind of broke mine after a couple of months by dropping it in the street outside my house.
+
+
+## Coffee mug {#coffee-mug}
+
+My current coffee mug is Hario Soto Magu mug.
+
+-   The coffee remains hot for a really long time- Easy to clean
+-   I can't see any part of it will break or wear down fast.
 
 
 ## Trove Wallet {#trove-wallet}
@@ -62,11 +70,3 @@ The default lid is very old school and sturdy, but you have to screw and unscrew
 I strongly recommend getting one from 24 Bottles.
 
 What I like about it is that unlike the plastic bottles the water never gets hot. This was a huge issue when I used a plastic bottle in the office.
-
-
-## Coffee mug {#coffee-mug}
-
-My current coffee mug is Hario Soto Magu mug.
-
--   The coffee remains hot for a really long time- Easy to clean
--   I can't see any part of it will break or wear down fast.

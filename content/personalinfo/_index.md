@@ -4,11 +4,6 @@ author: ["Eivind Hjertnes"]
 draft: false
 ---
 
-## Support {#support}
-
-<https://www.buymeacoffee.com/hjertnes>
-
-
 ## Contact {#contact}
 
 -   Keybase: hjertnes
@@ -27,12 +22,30 @@ Our little family:
 -   Molly our 1 year old brown Portuguese Water Dog
 
 
+## Homescreen {#homescreen}
+
+This is the homescreen of my iPhone 11. I have the Yellow. As of January 2020.
+
+{{< figure src="./homescreen.png" >}}
+
+
 ## Now {#now}
 
 -   Writing API's in C# and front ends using React at [sbanken](https://sbanken.no).
 -   Shooting as much as possible with my X-Pro 2
 -   Working on a Bookmarking service
 -   Trying to be a good father and boyfriend
+
+
+## Support {#support}
+
+<https://www.buymeacoffee.com/hjertnes>
+
+
+## Top of my laptop {#top-of-my-laptop}
+
+The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.
+![](./macbook.png)
 
 
 ## Using {#using}
@@ -191,16 +204,3 @@ I use org-journal, and all my most important text files are organized in between
 -   Redis
 -   Emacs / VS Code / Goland
 -   DataGrip for database stuff
-
-
-## Homescreen {#homescreen}
-
-This is the homescreen of my iPhone 11. I have the Yellow. As of January 2020.
-
-{{< figure src="./homescreen.png" >}}
-
-
-## Top of my laptop {#top-of-my-laptop}
-
-The top of my MacBook Escape as of January 2020. The photo is horrible, I'll probably re-shoot it soon. Just need daylight and a proper non iPhone camera.
-![](./macbook.png)

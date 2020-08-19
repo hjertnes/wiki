@@ -4,6 +4,54 @@ author: ["Eivind Hjertnes"]
 draft: false
 ---
 
+## Coffee stuff {#coffee-stuff}
+
+I've been into coffee stuff for a long time. Almost ten years at this point. I don't do that much fancy stuff at the moment. Mostly just making the best possible coffee with good but inexpensive coffee from the store. Usually with a Moccamaster.
+
+When I did more fancy stuff I used to do a lot of V60 at the end, before that I often did a lot of Aeropress or Moccapot.
+
+The most important thing when it comes to coffee however is not the gear, but the coffee itself. Figure out what style you prefer and get gear that makes the best of that coffee. I'd get a good grinder, but my experience is that grinders usually either make good medium or good fine grained. The other gear are usually very inexpensive.
+
+
+## Digital hoarding {#digital-hoarding}
+
+I hate having stuff, just for having them. So in order to make the footprint of my "stuff" as small as possible, I try to review it often. On a regular basis I look over my apps, my files etc and I get rid of everything I don't use or need.
+
+Old stuff fill up your disks, make your backups larger and may also expose you to security problems.
+
+Just because you don't use something does not mean it may not expose you.
+
+
+## Do it right {#do-it-right}
+
+When you write code (probably applies to a lot of other stuff) you can make something that just works or something good.
+
+It is about doing it right.
+
+It is about making it work well, being fast, fails gracefully, having tests. The code is clean.
+
+Yout know, right.
+
+At work, and other places I see too much of work that is just about getting something good enough that it is passable for something that can run in production.
+
+It is crap, and it never pays off. Because someone always have to either stich it together over and over or do the work to fix it.
+
+We need to stop this shit and do better work no matter how much pressure we have on ourself.
+
+We should never do anything less than "right".
+
+
+## I work for money {#i-work-for-money}
+
+I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects.
+
+The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot.
+
+Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties.
+
+It would probably be different if I worked in a smaller company.
+
+
 ## Luna {#luna}
 
 18th of May 2016 - 16th of July 2020; we first met her 16th of July 2016.
@@ -31,6 +79,19 @@ It is really hard, but I know it is for the better. Everything reminds me of her
 I lost my best friend, I'm completly crushed, and really sad. But everything feels easier now, and I have more time and energy to spend on our other dog and our daughter.
 
 
+## Minimalism {#minimalism}
+
+Minimalism is something I think most people don't understand.
+
+A lot of people think of it as having nothing. But that is not true. Minimalism is about having as little as possible. To get rid of everything that isn't essential.
+
+The way I go about it is to try to get rid of everything that doesn't improve my life.
+
+We all have a lot of stuff, that is just stuff. Doesn't improve our lives at all. That is the stuff to get rid of.
+
+For me, minimalism is more about the practise of questioning everything rather than the act of having little stuff. \`\`
+
+
 ## On getting rid of podcasts {#on-getting-rid-of-podcasts}
 
 Two months ago I got rid of all my podcasts, this was a result of a year and a half long process of removing more and more podcasts; and a few fallbacks.
@@ -38,34 +99,25 @@ Two months ago I got rid of all my podcasts, this was a result of a year and a h
 It feels great to be without podcasts. They had their role at some point. But now it just feels like busy work, and it feels better to focus on audiobooks and music as entertainment.
 
 
-## Why I get up early on weekends {#why-i-get-up-early-on-weekends}
+## Ordering with intention {#ordering-with-intention}
 
-I get to bed early because I get up really early (04:15 on weekdays, because I take the 05:40 train to the city and have to walk the dogs etc), and because I hate being tired.
+There are a lot of stuff around no matter what your hobby is that you could buy. I usually don't buy that many things that end up not working out for me.
 
-So instead of breaking the rythm each weekend I don't push it too far and usually are up between 6 and 7 most weekends.
+The reason is that I have a really slow process that keeps me from buying most stuff. When I see something interesting I add it to a list I keep of all the shit I want to get. Then later I look over all of it and remove the stuff I didn't find interesting, and the rest are moved to another list. That one I also look at sometimes, and before I buy something (the exception here is entertainment) I need to find a place for it. If I can't find something I want to use it for, and a reason for not using something I already own (if anything is usable for it) I don't get it.
 
-The dogs want to get up by that point anyways.
+Like I said it is really slow, and most stuff are just ignored.
 
-This change makes each monday much easier. And I get much more done every weekend.
+But it keeps me from wasting money on stuff.
 
 
-## Do it right {#do-it-right}
+## Starting a company {#starting-a-company}
 
-When you write code (probably applies to a lot of other stuff) you can make something that just works or something good.
+I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money.
 
-It is about doing it right.
+Thoughts from the process of looking into it:
 
-It is about making it work well, being fast, fails gracefully, having tests. The code is clean.
-
-Yout know, right.
-
-At work, and other places I see too much of work that is just about getting something good enough that it is passable for something that can run in production.
-
-It is crap, and it never pays off. Because someone always have to either stich it together over and over or do the work to fix it.
-
-We need to stop this shit and do better work no matter how much pressure we have on ourself.
-
-We should never do anything less than "right".
+-   I should wait as long as possible, because every single month it is running costs money
+-   It is amazing how something simple like a GitHub subscription affects the number of sales I need to not loose money
 
 
 ## What if I start to listen to podcasts again {#what-if-i-start-to-listen-to-podcasts-again}
@@ -82,17 +134,6 @@ At this point only one of them publish weekly or in any way regular. So I kind o
 I'm not at all back into podcasting. And I have zero interest in re-subscribing to any of the stuff I used to listen to.
 
 Most of the Apple Tech stuff bore me to death.
-
-
-## I work for money {#i-work-for-money}
-
-I try to keep my work home life balanace as plain as possible. The reason I work is because of money. If I did not have to do that I would work on very different projects.
-
-The way I look at it work pays for a certain amount of time per year. And I try to keep it as close to that amount as possible. But giving them moe than they pay for, for good will. But not a lot.
-
-Unlike most people, I usually don't go to most work parties. I usually go to team parties, but I skip the whole company parties.
-
-It would probably be different if I worked in a smaller company.
 
 
 ## Why I ended the inksmudge {#why-i-ended-the-inksmudge}
@@ -113,53 +154,12 @@ This means that I am going to write less about stationary stuff. But I'm still g
 This section is like a blog, just without a rss feed. There are things like this in other parts. But these are stuff that formerly was under Personal. And they may move, but corrently don't have a better room
 
 
-## Digital hoarding {#digital-hoarding}
+## Why I get up early on weekends {#why-i-get-up-early-on-weekends}
 
-I hate having stuff, just for having them. So in order to make the footprint of my "stuff" as small as possible, I try to review it often. On a regular basis I look over my apps, my files etc and I get rid of everything I don't use or need.
+I get to bed early because I get up really early (04:15 on weekdays, because I take the 05:40 train to the city and have to walk the dogs etc), and because I hate being tired.
 
-Old stuff fill up your disks, make your backups larger and may also expose you to security problems.
+So instead of breaking the rythm each weekend I don't push it too far and usually are up between 6 and 7 most weekends.
 
-Just because you don't use something does not mean it may not expose you.
+The dogs want to get up by that point anyways.
 
-
-## Ordering with intention {#ordering-with-intention}
-
-There are a lot of stuff around no matter what your hobby is that you could buy. I usually don't buy that many things that end up not working out for me.
-
-The reason is that I have a really slow process that keeps me from buying most stuff. When I see something interesting I add it to a list I keep of all the shit I want to get. Then later I look over all of it and remove the stuff I didn't find interesting, and the rest are moved to another list. That one I also look at sometimes, and before I buy something (the exception here is entertainment) I need to find a place for it. If I can't find something I want to use it for, and a reason for not using something I already own (if anything is usable for it) I don't get it.
-
-Like I said it is really slow, and most stuff are just ignored.
-
-But it keeps me from wasting money on stuff.
-
-
-## Minimalism {#minimalism}
-
-Minimalism is something I think most people don't understand.
-
-A lot of people think of it as having nothing. But that is not true. Minimalism is about having as little as possible. To get rid of everything that isn't essential.
-
-The way I go about it is to try to get rid of everything that doesn't improve my life.
-
-We all have a lot of stuff, that is just stuff. Doesn't improve our lives at all. That is the stuff to get rid of.
-
-For me, minimalism is more about the practise of questioning everything rather than the act of having little stuff. \`\`
-
-
-## Coffee stuff {#coffee-stuff}
-
-I've been into coffee stuff for a long time. Almost ten years at this point. I don't do that much fancy stuff at the moment. Mostly just making the best possible coffee with good but inexpensive coffee from the store. Usually with a Moccamaster.
-
-When I did more fancy stuff I used to do a lot of V60 at the end, before that I often did a lot of Aeropress or Moccapot.
-
-The most important thing when it comes to coffee however is not the gear, but the coffee itself. Figure out what style you prefer and get gear that makes the best of that coffee. I'd get a good grinder, but my experience is that grinders usually either make good medium or good fine grained. The other gear are usually very inexpensive.
-
-
-## Starting a company {#starting-a-company}
-
-I've been wanting to start a indie software company since 2010 or something. I have started to actually looking into this. The idea is to start by turning some of if not most of my hobby projects into web products. The idea is to start off at $10 a year, and see where that takes me. My main goal for this is for it to not loose money.
-
-Thoughts from the process of looking into it:
-
--   I should wait as long as possible, because every single month it is running costs money
--   It is amazing how something simple like a GitHub subscription affects the number of sales I need to not loose money
+This change makes each monday much easier. And I get much more done every weekend.

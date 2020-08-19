@@ -4,14 +4,29 @@ author: ["Eivind Hjertnes"]
 draft: false
 ---
 
-## Org-mode visibility {#org-mode-visibility}
+## Built-in modes I use {#built-in-modes-i-use}
 
-```emacs-lisp
-#+STARTUP: overview
-#+STARTUP: content
-#+STARTUP: showall
-#+STARTUP: showeverything
-```
+I'm not going to sum it all up here, but look [here](https://github.com/hjertnes/emacs.d/blob/master/lisp/pre-modes.el) for all the modes that come with emacs I have enabled, with some short comments.
+
+
+## Cheatsheet {#cheatsheet}
+
+This is mostly for me, but this is a growing list of keyboard shortcusts for Emacs. Some because I never recommend them others because others might find them useful.
+
+M=meta/alt, C=control, S=super/windows/cmd, SPC=space.
+
+-   C-x C-s: save
+-   C-x s: save as
+-   C-x C-f: open file
+-   C-x h: mark entire buffer
+-   C-x C-b: list buffers
+-   C-x b: select buffer
+-   Note: I have both(C-x b and C-x C-b) bound to ivy-switch-buffer on my system.
+-   C-g: cancel what ever you're doing
+-   M-x: run interactive command
+-   M-m: first non whitespace character on a line
+-   C-x [: page up
+-   C-x ]: page down
 
 
 ## Coming to Emacs 27 {#coming-to-emacs-27}
@@ -41,65 +56,13 @@ There is two kinds, one for having multiple window setups, and one more like reg
 There is a new package making is much easier to parse ISO 8601 stuff.
 
 
-## Helm and ivy {#helm-and-ivy}
+## Elfeed {#elfeed}
 
-Helm and ivy are two very popular emacs packages, that for the most part does the same thing. They provide partical completion / search stuff. Like for example when you tyype M-x. Helm is bigger, heavier and slower. But it works out of the box, and the initial setup is much easier. Ivy on the other hand feels much faster, but requires more config. Most people probably start with Helm. I used it for a long time, but once I got into it and figured out the config I greatly prefer Ivy because of how snappy it is
+I started to use elfeed as an experiment, because I was very much not sure about it. But I'm going to continue with it because I really like how easy it is to manage everything. And it have gotten me out of the "can't miss a post" phase. me a double. And I usually give 5 or 6 pages to the daily log collection at a time.
 
+This system is a lot more work than something like OmniFocus would be. But the work gives me a lot of natural opertunities to review things and it is easy to experiment and figure out what stuff works and does not. And my favourite thing about it is that it works for me.
 
-## Why not deft? {#why-not-deft}
-
-Okay. So most of my shit is oriented through different git repositories. And the most important part of that workflow is projectile M-p p to switch project or M-p SPC to search for a file.
-
-Because of this, it is much more natural for me to use projectile than something like deft. And I prefer having a few larger org documents instead of the a million different files concept that deft, roam and more use. It was popularized by notational velocity.
-
-
-## When Emacs gets confused about packages {#when-emacs-gets-confused-about-packages}
-
-So, you have your typical emacs installation with a few or a lot of packages installed. It all works fine, then you add another one and you get a shit load of errors, about some package version not exisitng or something.
-
-The simple solution to this problem is to delete the elpa folder in your .emacs.d and restart emacs. This will force emacs to (if everything is set up correctly) to refresh the package lists (when you run the package-refresh-contents command it stores a local copy of the list of packages on each package mirror you have in your config), then it will install everything you have told it to install.
-
-If you don't want to do that, or you manually install packages instead of doing it in your config (bad idea), then doing the steps as described [here](/emacs/packages) should fix it.
-
-I usually just nuke elpa and restart because it is faster.
-
-
-## Updating Packages {#updating-packages}
-
-How to upgrade emacs packages
-
-1.  M-x package-refresh-contents
-2.  M-x list-packages
-3.  Type U to mark all available upgrades for installation. Then type X to install them.
-
-
-## Lisp: let and let\* {#lisp-let-and-let}
-
-Let is probably the feature of lisp that I miss the most in other languages. A let is how you define local variables in a lisp. It is a function that takes two arguments, the first is a list of two element lists and the second is the code where the variables are available. And the first is a list of lists, where the inner list has two elements the variable name and then the expression or value to assign to the value.
-
-They are weird in the start, but you learn to love them when you start to write a lot of lisps.
-
-Now, if you are used to Clojure, then a assignment in a let expression can reference variables defined earlier in the same let expression. This is not possible in let in emacs, but it is in let\*.
-
-
-## Emacsclient {#emacsclient}
-
-I have used vim or editors like BBEdit, TextMate or SublimeText (and
-recently vscode) for most of my carrer. All of them either is a text
-based editor (vim) or has a command that you can use to open stuff in a
-GUI edtior.
-
-The advantage to this is that it is fast to open. This is really useful,
-if you like me do as much as possible on the command line.
-
-Emacsclient is a command that lets you send a file to a running instance
-of Emacs. This is really useful because most realy world configurations
-of Emacs takes some time to start. The only thing you need is to run M-x
-start-server or enable server-mode, and you can run "emacsclient"
-instead of emacs.
-
-In my configs I have aliased emacs and a bunch of other editor command
-to it. I think it works great.
+And I get to use a lot of notebooks and pens all the time.
 
 
 ## Emacs {#emacs}
@@ -109,147 +72,15 @@ Emacs is my go to editor these days, and have been for a couple of years at this
 I have added some pages with information about emacs packages, but my goal is that I add a page about all the packages I use in time. If you want a place to start look at my list of starter [projects](/emacs/starters). All the emacs related pages on this wiki start with Emacs:. And all of them should also be tagged with Emacs and be in this [list](/tags/emacs) or if you just want the [packages](/tags/emacspackage)
 
 
-## Starters {#starters}
+## Emacs Config as a org document. {#emacs-config-as-a-org-document-dot}
 
--   I have made one based on my own setup <https://git.sr.ht/~hjertnes/emacs-starter>
--   <http://spacemacs.org/>
--   <https://github.com/hlissner/doom-emacs>
--   <https://github.com/purcell/emacs.d>
--   <https://github.com/bbatsov/prelude>
+Emacs configurations can be really strange, and unlike a lot of other config files they can contain hundreds if not thousands of lines of comments and code.
 
-I use once of them (the first), I have previously used spacemacs and doom for a significant amount of time. I recommend picking one of the last four if you're just starting out, use doom or spacemacs if you want vim like keybindings or prelude or purcell's emacs.d if you want default ones. Other than that the four are similar. I think my personal setup is a great place to start if you want to build something from scratch.
+Org have something called org-babel that let you extract code from org documents. This enable you to write your config as a org document.
 
+The reason you might want to do this is because it enables you to focus more on commenting and writing how and why for everything in your configuration.
 
-## Cheatsheet {#cheatsheet}
-
-This is mostly for me, but this is a growing list of keyboard shortcusts for Emacs. Some because I never recommend them others because others might find them useful.
-
-M=meta/alt, C=control, S=super/windows/cmd, SPC=space.
-
--   C-x C-s: save
--   C-x s: save as
--   C-x C-f: open file
--   C-x h: mark entire buffer
--   C-x C-b: list buffers
--   C-x b: select buffer
--   Note: I have both(C-x b and C-x C-b) bound to ivy-switch-buffer on my system.
--   C-g: cancel what ever you're doing
--   M-x: run interactive command
--   M-m: first non whitespace character on a line
--   C-x [: page up
--   C-x ]: page down
-
-
-## Installing packages when use-package won't work {#installing-packages-when-use-package-won-t-work}
-
-When you use something like (use-package foobar :ensure t) it only works if the package you want to load and the name of it on the melpa or what ever is the same. And while that is the case most of the time, it isn't always. Or somethimes you just want to install something before everything else.
-
-I have three packages in my emacs configuration that is installed outside use-package for various reasons. There are some ways to get around it, either by nesting things. All of them are messy, and all of them sucks.
-
-You can see both ways in my personal emacs [config](https://git.sr.ht/~hjertnes/emacs.d). Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful.
-
-I do the nesting with smartparens, while I install org-plus-contrib, request and use-package in my package-manager module. The reason I do that is for different reasons. Use-package because it have to be there before I use it, request because it makes things simpler and org-plus-contrib because it is the only good way to do it. I could nest it, but I hate it as much.
-
-
-## Escape rope {#escape-rope}
-
-So you have gotten yourself into a weird command and you have no idea how and what will blow up if you continue. I get into it all the time.
-
-In emacs you can git C-g anywhere to cancel what ever you're in the middle of. I use it hundred times a day.
-
-
-## Getting started {#getting-started}
-
-A super short getting started with emacs guide.
-
-If you're just starting out, I strongly recommend to pick a [starter](/emacs/starters). Unless you have a good reason for doing so, I recommend using the emacs keybindings. I didn't start there, but I think it is the only way to really get emacs.
-
-Then I recommend not doing a lot yet, just get to know how to move around and get some work done. After you're more comfortable I recommend learning how to configure emacs, not from scratch but learn how to install packages and configure them from your starter.
-
-If you are using emacs keybindings I also recommend you to install no-easy-keys. It is the easiest way to get used to emacs keybindings as fast as possible.
-
-At some point you probably get the urge to roll your own config. I have a really good super minimal starter for that. It is what I have based my config on. Or it was a result of my config. If you look at spacemacs or prelude or any other fancy emacs configuration system it is just packages that are set up in a particular way plus a system to handle their weird config stuff. That's it
-
-You just need to figure out how to include the right packages to get the same s.
-
-
-## Built-in modes I use {#built-in-modes-i-use}
-
-I'm not going to sum it all up here, but look [here](https://github.com/hjertnes/emacs.d/blob/master/lisp/pre-modes.el) for all the modes that come with emacs I have enabled, with some short comments.
-
-
-## Themes {#themes}
-
-A list of the emacs themes I have in my config, and could uncommend and use.
-
--   nimbus-theme
--   afternoon-theme
--   solarized-theme
--   dracula-theme
-
-My current theme of choice is solarized-dark.
-
-
-## Shells {#shells}
-
-Shells in Emacs is a little bit weird for a number of reasons, most of them has to do with that when you're in a shell that shell might capture a some keyboard input you expected emacs to do and the other way arround. The way it usually works is that it is just passed on to emacs if the shell doesn't do something with it.
-
-If you want to use a regular shell, like zsh or fish, use M-x ansi-term. I don't recommend this. But if you want to this is the best option.
-
-What I use most of the time, except for with stuff I know doesn't work or work that great there is to use eshell. It is not a shell like zsh or fish, but rather a shell implemented in eshell. It is well integrated into emacs and most stuff works like you exepect them to.
-
-This is how I shell in emacs:
-
--   I don't use it as my shell; but rather when I just need to run a few commands.
--   Most of the time i use eshell, I also have a command defined from [here](https://www.emacswiki.org/emacs/EshellMultipleEshellBuffers) called eshell-new to make it easy to create new eshells, because eshell just send you to the first one if it exist.
-
-
-## Learning emacs {#learning-emacs}
-
-Learning emacs will be a life long project, or at least for as long as you continue to use it. Before we continue, if you want to do anything with emacs other than how it comes out of the box will require you to write some Emacs lisp. And while emacs is great out of the box, the true power comes from making it the best possible for you and your needs.
-
--   Read [this](https://www.gnu.org/software/emacs/tour/). It is a gentle introduction.
--   After that I recommend reading the [introduction to emacs lisp](https://www.gnu.org/software/emacs/manual/html%5Fnode/eintr/index.html).
--   When you have all of that I recommend that you find a good emacs cheet sheet like [this](https://www.gnu.org/software/emacs/refcards/index.html), and start using it. Google is your friend. Install a million packages and learn why it's not a great idea.
-
-When you are more familiar with emacs I strongly recommend that you read [Mastering emacs](https://www.masteringemacs.org/), I have read it many times and it is awesome for learning emacs but also understanding it. I first read it in the hostpital after removing my appendix.
-
-And every serious emacs user or addict or whatever we are calling ourselves will read the [Manual](https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/index.html) at some point. You can also get a meat space [version](https://shop.fsf.org/books/gnu-emacs-manual-18th-edition-v-261).
-
-I'm going to get one of them, but there are a few books from there I want to get (the emacs manual, the elisp manual and Stallman's books) but when I go there to check at least one of them have been out of stock.
-
-And I'm always happy to answer questions about emacs at [Micro.blog](https://micro.blog/hjertnes).
-
-
-## Modes {#modes}
-
-Emacs has two kinds of modes major and minor.
-
-A major mode is like c-mode, org-mode or text-mode. It can probably me something other than text editing. But in general a major mode is what you use to edit a a file of a given format. For example python-mode is a mode you can use to edit python files, and it has functionality that makes that easier and better. You can only have one major mode active at a time.
-
-A minor mode on the other hand add some kind of functionality. Company is a minor mode, yasnippet is a minormode, projectile is a minor mode. You can have as many minor modes active as you want.
-
-
-## Manuals and modern book formats {#manuals-and-modern-book-formats}
-
-I do not understand why, but for some weird reason none of the GNU manuals that I have been reading are available in ePub or anything like it. They're available as HTML in various forms and PDF. But some times you want to read it on your iPhone, iPad or a ebook reader like a Kindle.
-
-This have been something of a pain point for me for a long time. So I have tried countless different ways to deal with it. The only way I know about that works to do this on all of them, because of their size is the following:
-
--   Download the PDF's
--   Install Calibre
--   Add the PDF's
--   Convert them ot your device
--   Send them to the device either over USB or for iOS devices you could add it from a Mac and sync it over iCloud.
-
-
-## Interactive functions {#interactive-functions}
-
-In emacs you have two kinds of functions, you have a function, it can be called from other functions and you have a interactive function. A interactive functions can be called from other functions and from M-x. A regular function looks something like this (defun hello-world() "Hello World" (message "Hello World!)) where the form is the name followed by a list of arguments (in this case a empty list) a documentation string and the body of the function.
-
-A interactive function looks almost the same. (defun hello-world() "Hello World" (interactive)(message "Hello World!)). The only difference is the call to interactive between the doc string and the body.
-
-On the surface interactive enables you to call functions from M-x. But that is kind of just the surface of what it can do. You can also give it a string argument with all kinds of [codes](https://www.gnu.org/software/emacs/manual/html%5Fnode/elisp/Interactive-Codes.html#Interactive-Codes) ([<https://www.gnu.org/software/emacs/manual/html%5Fnode/elisp/Interactive-Examples.html#Interactive-Examples>][examples]), that examples you do also capture input before invoking the function.
+I did it a while back (and have a starter repo for you here) and I think my config is a hell of a lot better for it.
 
 
 ## Emacs for everything {#emacs-for-everything}
@@ -266,73 +97,6 @@ This is my strategy for making it possible:
 To do everyhting in Emacs is in a lot of cases worse, but it makes my life a lot saner to do it this way.
 
 
-## The packages metnioned here {#the-packages-metnioned-here}
-
-I have written about a lot emacs packages on this wiki. They are not the packages I myself currently use. My setup change almost daily, as I try to adjust things and remove stuff I don't use, re-add it, replacing it with something else etc. But all of the stuff I have mentioned here have at some point been in my config. And they are here as a reference for me and others. As a explaination of what they do etc.
-
-
-## Understanding it {#understanding-it}
-
-This is intended as a short introduction into some of the core concepts of emacs. If you want a deeper dive I recommend [Mastering Emacs](https://www.masteringemacs.org/), it's a great book I've read many times.
-
-A lot of terminology in emacs is a little bit weird, and crash with what the rest of the world calls it. The reason for this is that Emacs started in the 70s before this terminology existed.
-
--   Frame: what everyone else calls a window
--   Window: a frame is divded into one or more windows.
--   Buffer: everything that is visible in emacs is a buffer, it can be a file or something interactive like a Git app or just some text that isn't saved yet.
-
-The emacs window layout is very confusing in the beginning, this is because lisp functions you call may change it. In most other editors it is something a little bit more fixed. This is very powerful because a command can set up the layout to be taylored to something you're going to do and then close it when you're done. This is for it is when you open magit, commit some stuff and then you quit it.
-
-Another thing you should understand about emacs is that buffers and windows are not one to one. Let's say you are working on a big C# class. For example with some properties on the top, a bunch of contructors in the middle and some private validation methods on the bottom. This is by the way not how I would write it. I would make the properties as a class, then a builder class instead of the constructors and then a seperate validation class. What you could do in emacs, and I do it a lot, is to show the same buffer in multiple windows. To avoid having to jump up and down all the time.
-
-
-## OSX {#osx}
-
-Just a super short list of things I have done to make using Emacs under OSX better
-
--   [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) makes sure emacs inherits path from your shell.
--   (when (eq system-type 'darwin) (setq mac-right-option-modifier 'none mac-right-command-modifier 'none)) this makes sure that the right option and command keys on your keyboard isn't handled by Emacs. This enables you to access certain symbols that are under cmd and cmd+option combos on OSX
--   I use [emacs-plus](https://github.com/d12frosted/homebrew-emacs-plus) with all the options enabled, becuase i prefer that, the regular emacs cask is the recommended method. I don't do that because I prefer having mailtuils being a part of emacs because of mu4e.
-
-
-## Emacs Config as a org document. {#emacs-config-as-a-org-document-dot}
-
-Emacs configurations can be really strange, and unlike a lot of other config files they can contain hundreds if not thousands of lines of comments and code.
-
-Org have something called org-babel that let you extract code from org documents. This enable you to write your config as a org document.
-
-The reason you might want to do this is because it enables you to focus more on commenting and writing how and why for everything in your configuration.
-
-I did it a while back (and have a starter repo for you here) and I think my config is a hell of a lot better for it.
-
-
-## M-x: the true power of Emacs. {#m-x-the-true-power-of-emacs-dot}
-
-Anyone who has used emacs seriously must aknowledge its imense power. The place most users see this is in the M-x command. Everything you do in emacs is a lisp function, and some of these functions are so called "interactive" functions. This means that they can be invoked from M-x.
-
-If something is a keyboard shortcut, it will amost always also be available from M-x. When I don't remember how to do something or don't know how to do something I start searching M-x.
-
-This is where you see the immense power of Emacs. And when you understand that you could in a few seconds write a lisp function, and evaulate it and have it avilable in M-x you see the insane flexibility of it.
-
-
-## Elfeed {#elfeed}
-
-I started to use elfeed as an experiment, because I was very much not sure about it. But I'm going to continue with it because I really like how easy it is to manage everything. And it have gotten me out of the "can't miss a post" phase. me a double. And I usually give 5 or 6 pages to the daily log collection at a time.
-
-This system is a lot more work than something like OmniFocus would be. But the work gives me a lot of natural opertunities to review things and it is easy to experiment and figure out what stuff works and does not. And my favourite thing about it is that it works for me.
-
-And I get to use a lot of notebooks and pens all the time.
-
-
-## Why Emacs is a great file manager {#why-emacs-is-a-great-file-manager}
-
-Emacs has a built in file manager called Dired. It is awesome, and can be extended like everything else in Emacs. And it has Tramp.
-
-Tramp is a system where you can work with file systems for example as root, over ssh or inside docker containers.
-
-For how I work with files Tramp is the ideal.
-
-
 ## Emacs memory usage {#emacs-memory-usage}
 
 Emacs has a garbadge collector. The way it works is that every time some threshold is crossed it tries to free up memory. The higher this number is the less often it runs, and the more stuff it has to check per time.
@@ -344,19 +108,6 @@ My recommendation however is not a direct reflection of my own setup. I would st
 But if you see that you hit the threshold much faster than you'd like to restart emacs. I'd increase it.
 
 For me it is not a problem to give emacs 2GB and just restart when I reach that once a week or so.
-
-
-## How does one even start with Emacs? {#how-does-one-even-start-with-emacs}
-
-This is a question I have wondered a lot about recently.
-
-One way is to start with Spacemacs or Prelude or some of the other starter packs or systems. The other is to just start with a more or less empty init.el and build from there.
-
-There are good things about either strategy. If you go with the former you probably have everything you need working within an hour. The bad thing about it is that everything looks more complicated than it is and you learn way less.
-
-I started with Spacemacs and slowly ended up with my custom init.el file that I am way happier with than I ever were with Spacemacs, Doom or any other system.
-
-I recommend just starting with a init.el file where the basic package management and use package have been set up and start from there. If yo have the time. But if this seems like a stopper and something that will keep you from going for it I recommend going for a starter project.
 
 
 ## Emacs packages {#emacs-packages}
@@ -581,3 +332,252 @@ Makes emacs ident work more like you expect
 ### git-gutter {#git-gutter}
 
 Shows git status inline
+
+
+## Emacsclient {#emacsclient}
+
+I have used vim or editors like BBEdit, TextMate or SublimeText (and
+recently vscode) for most of my carrer. All of them either is a text
+based editor (vim) or has a command that you can use to open stuff in a
+GUI edtior.
+
+The advantage to this is that it is fast to open. This is really useful,
+if you like me do as much as possible on the command line.
+
+Emacsclient is a command that lets you send a file to a running instance
+of Emacs. This is really useful because most realy world configurations
+of Emacs takes some time to start. The only thing you need is to run M-x
+start-server or enable server-mode, and you can run "emacsclient"
+instead of emacs.
+
+In my configs I have aliased emacs and a bunch of other editor command
+to it. I think it works great.
+
+
+## Escape rope {#escape-rope}
+
+So you have gotten yourself into a weird command and you have no idea how and what will blow up if you continue. I get into it all the time.
+
+In emacs you can git C-g anywhere to cancel what ever you're in the middle of. I use it hundred times a day.
+
+
+## Getting started {#getting-started}
+
+A super short getting started with emacs guide.
+
+If you're just starting out, I strongly recommend to pick a [starter](/emacs/starters). Unless you have a good reason for doing so, I recommend using the emacs keybindings. I didn't start there, but I think it is the only way to really get emacs.
+
+Then I recommend not doing a lot yet, just get to know how to move around and get some work done. After you're more comfortable I recommend learning how to configure emacs, not from scratch but learn how to install packages and configure them from your starter.
+
+If you are using emacs keybindings I also recommend you to install no-easy-keys. It is the easiest way to get used to emacs keybindings as fast as possible.
+
+At some point you probably get the urge to roll your own config. I have a really good super minimal starter for that. It is what I have based my config on. Or it was a result of my config. If you look at spacemacs or prelude or any other fancy emacs configuration system it is just packages that are set up in a particular way plus a system to handle their weird config stuff. That's it
+
+You just need to figure out how to include the right packages to get the same s.
+
+
+## Helm and ivy {#helm-and-ivy}
+
+Helm and ivy are two very popular emacs packages, that for the most part does the same thing. They provide partical completion / search stuff. Like for example when you tyype M-x. Helm is bigger, heavier and slower. But it works out of the box, and the initial setup is much easier. Ivy on the other hand feels much faster, but requires more config. Most people probably start with Helm. I used it for a long time, but once I got into it and figured out the config I greatly prefer Ivy because of how snappy it is
+
+
+## How does one even start with Emacs? {#how-does-one-even-start-with-emacs}
+
+This is a question I have wondered a lot about recently.
+
+One way is to start with Spacemacs or Prelude or some of the other starter packs or systems. The other is to just start with a more or less empty init.el and build from there.
+
+There are good things about either strategy. If you go with the former you probably have everything you need working within an hour. The bad thing about it is that everything looks more complicated than it is and you learn way less.
+
+I started with Spacemacs and slowly ended up with my custom init.el file that I am way happier with than I ever were with Spacemacs, Doom or any other system.
+
+I recommend just starting with a init.el file where the basic package management and use package have been set up and start from there. If yo have the time. But if this seems like a stopper and something that will keep you from going for it I recommend going for a starter project.
+
+
+## Installing packages when use-package won't work {#installing-packages-when-use-package-won-t-work}
+
+When you use something like (use-package foobar :ensure t) it only works if the package you want to load and the name of it on the melpa or what ever is the same. And while that is the case most of the time, it isn't always. Or somethimes you just want to install something before everything else.
+
+I have three packages in my emacs configuration that is installed outside use-package for various reasons. There are some ways to get around it, either by nesting things. All of them are messy, and all of them sucks.
+
+You can see both ways in my personal emacs [config](https://git.sr.ht/~hjertnes/emacs.d). Sometimes I install them in my package manager module using the built in package-install command. And other times I first run a (use-package) to install the package and then I require what I want or need to load inside its :config. I don't have a lot of packages like this but there is a small handful.
+
+I do the nesting with smartparens, while I install org-plus-contrib, request and use-package in my package-manager module. The reason I do that is for different reasons. Use-package because it have to be there before I use it, request because it makes things simpler and org-plus-contrib because it is the only good way to do it. I could nest it, but I hate it as much.
+
+
+## Interactive functions {#interactive-functions}
+
+In emacs you have two kinds of functions, you have a function, it can be called from other functions and you have a interactive function. A interactive functions can be called from other functions and from M-x. A regular function looks something like this (defun hello-world() "Hello World" (message "Hello World!)) where the form is the name followed by a list of arguments (in this case a empty list) a documentation string and the body of the function.
+
+A interactive function looks almost the same. (defun hello-world() "Hello World" (interactive)(message "Hello World!)). The only difference is the call to interactive between the doc string and the body.
+
+On the surface interactive enables you to call functions from M-x. But that is kind of just the surface of what it can do. You can also give it a string argument with all kinds of [codes](https://www.gnu.org/software/emacs/manual/html%5Fnode/elisp/Interactive-Codes.html#Interactive-Codes) ([<https://www.gnu.org/software/emacs/manual/html%5Fnode/elisp/Interactive-Examples.html#Interactive-Examples>][examples]), that examples you do also capture input before invoking the function.
+
+
+## Learning emacs {#learning-emacs}
+
+Learning emacs will be a life long project, or at least for as long as you continue to use it. Before we continue, if you want to do anything with emacs other than how it comes out of the box will require you to write some Emacs lisp. And while emacs is great out of the box, the true power comes from making it the best possible for you and your needs.
+
+-   Read [this](https://www.gnu.org/software/emacs/tour/). It is a gentle introduction.
+-   After that I recommend reading the [introduction to emacs lisp](https://www.gnu.org/software/emacs/manual/html%5Fnode/eintr/index.html).
+-   When you have all of that I recommend that you find a good emacs cheet sheet like [this](https://www.gnu.org/software/emacs/refcards/index.html), and start using it. Google is your friend. Install a million packages and learn why it's not a great idea.
+
+When you are more familiar with emacs I strongly recommend that you read [Mastering emacs](https://www.masteringemacs.org/), I have read it many times and it is awesome for learning emacs but also understanding it. I first read it in the hostpital after removing my appendix.
+
+And every serious emacs user or addict or whatever we are calling ourselves will read the [Manual](https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/index.html) at some point. You can also get a meat space [version](https://shop.fsf.org/books/gnu-emacs-manual-18th-edition-v-261).
+
+I'm going to get one of them, but there are a few books from there I want to get (the emacs manual, the elisp manual and Stallman's books) but when I go there to check at least one of them have been out of stock.
+
+And I'm always happy to answer questions about emacs at [Micro.blog](https://micro.blog/hjertnes).
+
+
+## Lisp: let and let\* {#lisp-let-and-let}
+
+Let is probably the feature of lisp that I miss the most in other languages. A let is how you define local variables in a lisp. It is a function that takes two arguments, the first is a list of two element lists and the second is the code where the variables are available. And the first is a list of lists, where the inner list has two elements the variable name and then the expression or value to assign to the value.
+
+They are weird in the start, but you learn to love them when you start to write a lot of lisps.
+
+Now, if you are used to Clojure, then a assignment in a let expression can reference variables defined earlier in the same let expression. This is not possible in let in emacs, but it is in let\*.
+
+
+## M-x: the true power of Emacs. {#m-x-the-true-power-of-emacs-dot}
+
+Anyone who has used emacs seriously must aknowledge its imense power. The place most users see this is in the M-x command. Everything you do in emacs is a lisp function, and some of these functions are so called "interactive" functions. This means that they can be invoked from M-x.
+
+If something is a keyboard shortcut, it will amost always also be available from M-x. When I don't remember how to do something or don't know how to do something I start searching M-x.
+
+This is where you see the immense power of Emacs. And when you understand that you could in a few seconds write a lisp function, and evaulate it and have it avilable in M-x you see the insane flexibility of it.
+
+
+## Manuals and modern book formats {#manuals-and-modern-book-formats}
+
+I do not understand why, but for some weird reason none of the GNU manuals that I have been reading are available in ePub or anything like it. They're available as HTML in various forms and PDF. But some times you want to read it on your iPhone, iPad or a ebook reader like a Kindle.
+
+This have been something of a pain point for me for a long time. So I have tried countless different ways to deal with it. The only way I know about that works to do this on all of them, because of their size is the following:
+
+-   Download the PDF's
+-   Install Calibre
+-   Add the PDF's
+-   Convert them ot your device
+-   Send them to the device either over USB or for iOS devices you could add it from a Mac and sync it over iCloud.
+
+
+## Modes {#modes}
+
+Emacs has two kinds of modes major and minor.
+
+A major mode is like c-mode, org-mode or text-mode. It can probably me something other than text editing. But in general a major mode is what you use to edit a a file of a given format. For example python-mode is a mode you can use to edit python files, and it has functionality that makes that easier and better. You can only have one major mode active at a time.
+
+A minor mode on the other hand add some kind of functionality. Company is a minor mode, yasnippet is a minormode, projectile is a minor mode. You can have as many minor modes active as you want.
+
+
+## Org-mode visibility {#org-mode-visibility}
+
+```emacs-lisp
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+```
+
+
+## OSX {#osx}
+
+Just a super short list of things I have done to make using Emacs under OSX better
+
+-   [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) makes sure emacs inherits path from your shell.
+-   (when (eq system-type 'darwin) (setq mac-right-option-modifier 'none mac-right-command-modifier 'none)) this makes sure that the right option and command keys on your keyboard isn't handled by Emacs. This enables you to access certain symbols that are under cmd and cmd+option combos on OSX
+-   I use [emacs-plus](https://github.com/d12frosted/homebrew-emacs-plus) with all the options enabled, becuase i prefer that, the regular emacs cask is the recommended method. I don't do that because I prefer having mailtuils being a part of emacs because of mu4e.
+
+
+## Shells {#shells}
+
+Shells in Emacs is a little bit weird for a number of reasons, most of them has to do with that when you're in a shell that shell might capture a some keyboard input you expected emacs to do and the other way arround. The way it usually works is that it is just passed on to emacs if the shell doesn't do something with it.
+
+If you want to use a regular shell, like zsh or fish, use M-x ansi-term. I don't recommend this. But if you want to this is the best option.
+
+What I use most of the time, except for with stuff I know doesn't work or work that great there is to use eshell. It is not a shell like zsh or fish, but rather a shell implemented in eshell. It is well integrated into emacs and most stuff works like you exepect them to.
+
+This is how I shell in emacs:
+
+-   I don't use it as my shell; but rather when I just need to run a few commands.
+-   Most of the time i use eshell, I also have a command defined from [here](https://www.emacswiki.org/emacs/EshellMultipleEshellBuffers) called eshell-new to make it easy to create new eshells, because eshell just send you to the first one if it exist.
+
+
+## Starters {#starters}
+
+-   I have made one based on my own setup <https://git.sr.ht/~hjertnes/emacs-starter>
+-   <http://spacemacs.org/>
+-   <https://github.com/hlissner/doom-emacs>
+-   <https://github.com/purcell/emacs.d>
+-   <https://github.com/bbatsov/prelude>
+
+I use once of them (the first), I have previously used spacemacs and doom for a significant amount of time. I recommend picking one of the last four if you're just starting out, use doom or spacemacs if you want vim like keybindings or prelude or purcell's emacs.d if you want default ones. Other than that the four are similar. I think my personal setup is a great place to start if you want to build something from scratch.
+
+
+## The packages metnioned here {#the-packages-metnioned-here}
+
+I have written about a lot emacs packages on this wiki. They are not the packages I myself currently use. My setup change almost daily, as I try to adjust things and remove stuff I don't use, re-add it, replacing it with something else etc. But all of the stuff I have mentioned here have at some point been in my config. And they are here as a reference for me and others. As a explaination of what they do etc.
+
+
+## Themes {#themes}
+
+A list of the emacs themes I have in my config, and could uncommend and use.
+
+-   nimbus-theme
+-   afternoon-theme
+-   solarized-theme
+-   dracula-theme
+
+My current theme of choice is solarized-dark.
+
+
+## Understanding it {#understanding-it}
+
+This is intended as a short introduction into some of the core concepts of emacs. If you want a deeper dive I recommend [Mastering Emacs](https://www.masteringemacs.org/), it's a great book I've read many times.
+
+A lot of terminology in emacs is a little bit weird, and crash with what the rest of the world calls it. The reason for this is that Emacs started in the 70s before this terminology existed.
+
+-   Frame: what everyone else calls a window
+-   Window: a frame is divded into one or more windows.
+-   Buffer: everything that is visible in emacs is a buffer, it can be a file or something interactive like a Git app or just some text that isn't saved yet.
+
+The emacs window layout is very confusing in the beginning, this is because lisp functions you call may change it. In most other editors it is something a little bit more fixed. This is very powerful because a command can set up the layout to be taylored to something you're going to do and then close it when you're done. This is for it is when you open magit, commit some stuff and then you quit it.
+
+Another thing you should understand about emacs is that buffers and windows are not one to one. Let's say you are working on a big C# class. For example with some properties on the top, a bunch of contructors in the middle and some private validation methods on the bottom. This is by the way not how I would write it. I would make the properties as a class, then a builder class instead of the constructors and then a seperate validation class. What you could do in emacs, and I do it a lot, is to show the same buffer in multiple windows. To avoid having to jump up and down all the time.
+
+
+## Updating Packages {#updating-packages}
+
+How to upgrade emacs packages
+
+1.  M-x package-refresh-contents
+2.  M-x list-packages
+3.  Type U to mark all available upgrades for installation. Then type X to install them.
+
+
+## When Emacs gets confused about packages {#when-emacs-gets-confused-about-packages}
+
+So, you have your typical emacs installation with a few or a lot of packages installed. It all works fine, then you add another one and you get a shit load of errors, about some package version not exisitng or something.
+
+The simple solution to this problem is to delete the elpa folder in your .emacs.d and restart emacs. This will force emacs to (if everything is set up correctly) to refresh the package lists (when you run the package-refresh-contents command it stores a local copy of the list of packages on each package mirror you have in your config), then it will install everything you have told it to install.
+
+If you don't want to do that, or you manually install packages instead of doing it in your config (bad idea), then doing the steps as described [here](/emacs/packages) should fix it.
+
+I usually just nuke elpa and restart because it is faster.
+
+
+## Why Emacs is a great file manager {#why-emacs-is-a-great-file-manager}
+
+Emacs has a built in file manager called Dired. It is awesome, and can be extended like everything else in Emacs. And it has Tramp.
+
+Tramp is a system where you can work with file systems for example as root, over ssh or inside docker containers.
+
+For how I work with files Tramp is the ideal.
+
+
+## Why not deft? {#why-not-deft}
+
+Okay. So most of my shit is oriented through different git repositories. And the most important part of that workflow is projectile M-p p to switch project or M-p SPC to search for a file.
+
+Because of this, it is much more natural for me to use projectile than something like deft. And I prefer having a few larger org documents instead of the a million different files concept that deft, roam and more use. It was popularized by notational velocity.

@@ -4,23 +4,32 @@ author: ["Eivind Hjertnes"]
 draft: false
 ---
 
-## Photograhy {#photograhy}
+## Analog photography tricks for everyone {#analog-photography-tricks-for-everyone}
 
-This is the gear I own, and below a short description of what I use at the moment:
+Getting a manual 35mm film camera have been the thing I have learnt the most about photography from.
 
--   Fuji X-Pro2
--   8mm f2.8
--   23mm f2
--   35mm f2
--   50mm f2
--   Nikon FM
--   50mm f1.8
--   24mm f2.8
--   Fuji X100T
+Having to adjust all the parameters manually have thought me how to work efficiently with them on all cameras.
 
-These days I mostly shoot using my X-Pro2 and the 23mm, if I think I want more than one focal length I usually also bring the 50mm. I don't do anyhting with my RAW files at the moment I just shoot jpeg + raw using Acros film simulation, throw it into Apple Photos, but I keep the raw files for "just in case I change my mind".
+You need to adjust shutter speed, f-stop and focus; and pick a ISO speed and stick to it for the entire film. Sometimes you use a film that is unusable for the situation and you need to change it. And that means wasting money.
 
-Not doing a lot of analog at the moment. That might change.
+What I do a lot of the time shooting analog  is that I set the shutter speed to 1/50th of a second, the slowest I can shoot handheld without having to think aobut it and then I just adjust f-spot. To make zooming easy I also a lot of them time always go for the biggest f-stop possible, unless I'm for some reason really want a shallow depth of field.
+Back in my street shooting days I used to just pre-set everything and wait until some subject walked into the distanced I had zoomed for.
+
+Oh yeah, and if you can shoot in f8 almost everything is in focus.
+
+I placed a Contigo mug with the Autoseal system, because it was really hard to clean and the system broke down after about a year.
+
+
+## Camera lens focal lengths {#camera-lens-focal-lengths}
+
+These are some notes about my views on lens focal lengths. They are in 35mm, if you have a crop sensor like a Fuji or Nikon or Sony you need to divide it by 1.6 or multiply it to go the other way; or 1.5 for Canon. For example a 35mm on 35mm film is 23mm on a Fuji.
+
+-   Fisheye: a fisheye should have 180 degrees of view, it is the widest you can go and keep a square image. I have one true 180 degrees one that is a 12mm.
+-   35mm: I think this focal length is the perfect when you just want to walk around shooting snapshots
+-   50mm: Great if you want a little bit more control of what's in the image than a 35; also great if you want soemthing that's good for both portraits and snapshots.
+-   70-90mm: The perfect for portraits.
+
+I prefer primes, because they are much easier to shoot with one handed; and I prefer the smallest lens possible over the lowest f-number possible
 
 
 ## Gear {#gear}
@@ -38,20 +47,23 @@ Not doing a lot of analog at the moment. That might change.
 -   Usually HP5+ 400 pushed to 1600.
 
 
-## Analog photography tricks for everyone {#analog-photography-tricks-for-everyone}
+## Photograhy {#photograhy}
 
-Getting a manual 35mm film camera have been the thing I have learnt the most about photography from.
+This is the gear I own, and below a short description of what I use at the moment:
 
-Having to adjust all the parameters manually have thought me how to work efficiently with them on all cameras.
+-   Fuji X-Pro2
+-   8mm f2.8
+-   23mm f2
+-   35mm f2
+-   50mm f2
+-   Nikon FM
+-   50mm f1.8
+-   24mm f2.8
+-   Fuji X100T
 
-You need to adjust shutter speed, f-stop and focus; and pick a ISO speed and stick to it for the entire film. Sometimes you use a film that is unusable for the situation and you need to change it. And that means wasting money.
+These days I mostly shoot using my X-Pro2 and the 23mm, if I think I want more than one focal length I usually also bring the 50mm. I don't do anyhting with my RAW files at the moment I just shoot jpeg + raw using Acros film simulation, throw it into Apple Photos, but I keep the raw files for "just in case I change my mind".
 
-What I do a lot of the time shooting analog  is that I set the shutter speed to 1/50th of a second, the slowest I can shoot handheld without having to think aobut it and then I just adjust f-spot. To make zooming easy I also a lot of them time always go for the biggest f-stop possible, unless I'm for some reason really want a shallow depth of field.
-Back in my street shooting days I used to just pre-set everything and wait until some subject walked into the distanced I had zoomed for.
-
-Oh yeah, and if you can shoot in f8 almost everything is in focus.
-
-I placed a Contigo mug with the Autoseal system, because it was really hard to clean and the system broke down after about a year.
+Not doing a lot of analog at the moment. That might change.
 
 
 ## Photography workflow {#photography-workflow}
@@ -74,18 +86,6 @@ Most of the time I have the 23mm on my X-Pro, if I'm going somewhere with it I u
 After years of being unhappy with the time I took and what I got out of it I have stopped my Lightroom based workflow I started shooting JPEG + RAW, add the jpegs to Apple Photos and process them, and I just stick the RAW's on an external drive. I shoot with the Acros preset on my camera.
 
 I'm usually more happy with those results than I ever was with Lightroom.
-
-
-## Camera lens focal lengths {#camera-lens-focal-lengths}
-
-These are some notes about my views on lens focal lengths. They are in 35mm, if you have a crop sensor like a Fuji or Nikon or Sony you need to divide it by 1.6 or multiply it to go the other way; or 1.5 for Canon. For example a 35mm on 35mm film is 23mm on a Fuji.
-
--   Fisheye: a fisheye should have 180 degrees of view, it is the widest you can go and keep a square image. I have one true 180 degrees one that is a 12mm.
--   35mm: I think this focal length is the perfect when you just want to walk around shooting snapshots
--   50mm: Great if you want a little bit more control of what's in the image than a 35; also great if you want soemthing that's good for both portraits and snapshots.
--   70-90mm: The perfect for portraits.
-
-I prefer primes, because they are much easier to shoot with one handed; and I prefer the smallest lens possible over the lowest f-number possible
 
 
 ## X-Pro 2 {#x-pro-2}
