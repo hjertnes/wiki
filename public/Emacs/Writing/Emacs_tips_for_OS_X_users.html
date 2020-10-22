@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Eivind Hjertnes" />
+  <title>Hjertnes.wiki</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><a href="/">Hjertnes.wiki</a></h1>
+<header id="title-block-header">
+<h1 class="title">Emacs tips for OS X users</h1>
+</header>
+<ul>
+<li><a href="roam:Emacs">roam:Emacs</a></li>
+<li><a href="roam:Emacs Writing">roam:Emacs Writing</a></li>
+<li><a href="roam:Notes">roam:Notes</a></li>
+</ul>
+<p>Just a super short list of things I have done to make using Emacs under OSX better</p>
+<p>[exec-path-from-shell](<a href="https://github.com/purcell/exec-path-from-shell">https://github.com/purcell/exec-path-from-shell</a>) makes sure emacs inherits path from your shell.</p>
+<p>(when (eq system-type 'darwin) (setq mac-right-option-modifier 'none mac-right-command-modifier 'none)) this makes sure that the right option and command keys on your keyboard isn't handled by Emacs. This enables you to access certain symbols that are under cmd and cmd+option combos on OSX</p>
+<p>I use [emacs-plus](<a href="https://github.com/d12frosted/homebrew-emacs-plus">https://github.com/d12frosted/homebrew-emacs-plus</a>) with all the options enabled, becuase i prefer that, the regular emacs cask is the recommended method. I don't do that because I prefer having mailtuils being a part of emacs because of mu4e.</p>
+</body>
+</html>

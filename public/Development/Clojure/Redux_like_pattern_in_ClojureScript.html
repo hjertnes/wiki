@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Eivind Hjertnes" />
+  <title>Hjertnes.wiki</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><a href="/">Hjertnes.wiki</a></h1>
+<header id="title-block-header">
+<h1 class="title">Redux like pattern in ClojureScript</h1>
+</header>
+<ul>
+<li><a href="roam:Clojure">roam:Clojure</a></li>
+<li><a href="roam:Development">roam:Development</a></li>
+<li><a href="roam:Notes">roam:Notes</a>]</li>
+</ul>
+<p>Below is a super minimal version of a redux like pattern (if you use combine reducers in redux). If you want a full example of how it works you can see it in use in this [repo](<a href="https://github.com/hjertnes/bank2">https://github.com/hjertnes/bank2</a>) that I originally wrote it for.</p>
+<p>The way it works is that you define a hashmap of reducers, each reducer take state and a action as input, then it either returns the previous state (if the actions isn't something it can do anything about) or a new version of it state. It will always run an action through all of the reducers.</p>
+<p>It is written in a way where you decide all the logic yourself. The way I do it is that if you pass it nil default state is returned. First you create the store, then you create the dispatch method; the dispatch is used to send action to the store. The store is a single atom. I'm not sure how well this scales, but my approach is as always to start simple and see where it explodes.</p>
+<p>&lt;script src="<a href="https://gist.github.com/hjertnes/d1014636cbf508d75846d90b01d4e027.js">https://gist.github.com/hjertnes/d1014636cbf508d75846d90b01d4e027.js</a>"&gt;&lt;/script&gt;</p>
+</body>
+</html>

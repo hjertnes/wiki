@@ -1,5 +1,0 @@
-Owner: Eivind Hjertnes
-Contact: me [at] hjertnes.me
-Micro.blog: hjertnes
-Keybase: hjertnes
-Colophon: Made with Hugo

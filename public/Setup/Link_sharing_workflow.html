@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Eivind Hjertnes" />
+  <title>Hjertnes.wiki</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><a href="/">Hjertnes.wiki</a></h1>
+<header id="title-block-header">
+<h1 class="title">Link sharing workflow</h1>
+</header>
+<ul>
+<li><a href="roam:Notes">roam:Notes</a></li>
+<li><a href="roam:Setup">roam:Setup</a></li>
+</ul>
+<p>All links I see online I want to read or check out are sent to Instapaper. Then at some later point I read it, and mark it with a "like" if this is something I want to share and add it to drafts(and later OmniFocus) if I want to do something with it like buy it or learn it etc. I share up to 50 likes every friday, so I have this constant flow of stuff.</p>
+<p>This is how I do it, and it is not a pretty workflow because I have no access to the Instapaper API</p>
+<ul>
+<li>My likes that have not been shared yet are stored in a list of links in a file named likes.org, when there are less than 50 lines in it I do the following</li>
+<li>I download a CSV export from Instapaper</li>
+<li>I run [this](<a href="https://git.sr.ht/~hjertnes/instapaper2org">https://git.sr.ht/~hjertnes/instapaper2org</a>) go program and paste the output into my org document</li>
+<li>I run a M-x command to sort the lines and remove duplicates</li>
+<li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(<span class="fu">$</span>(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+</body>
+</html>

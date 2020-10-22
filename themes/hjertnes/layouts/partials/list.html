@@ -1,9 +1,0 @@
-{{ range .Pages.ByTitle }}
-		<li>
-         <a href={{ .Permalink }}> {{ .Title }} </a>
-      </li>
-      <ul>
-         {{ partial "list.html" . }}
-      </ul>
-      
-{{ end }}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Eivind Hjertnes" />
+  <title>Hjertnes.wiki</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><a href="/">Hjertnes.wiki</a></h1>
+<header id="title-block-header">
+<h1 class="title">Bulk Processing Images with ImageMatgick</h1>
+</header>
+<ul>
+<li><a href="roam:Notes">roam:Notes</a></li>
+</ul>
+<p>-<a href="roam:Lists">roam:Lists</a> This works with most images, but it will not work with raw files because they are not really images, but rather something you can create a image with</p>
+<p>for f in $(find . -iname '\*.HEIC'); do convert $f $(sed "s/HEIC/JPG/g" &lt;&lt;&lt; "$f"); done</p>
+<p>Just rename HEIC to what ever you are converting from and JPG to what ever you are converting to. The only thing you need to have installed is image magick.</p>
+</body>
+</html>
