@@ -193,3 +193,31 @@
 2020/10/22 21:09:47 Elapsed time 314.779µs 	     GET 	 /
 2020/10/22 21:09:47 Elapsed time 192.219µs 	     GET 	 /style.css
 2020/10/22 21:09:47 Elapsed time 34.75µs 	     GET 	 /favicon.ico
+2020/10/23 05:38:30 Simple-HTTP v0.5.0 started to serve 'public' folder on port: 8082
+2020/10/23 05:38:37 Elapsed time 9.317242ms 	     GET 	 /
+2020/10/23 05:38:37 Elapsed time 277.754µs 	     GET 	 /style.css
+2020/10/23 05:38:37 Elapsed time 47.909µs 	     GET 	 /favicon.ico
+2020/10/23 05:38:45 Elapsed time 104.884µs 	     GET 	 /About
+2020/10/23 05:38:45 Elapsed time 312.736µs 	     GET 	 /About/
+2020/10/23 05:38:46 Elapsed time 456.956µs 	     GET 	 /style.css
+2020/10/23 05:38:46 Elapsed time 41.884µs 	     GET 	 /favicon.ico
+2020/10/23 05:38:51 Elapsed time 341.218µs 	     GET 	 /
+2020/10/23 05:40:02 Elapsed time 24.284769ms 	     GET 	 /
+2020/10/23 05:40:02 Elapsed time 199.265µs 	     GET 	 /style.css
+2020/10/23 05:40:02 Elapsed time 28.229µs 	     GET 	 /favicon.ico
+2020/10/23 05:40:09 Elapsed time 345.836µs 	     GET 	 /
+2020/10/23 05:40:09 Elapsed time 18.879518ms 	     GET 	 /style.css
+2020/10/23 05:40:09 Elapsed time 28.442µs 	     GET 	 /favicon.ico
+2020/10/23 05:40:15 Simple-HTTP v0.5.0 started to serve 'public' folder on port: 8082
+2020/10/23 05:40:18 Elapsed time 8.144261ms 	     GET 	 /
+2020/10/23 05:40:18 Elapsed time 511.25µs 	     GET 	 /style.css
+2020/10/23 05:40:18 Elapsed time 41.163µs 	     GET 	 /favicon.ico
+2020/10/23 05:40:19 Elapsed time 356.017µs 	     GET 	 /
+2020/10/23 05:40:19 Elapsed time 191.185µs 	     GET 	 /style.css
+2020/10/23 05:40:19 Elapsed time 26.861µs 	     GET 	 /favicon.ico
+2020/10/23 05:40:46 Elapsed time 668.485µs 	     GET 	 /
+2020/10/23 05:40:46 Elapsed time 9.528608ms 	     GET 	 /style.css
+2020/10/23 05:40:46 Elapsed time 26.02µs 	     GET 	 /favicon.ico
+2020/10/23 05:41:30 Elapsed time 293.757µs 	     GET 	 /
+2020/10/23 05:41:30 Elapsed time 212.603µs 	     GET 	 /style.css
+2020/10/23 05:41:30 Elapsed time 31.364µs 	     GET 	 /favicon.ico
