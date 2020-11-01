@@ -14,19 +14,21 @@
 <h1 class="title">MacOS Tricks</h1>
 </header>
 <ul>
-<li><a href="roam:Lists">roam:Lists</a></li>
+<li><a href="../Lists/index.html">Lists</a></li>
+<li><a href="index.html">Tricks</a></li>
 </ul>
-<p>-<a href="roam:Lists">roam:Lists</a></p>
 <h1 id="if-emacs-cant-read-some-of-your-folder">If Emacs can't read some of your folder</h1>
-<h2 id="if-you-run-os-x-and-you-for-some-reason-struggle-with-opening-files-in-some-of-the-folders-in-your-home-folder-it-is-because-of-some-dumb-ass-os-x-security-crap.-the-short-reason-is-that-ruby-is-involved-somehwere-in-launching-emacs.app-so-you-need-to-whitelist-usrbinruby-in-full-disk-access.-makes-a-lot-of-sense-not-for-me-either-but-it-works.">If you run OS X, and you for some reason struggle with opening files in some of the folders in your home folder, it is because of some dumb ass OS X security crap. The short reason is that Ruby is involved somehwere in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full Disk Access. Makes a lot of sense? Not for me either, but it works.</h2>
-<h2 id="if-you-dont-figure-out-how-to-do-this">If you don't figure out how to do this:</h2>
-<h3 id="open-a-terminal">Open a terminal</h3>
-<h3 id="cd-usrbin">cd /usr/bin</h3>
-<h3 id="open-.">open .</h3>
-<h3 id="drag-ruby-to-the-full-disk-access-list">Drag ruby to the full disk access list</h3>
+<p>If you run OS X, and you for some reason struggle with opening files in some of the folders in your home folder, it is because of some dumb ass OS X security crap. The short reason is that Ruby is involved somehwere in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full Disk Access. Makes a lot of sense? Not for me either, but it works.</p>
+<p>If you don't figure out how to do this:</p>
+<ul>
+<li>Open a terminal</li>
+<li>cd /usr/bin</li>
+<li>open .</li>
+<li>Drag ruby to the full disk access list</li>
+</ul>
 <h1 id="disable-osx-icons">Disable OSX icons</h1>
-<h2 id="defaults-write-com.apple.finder-createdesktop--bool-false-killall-dock">defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Dock</h2>
+<p>defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Dock</p>
 <h1 id="hide-dock">Hide Dock</h1>
-<h2 id="defaults-write-com.apple.dock-tilesize--integer-1-killall-dock">defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock</h2>
+<p>defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock</p>
 </body>
 </html>

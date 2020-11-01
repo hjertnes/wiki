@@ -14,10 +14,13 @@
 <h1 class="title">Bulk Processing Images with ImageMatgick</h1>
 </header>
 <ul>
-<li><a href="roam:Notes">roam:Notes</a></li>
+<li><a href="../Notes/index.html">Notes</a></li>
+<li><a href="../Shell/index.html">Shell</a></li>
+<li><a href="index.html">Tricks</a></li>
 </ul>
-<p>-<a href="roam:Lists">roam:Lists</a> This works with most images, but it will not work with raw files because they are not really images, but rather something you can create a image with</p>
-<p>for f in $(find . -iname '\*.HEIC'); do convert $f $(sed "s/HEIC/JPG/g" &lt;&lt;&lt; "$f"); done</p>
+<p>This works with most images, but it will not work with raw files because they are not really images, but rather something you can create a image with</p>
+<pre class="shell"><code>for f in $(find . -iname &#39;\*.HEIC&#39;); do convert $f $(sed &quot;s/HEIC/JPG/g&quot; &lt;&lt;&lt; &quot;$f&quot;); done
+</code></pre>
 <p>Just rename HEIC to what ever you are converting from and JPG to what ever you are converting to. The only thing you need to have installed is image magick.</p>
 </body>
 </html>

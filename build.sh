@@ -1,12 +1,8 @@
 #!/bin/sh
-# TODO
-# find all the stuff I don't want public
-# fix the naming stuff I fucked up
 
 rm -rf public
-cp -R ~/txt/roam public
 
-# TODO styling
+cp -R ~/txt/roam public
 
 find . -name ".DS_Store" -print0 | while read -d $'\0' file
 do
@@ -15,19 +11,15 @@ done
 
 find . -name "*.org" -print0 | while read -d $'\0' file
 do
-    echo "$file"
     if ! grep -q "^#+private: true" "$file";
     then
+	gsed -i "s/\.org/\.html/g" "$file";
 	pandoc "$file" -s -o "${file/.org/.html}" --template hjertnes.html
-    else
-	echo "$file contains private"
     fi
-
-
-
-
     rm "$file"
-done    
+done
+
+find public/ -empty -type d -delete
 
 cd public/ && ~/bin/wiki-index-builder . > index.html && cd ..
 
