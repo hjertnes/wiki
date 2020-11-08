@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -19,10 +20,10 @@
 <li><a href="index.html">Tricks</a></li>
 </ul>
 <p>Example of how to bulk rename files in bash</p>
-<pre class="shell"><code>for file in *.html
-do
-  mv &quot;$file&quot; &quot;${file%.html}.txt&quot;
-  done
-</code></pre>
+<div class="sourceCode" id="cb1"><pre class="lang-bash"><code class="lang-bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">for</span> <span class="fu">file</span> in *.html</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="kw">do</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>  <span class="fu">mv</span> <span class="st">&quot;</span><span class="va">$file</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">${file%</span>.html<span class="va">}</span><span class="st">.txt&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>  <span class="kw">done</span></span></code></pre></div>
+	<script src="/prism.js"></script>
 </body>
 </html>

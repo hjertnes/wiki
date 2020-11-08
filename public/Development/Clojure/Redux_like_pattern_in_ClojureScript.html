@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -22,5 +23,6 @@
 <p>The way it works is that you define a hashmap of reducers, each reducer take state and a action as input, then it either returns the previous state (if the actions isn't something it can do anything about) or a new version of it state. It will always run an action through all of the reducers.</p>
 <p>It is written in a way where you decide all the logic yourself. The way I do it is that if you pass it nil default state is returned. First you create the store, then you create the dispatch method; the dispatch is used to send action to the store. The store is a single atom. I'm not sure how well this scales, but my approach is as always to start simple and see where it explodes.</p>
 <p>&lt;script src="<a href="https://gist.github.com/hjertnes/d1014636cbf508d75846d90b01d4e027.js">https://gist.github.com/hjertnes/d1014636cbf508d75846d90b01d4e027.js</a>"&gt;&lt;/script&gt;</p>
+	<script src="/prism.js"></script>
 </body>
 </html>

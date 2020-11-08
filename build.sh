@@ -19,8 +19,15 @@ do
     rm "$file"
 done
 
+find . -name "*.html" -print0 | while read -d $'\0' file
+do
+    gsed -i "s/class=\"sourceCode\ /class=\"lang-/g" "$file";
+done
+
 find public/ -empty -type d -delete
 
 cd public/ && ~/bin/wiki-index-builder . > index.html && cd ..
 
 cp style.css public/
+cp prism.css public/
+cp prism.js public/

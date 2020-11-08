@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -26,6 +27,7 @@
 <li>I run a M-x command to sort the lines and remove duplicates</li>
 <li>Then I go into the instapaper website, click likes and run the javascript snippet below until all likes are removed</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(<span class="fu">$</span>(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="lang-javascript"><code class="lang-javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(<span class="fu">$</span>(<span class="st">&quot;.action_link.star_toggle.starred&quot;</span>))<span class="op">.</span><span class="fu">map</span>(x <span class="kw">=&gt;</span> $<span class="op">.</span><span class="fu">get</span>(x<span class="op">.</span><span class="at">href</span>)<span class="op">.</span><span class="fu">then</span>(y <span class="kw">=&gt;</span> {}))</span></code></pre></div>
+	<script src="/prism.js"></script>
 </body>
 </html>

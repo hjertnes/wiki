@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -26,9 +27,16 @@
 <li>open .</li>
 <li>Drag ruby to the full disk access list</li>
 </ul>
+<h1 id="hide-desktop-icons">Hide Desktop icons</h1>
+<div class="sourceCode" id="cb1"><pre class="lang-bash"><code class="lang-bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop false<span class="kw">;</span> <span class="fu">killall</span> Finder</span></code></pre></div>
 <h1 id="disable-osx-icons">Disable OSX icons</h1>
-<p>defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Dock</p>
+<div class="sourceCode" id="cb2"><pre class="lang-bash"><code class="lang-bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Finder</span></code></pre></div>
 <h1 id="hide-dock">Hide Dock</h1>
-<p>defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock</p>
+<div class="sourceCode" id="cb3"><pre class="lang-bash"><code class="lang-bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
+<h1 id="show-all-files-in-finder">Show all files in Finder</h1>
+<p>This enables Finder to display hidden files</p>
+<div class="sourceCode" id="cb4"><pre class="lang-bash"><code class="lang-bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.Finder AppleShowAllFiles true</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="fu">killall</span> Finder</span></code></pre></div>
+	<script src="/prism.js"></script>
 </body>
 </html>

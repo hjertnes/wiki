@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -19,8 +20,8 @@
 <li><a href="index.html">Tricks</a></li>
 </ul>
 <p>This works with most images, but it will not work with raw files because they are not really images, but rather something you can create a image with</p>
-<pre class="shell"><code>for f in $(find . -iname &#39;\*.HEIC&#39;); do convert $f $(sed &quot;s/HEIC/JPG/g&quot; &lt;&lt;&lt; &quot;$f&quot;); done
-</code></pre>
+<div class="sourceCode" id="cb1"><pre class="lang-bash"><code class="lang-bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">for</span> <span class="ex">f</span> in <span class="va">$(</span><span class="fu">find</span> . -iname <span class="st">&#39;\*.HEIC&#39;</span><span class="va">)</span><span class="kw">;</span> <span class="kw">do</span> <span class="ex">convert</span> <span class="va">$f</span> <span class="va">$(</span><span class="fu">sed</span> <span class="st">&quot;s/HEIC/JPG/g&quot;</span> <span class="op">&lt;&lt;&lt;</span> <span class="st">&quot;</span><span class="va">$f</span><span class="st">&quot;</span><span class="va">)</span><span class="kw">;</span> <span class="kw">done</span></span></code></pre></div>
 <p>Just rename HEIC to what ever you are converting from and JPG to what ever you are converting to. The only thing you need to have installed is image magick.</p>
+	<script src="/prism.js"></script>
 </body>
 </html>

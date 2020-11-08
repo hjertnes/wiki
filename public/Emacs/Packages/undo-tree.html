@@ -7,6 +7,7 @@
   <meta name="author" content="Eivind Hjertnes" />
   <title>Hjertnes.wiki</title>
   <link rel="stylesheet" href="/style.css" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
   <h1><a href="/">Hjertnes.wiki</a></h1>
@@ -22,5 +23,6 @@
 <p>Undo in emacs are just this ring or long list of changes per buffer. It can be a little bit confusing to understand because a lot of really minor details. The short version is that every time you remove something it is added to the kill ring, and that data can at any point within its configurable limits be brought back.</p>
 <p>While I understand how it works, I have never gotten used to it. So I use undo-tree instead. Instead of it just being this list or ringe of changes it breaks it down into a tree. And it even have this visualization thing you run go into, where you can move along the changes and see the buffer update in real time. And let's say you have a buffer with 10 changes, and you go back two changes, and then start to change that, it will branch out from the main one.</p>
 <p>You may be fine with the regular kill ring implementation, but undo-tree works a hell of a lot better for me.</p>
+	<script src="/prism.js"></script>
 </body>
 </html>
