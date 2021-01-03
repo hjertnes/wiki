@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">Emacs Customization</h1>
-</header>
-<ul>
-<li><a href="../../Notes/index.html">Notes</a></li>
-<li><a href="../index.html">Emacs</a></li>
-<li><a href="index.html">Emacs Writing</a></li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Emacs Customization</h1>
+<div><ul>
+<li><a href="/Notes/index.html">Notes</a></li>
+<li><a href="/Emacs/index.html">Emacs</a></li>
+<li><a href="/Emacs/Writing/index.html">Emacs Writing</a></li>
 </ul>
-<p>Emacs has this insane system for customizing it, you can even configure a lot of emacs using this GUI thing. I have never used it. But people do.</p>
-<p>If you like me prefer editing configurations over using GUI, you have probably noticed some "noise" in the end of your emacs config starting with "custom-set-variables". This is from the customization system. It is also used to save things like installed packages and other stuff like that.</p>
+<p>Emacs has this insane system for customizing it, you can even configure
+a lot of emacs using this GUI thing. I have never used it. But people
+do.</p>
+<p>If you like me prefer editing configurations over using GUI, you have
+probably noticed some &quot;noise&quot; in the end of your emacs config starting
+with &quot;custom-set-variables&quot;. This is from the customization system. It
+is also used to save things like installed packages and other stuff like
+that.</p>
 <p>If you want to have your custom.el in a seperate file you can do this:</p>
-<div class="sourceCode" id="cb1" data-org-language="emacs-lisp"><pre class="lang-commonlisp"><code class="lang-commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>(<span class="kw">setq</span> custom-file <span class="st">&quot;~/.emacs.d/custom.el&quot;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>(<span class="kw">load</span> custom-file)</span></code></pre></div>
-<p>The only thing about it is that the custom.el file need to exist in advance.</p>
-	<script src="/prism.js"></script>
+<pre><code class="language-{.commonlisp">(setq custom-file &quot;~/.emacs.d/custom.el&quot;)
+(load custom-file)
+</code></pre>
+<p>The only thing about it is that the custom.el file need to exist in
+advance.</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

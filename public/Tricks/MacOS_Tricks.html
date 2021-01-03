@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">MacOS Tricks</h1>
-</header>
-<ul>
-<li><a href="../Lists/index.html">Lists</a></li>
-<li><a href="index.html">Tricks</a></li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>MacOS Tricks</h1>
+<div><ul>
+<li><a href="/Lists/index.html">Lists</a></li>
+<li><a href="/Tricks/index.html">Tricks</a></li>
 </ul>
-<h1 id="if-emacs-cant-read-some-of-your-folder">If Emacs can't read some of your folder</h1>
-<p>If you run OS X, and you for some reason struggle with opening files in some of the folders in your home folder, it is because of some dumb ass OS X security crap. The short reason is that Ruby is involved somehwere in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full Disk Access. Makes a lot of sense? Not for me either, but it works.</p>
+<h1>If Emacs can't read some of your folder</h1>
+<p>If you run OS X, and you for some reason struggle with opening files in
+some of the folders in your home folder, it is because of some dumb ass
+OS X security crap. The short reason is that Ruby is involved somehwere
+in launching Emacs.app, so you need to whitelist /usr/bin/ruby in Full
+Disk Access. Makes a lot of sense? Not for me either, but it works.</p>
 <p>If you don't figure out how to do this:</p>
 <ul>
 <li>Open a terminal</li>
@@ -27,16 +33,24 @@
 <li>open .</li>
 <li>Drag ruby to the full disk access list</li>
 </ul>
-<h1 id="hide-desktop-icons">Hide Desktop icons</h1>
-<div class="sourceCode" id="cb1"><pre class="lang-bash"><code class="lang-bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop false<span class="kw">;</span> <span class="fu">killall</span> Finder</span></code></pre></div>
-<h1 id="disable-osx-icons">Disable OSX icons</h1>
-<div class="sourceCode" id="cb2"><pre class="lang-bash"><code class="lang-bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.finder CreateDesktop -bool false <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Finder</span></code></pre></div>
-<h1 id="hide-dock">Hide Dock</h1>
-<div class="sourceCode" id="cb3"><pre class="lang-bash"><code class="lang-bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.dock tilesize -integer 1 <span class="kw">&amp;&amp;</span> <span class="fu">killall</span> Dock</span></code></pre></div>
-<h1 id="show-all-files-in-finder">Show all files in Finder</h1>
+<h1>Hide Desktop icons</h1>
+<pre><code class="language-{.bash}">defaults write com.apple.finder CreateDesktop false; killall Finder
+</code></pre>
+<h1>Disable OSX icons</h1>
+<pre><code class="language-{.bash}">defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder
+</code></pre>
+<h1>Hide Dock</h1>
+<pre><code class="language-{.bash}">defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock
+</code></pre>
+<h1>Show all files in Finder</h1>
 <p>This enables Finder to display hidden files</p>
-<div class="sourceCode" id="cb4"><pre class="lang-bash"><code class="lang-bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">defaults</span> write com.apple.Finder AppleShowAllFiles true</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="fu">killall</span> Finder</span></code></pre></div>
-	<script src="/prism.js"></script>
+<pre><code class="language-{.bash}">defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
+</code></pre>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

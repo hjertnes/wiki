@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
+  <link href="/prism.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Code Acccess Levels</h1>
+<div><ul>
+<li><a href="/Development/index.html">Development</a></li>
+<li><a href="/Notes/index.html">Notes</a></li>
+</ul>
+<p>Some programming languages have access keywords you can use to control
+how what are accessed. I've always had the impression that the main
+thing about them was security, but that isn't it. There are probably
+some cases where it is security aspects to it.</p>
+<p>But the main thing is to control what part of your code is visibile to
+other parts of it. This is very important in general, but especially
+when you write packages.</p>
+<p>Clean code and all of that comes it here.</p>
+<p>But if you have clear abstractions with think interfaces to your code
+and the rest is not visible to others parts of your code base or other
+packages importing it then you don't have to think too much about
+breaking changes.</p>
+<p>If all of your code is public, then everything importing your package
+will have access to it. And that means that you will be very limited in
+changes you can do without breaking other peoples code. If you instead
+only what is absolutley neccessary is exposed you have much more freedom
+with all the rest of the code</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
+</body>
+</html>

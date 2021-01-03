@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">EntityFramework Performance</h1>
-</header>
-<ul>
-<li><a href="index.html">C#</a></li>
-<li><a href="../index.html">Development</a></li>
-<li><a href="../../Notes/index.html">Notes</a>]</li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>EntityFramework Performance</h1>
+<div><ul>
+<li>[[C#]]</li>
+<li><a href="/Development/index.html">Development</a></li>
+<li><a href="/Notes/index.html">Notes</a>]</li>
 </ul>
-<p>Entity Core is a ORM for .NET Core made by Microsoft. In constrast to previous versions of it, the Core version of EF is really great. Yeah, I mean it.</p>
+<p>Entity Core is a ORM for .NET Core made by Microsoft. In constrast to
+previous versions of it, the Core version of EF is really great. Yeah, I
+mean it.</p>
 <p>There is two things you need to keep in mind while working with EF</p>
-<p>One query going on per "request" at a time; in other words, if you loop over some rest and then need to do some queries inside that loop, you need to do a .ToList() or similar before starting the loop.</p>
-<p>If you a .ToList, ToArray, First or anything like that it will query the database, and if you run SaveChanges or SaveChanges async it will write data to the database. You want to make sure you only query the database as late as possible and that you save the context as infrequent as possible. I usually do it once per API request.</p>
-	<script src="/prism.js"></script>
+<p>One query going on per &quot;request&quot; at a time; in other words, if you
+loop over some rest and then need to do some queries inside that loop,
+you need to do a .ToList() or similar before starting the loop.</p>
+<p>If you a .ToList, ToArray, First or anything like that it will query the
+database, and if you run SaveChanges or SaveChanges async it will write
+data to the database. You want to make sure you only query the database
+as late as possible and that you save the context as infrequent as
+possible. I usually do it once per API request.</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

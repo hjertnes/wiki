@@ -6,37 +6,18 @@
   --purple: #800080
 }
 
+img {
+  max-width: 50%;
+}
+
 html {
   font-family: 'Source Code Pro', monospace;
   color: var(--prime-color);
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-}
-body {
-  padding: 28.56px 50px 50px 50px;
-  margin: 0 0 0 0;
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  body{
-    padding-top: 0;
-    padding-left:15px;
-    padding-right: 15px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  body {
-    padding-top: 0;
-    padding-left:15px;
-    padding-right: 15px;
-  }
-}
-
-h1 {
-  text-transform: capitalize;
 }
 header > h1 {
+  text-transform: capitalize;
+}
+article h2 {
   font-size: large;
 }
 

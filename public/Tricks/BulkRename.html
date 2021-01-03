@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">Bulk Rename</h1>
-</header>
-<ul>
-<li><a href="../Notes/index.html">Notes</a></li>
-<li><a href="../Shell/index.html">Shell</a></li>
-<li><a href="index.html">Tricks</a></li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Bulk Rename</h1>
+<div><ul>
+<li><a href="/Notes/index.html">Notes</a></li>
+<li><a href="/Shell/index.html">Shell</a></li>
+<li><a href="/Tricks/index.html">Tricks</a></li>
 </ul>
 <p>Example of how to bulk rename files in bash</p>
-<div class="sourceCode" id="cb1"><pre class="lang-bash"><code class="lang-bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">for</span> <span class="fu">file</span> in *.html</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="kw">do</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>  <span class="fu">mv</span> <span class="st">&quot;</span><span class="va">$file</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="va">${file%</span>.html<span class="va">}</span><span class="st">.txt&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>  <span class="kw">done</span></span></code></pre></div>
-	<script src="/prism.js"></script>
+<pre><code class="language-{.bash}">for file in *.html
+do
+  mv &quot;$file&quot; &quot;${file%.html}.txt&quot;
+  done
+</code></pre>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

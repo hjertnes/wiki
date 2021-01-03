@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">Keep Emacs 27.1 from refreshing packages on every restart</h1>
-</header>
-<ul>
-<li><a href="../../Notes/index.html">Notes</a></li>
-<li><a href="../index.html">Emacs</a></li>
-<li><a href="index.html">Emacs Writing</a></li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Keep Emacs 27.1 from refreshing packages on every restart</h1>
+<div><ul>
+<li><a href="/Notes/index.html">Notes</a></li>
+<li><a href="/Emacs/index.html">Emacs</a></li>
+<li><a href="/Emacs/Writing/index.html">Emacs Writing</a></li>
 </ul>
-<p>This have been annoying me for months. One of the larger changes in Emacs 27.1 was the introduction of early-init. Not going into it here.</p>
-<p>But one side effect of that, is that, with the default setup it would refresh package lists, even with code that prior to 27.1 stopped that from hapening.</p>
+<p>This have been annoying me for months. One of the larger changes in
+Emacs 27.1 was the introduction of early-init. Not going into it here.</p>
+<p>But one side effect of that, is that, with the default setup it would
+refresh package lists, even with code that prior to 27.1 stopped that
+from hapening.</p>
 <p>This is how to fix this, first set this in early-init.el</p>
-<div class="sourceCode" id="cb1" data-org-language="emacs-lisp"><pre class="lang-commonlisp"><code class="lang-commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>(<span class="kw">setq</span> package-enable-at-startup <span class="kw">nil</span>)</span></code></pre></div>
+<pre><code class="language-{.commonlisp">(setq package-enable-at-startup nil)
+</code></pre>
 <p>Then, you need to have this in your init.el or similar:</p>
-<div class="sourceCode" id="cb2" data-org-language="emacs-lisp"><pre class="lang-commonlisp"><code class="lang-commonlisp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>(package-initialize)</span></code></pre></div>
+<pre><code class="language-{.commonlisp">(package-initialize)
+</code></pre>
 <p>I have it in my org config file, right after I set the package lists.</p>
-	<script src="/prism.js"></script>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

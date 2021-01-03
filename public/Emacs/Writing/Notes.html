@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Eivind Hjertnes" />
-  <title>Hjertnes.wiki</title>
-  <link rel="stylesheet" href="/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
   <link href="/prism.css" rel="stylesheet" />
 </head>
 <body>
-  <h1><a href="/">Hjertnes.wiki</a></h1>
-<header id="title-block-header">
-<h1 class="title">Emacs Notes</h1>
-</header>
-<ul>
-<li><a href="../index.html">Emacs</a></li>
-<li><a href="index.html">Emacs Writing</a></li>
-<li><a href="../../Lists/index.html">Lists</a></li>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Emacs Notes</h1>
+<div><ul>
+<li><a href="/Emacs/index.html">Emacs</a></li>
+<li><a href="/Emacs/Writing/index.html">Emacs Writing</a></li>
+<li><a href="/Lists/index.html">Lists</a></li>
 </ul>
 <p>Various stuff I have noted while reading Emacs books and docs</p>
 <ul>
 <li>C-M-o split line</li>
-<li>M-\ ident</li>
-<li>C-M-\ ident region</li>
+<li>M- ident</li>
+<li>C-M- ident region</li>
 <li>M-g g: goto line</li>
 <li>C-a C-k Delete line</li>
 <li>C-k implicity kill until the end of the current line.</li>
 <li>C-x g magit</li>
 <li>C-g Abort a command in progress (useful if you mistype)</li>
 <li>C-x o Switch to other window, if there is another open</li>
-<li>C-x C-s Save (or "Save buffer")</li>
-<li>C-x C-c Close (if you have made changes, it will as if you want to save, and you can type y or n or a few other options, and if you hit n, it will ask you to confirm with yes or no)</li>
+<li>C-x C-s Save (or &quot;Save buffer&quot;)</li>
+<li>C-x C-c Close (if you have made changes, it will as if you want to
+save, and you can type y or n or a few other options, and if you hit
+n, it will ask you to confirm with yes or no)</li>
 <li>C-a Move cursor to beginning of line</li>
 <li>C-e Move cursor to end of line</li>
 <li>C-p Move cursor to previous line</li>
@@ -39,17 +43,19 @@
 <li>M-f Move cursor forward one word</li>
 <li>M-b Move cursor backward one word</li>
 <li>M-d Delete word (starting at cursor)</li>
-<li>C-k Delete line/Kill line (uses kill-buffer) (starting at cursor point)</li>
+<li>C-k Delete line/Kill line (uses kill-buffer) (starting at cursor
+point)</li>
 <li>C-s Search forward (prompts for search string)</li>
 <li>C-r Search backwards (prompts for search string)</li>
-<li>M-% Replace (prompts for a search string and a string with which to replace it)</li>
+<li>M-% Replace (prompts for a search string and a string with which to
+replace it)</li>
 <li>C-_ Undo (this is the minus key, but written as underscore)</li>
 <li>C-x u Also undo</li>
 <li>C-@ Set mark</li>
 <li>C-w Cut (from kill-buffer)</li>
 <li>M-w Copy (from kill-buffer)</li>
-<li>C-y Paste/Yank (from kill-buffer)”</li>
-<li>“C-h C-h : help</li>
+<li>C-y Paste/Yank (from kill-buffer)&quot;</li>
+<li>&quot;C-h C-h : help</li>
 <li>C-g : quit</li>
 <li>C-x b : switch buffers</li>
 <li>C-x right : right-cycle through buffers</li>
@@ -57,8 +63,10 @@
 <li>C-x k : kill buffer</li>
 <li>C-x 0 : close the active window</li>
 <li>C-x 1 : close all windows except the active window</li>
-<li>C-x 2 : split the active window vertically into two horizontal windows</li>
-<li>C-x 3 : split the active window horizontally into two vertical windows</li>
+<li>C-x 2 : split the active window vertically into two horizontal
+windows</li>
+<li>C-x 3 : split the active window horizontally into two vertical
+windows</li>
 <li>C-x o : change active window to next window</li>
 <li>C-x C-f : open file</li>
 <li>C-x C-s : save file</li>
@@ -73,7 +81,8 @@
 <li>C-_ : undo</li>
 <li>C-s : search forwards</li>
 <li>C-r : search backwards</li>
-<li>M-% : query replace (‘space’ to replace, ‘n’ to skip, ‘!’ to replace all)</li>
+<li>M-% : query replace ('space' to replace, 'n' to skip, '!' to replace
+all)</li>
 <li>M-q : wrap text</li>
 <li>C-left : move one word left</li>
 <li>C-right : move one word right</li>
@@ -83,24 +92,26 @@
 <li>end : move to the end of the line</li>
 <li>page up : move up a page</li>
 <li>page down : move down a page</li>
-<li>M : move to end of buffer”</li>
-<li>"C-c SPC" ==&gt; ace-jump-word-mode</li>
-<li>enter first character of a word, select the highlighted key to move to it.</li>
-<li>"C-u C-c SPC" ==&gt; ace-jump-char-mode</li>
-<li>enter a character for query, select the highlighted key to move to it.</li>
-<li>"C-u C-u C-c SPC" ==&gt; ace-jump-line-mode</li>
+<li>M : move to end of buffer&quot;</li>
+<li>&quot;C-c SPC&quot; ==&gt; ace-jump-word-mode</li>
+<li>enter first character of a word, select the highlighted key to move
+to it.</li>
+<li>&quot;C-u C-c SPC&quot; ==&gt; ace-jump-char-mode</li>
+<li>enter a character for query, select the highlighted key to move to
+it.</li>
+<li>&quot;C-u C-u C-c SPC&quot; ==&gt; ace-jump-line-mode</li>
 <li>dd Ca Ck Ck</li>
 <li>C-o blank line fater</li>
 <li>C-SPC / start mark</li>
 <li>Cu Cx s Save all</li>
-<li>"Key BindingPurpose</li>
+<li>&quot;Key BindingPurpose</li>
 <li>C-M-nMove forward to the next list</li>
-<li>C-M-pMove backward to the previous list"</li>
-<li>"C-M-dMove down into a list</li>
-<li>C-M-uMove up out of a list"</li>
-<li>"C-M-fMove forward by s-expression</li>
-<li>C-M-bMove backward by s-expression"</li>
-<li>"M-mMoves point to the first non-whitespace</li>
+<li>C-M-pMove backward to the previous list&quot;</li>
+<li>&quot;C-M-dMove down into a list</li>
+<li>C-M-uMove up out of a list&quot;</li>
+<li>&quot;C-M-fMove forward by s-expression</li>
+<li>C-M-bMove backward by s-expression&quot;</li>
+<li>&quot;M-mMoves point to the first non-whitespace</li>
 <li>M-^ jank line to the one above it</li>
 <li>C-M-h mark defun</li>
 <li>C-x C-x</li>
@@ -115,6 +126,10 @@
 <li>00000</li>
 <li>M-d kill to end of word</li>
 </ul>
-	<script src="/prism.js"></script>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
 </body>
 </html>

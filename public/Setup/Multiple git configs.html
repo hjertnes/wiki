@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
+  <link href="/prism.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">hjertnes.website </a></h1>
+    </a>
+    </header>
+	<main>
+<article>
+<h1>Multiple git configs</h1>
+<div><ul>
+<li><a href="/Setup/index.html">Setup</a></li>
+<li><a href="/Development/index.html">Development</a></li>
+<li><a href="/Notes/index.html">Notes</a></li>
+</ul>
+<p>The other week I was looking for a way to get my git config to work like
+I want on my work machine. I wanted it to use different e-mail addresses
+based on what folder the repo was it. My setup is simple: ~/Code and
+.emacs.d is where my personal stuff lives and all the work stuff is in
+~/KnowitCode.</p>
+<p>The reason they are seperated is that my personal stuff is in Git and
+synced over Dropbox. And I'm not allowed to have work code on non work
+machines. So this is how it is set up.</p>
+<p>Then I found this
+<a href="https://www.kevinkuszyk.com/2018/12/10/git-tips-6-using-git-with-multiple-email-addresses/">https://www.kevinkuszyk.com/2018/12/10/git-tips-6-using-git-with-multiple-email-addresses/</a>
+blog post, describing how you can configure git to override a default
+config based on paths.</p>
+<p>It solved all my problems in a great way. I don't even have to think
+about it.</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
+</body>
+</html>
