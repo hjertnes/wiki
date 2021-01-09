@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
+  <link href="/prism.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">wiki.hjertnes.website </a></h1>
+    </header>
+	<main>
+<article>
+<h1>SQL</h1>
+<div><p>Random SQL notes</p>
+<p>where is before group by
+having is after</p>
+<p>INNER JOIN: The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies.</p>
+<p>LEFT JOIN: This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join.</p>
+<p>RIGHT JOIN: RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join</p>
+<p>FULL JOIN: FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables.</p>
+<p>SELECT depname, empno, salary, avg(salary) OVER (PARTITION BY depname) FROM empsalary;</p>
+<p>&quot;avg(salary) OVER (PARTITION BY depname)&quot;</p>
+<p>explain</p>
+<p>shows what queryies does</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
+</body>
+</html>

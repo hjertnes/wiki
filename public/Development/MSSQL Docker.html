@@ -11,22 +11,30 @@
 <body>
     <header>
       <h1><a href="https://wiki.hjertnes.website/">wiki.hjertnes.website </a></h1>
-    </a>
     </header>
 	<main>
 <article>
-<h1>Killing eve</h1>
+<h1>MSSQL Docker</h1>
 <div><ul>
-<li><a href="/Entertainment/index.html">Entertainment</a></li>
-<li><a href="/Entertainment/Shows/index.html">Shows</a></li>
-<li><a href="/Reviews/index.html">Reviews</a></li>
+<li><a href="/Development/index.html">Development</a></li>
 <li><a href="/Notes/index.html">Notes</a></li>
-<li><a href="/Entertainment/Ratings/4.html">4/5</a></li>
+<li><a href="/Setup/index.html">Setup</a></li>
 </ul>
-<p>Killing Eve is a great show about assassins. I watched the first 2
-seasons, and then I kind of gave up on the third.</p>
-<p>This was a very different show, and I love how it feels like a assassin
-show, but it is more about diplomacy.</p>
+<p>This is how I run MSSQL on my work Mac. The TLDR is that I do C# development on a Mac.</p>
+<pre><code>version: &quot;3&quot;
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: sql-server
+    container_name: sql-server
+    ports:
+      - &quot;1433:1433&quot;
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MyPassword2020
+      - MSSQL_PID=Express
+
+</code></pre>
 </div>
 <div></div>
 </article>
