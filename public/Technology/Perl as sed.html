@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>wiki.hjertnes.website</title>
+	<link rel="stylesheet" href="/style.css">
+  <link href="/prism.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <h1><a href="https://wiki.hjertnes.website/">wiki.hjertnes.website </a></h1>
+    </header>
+	<main>
+<article>
+<h1>Perl as sed</h1>
+<div><ul>
+<li><a href="/Notes/index.html">Notes</a></li>
+<li><a href="/Technology/index.html">Technology</a></li>
+</ul>
+<p>Something I discovered while reading thosands of pages trying to find a good setup for doing search and replace with regular expressions on the command line</p>
+<pre><code>perl -p -i -e 's/Barfoo/Foobar/g' *txt
+</code></pre>
+<p>The long story is that I want to do search and replace on the command line, and sed is mostly what I want. Except that I want modern regular expressions and sed only use the arcane unix stuff. AWK isn't really my kind of thing. It's kind of awkward.
+Then I found the snippet above. It is mostly what I wanted.
+Something that works more or less like sed, with modern regexp support. I'd much prefer it if someone made a modern sed with a perl compatible regular expression engine. But it works</p>
+</div>
+<div></div>
+</article>
+	</main>
+		<script src="/prism.js"></script>
+</body>
+</html>

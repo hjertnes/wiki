@@ -21,11 +21,11 @@
 <li><a href="/Emacs/Writing/index.html">Emacs Writing</a></li>
 </ul>
 <p>This have been annoying me for months. One of the larger changes in
-Emacs 27.1 was the introduction of early-init. Not going into it here.</p>
-<p>But one side effect of that, is that, with the default setup it would
+Emacs 27.1 was the introduction of early-init. Not going into it here.
+But one side effect of that, is that, with the default setup it would
 refresh package lists, even with code that prior to 27.1 stopped that
-from hapening.</p>
-<p>This is how to fix this, first set this in early-init.el</p>
+from hapening.
+This is how to fix this, first set this in early-init.el</p>
 <pre><code class="language-{.commonlisp">(setq package-enable-at-startup nil)
 </code></pre>
 <p>Then, you need to have this in your init.el or similar:</p>

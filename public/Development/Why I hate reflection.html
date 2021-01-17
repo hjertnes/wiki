@@ -19,15 +19,15 @@
 <li><a href="/Development/index.html">Development</a></li>
 <li><a href="/Notes/index.html">Notes</a></li>
 </ul>
-<p>You have dynamic programming, like in Python or JavaScript. Where you don't work with types at all. Everything is just an value. And sometimes things crash or doesn't work as intended because someone sent a string instead of a integer or a list instead of a dictionary.</p>
-<p>And then you have langauges like Go, C# or Java that are statically typed. This means that a lot of the time you specify the type of things. Sometimes it can be inferred. If you try to send a string where you should use a integer it won't build or run.</p>
-<p>Most statically typed languages have something called reflection. Some of them might use a different name. But this is the name it has in Go, Java and C#. It is basically a way to do dynamic programming in a statically typed language.</p>
-<p>When you type statically a large part of the work can be validated during build, while dynamic typing usually rely on you actually running the code to discovering it. And reflection is the same way.</p>
-<p>Reflection is a lot slower than statically typed code, for the simple reason that, when you provide types the compiler can do a lot of work during build time to make it fast. And most of this isn't possible when you're looking at some random piece of data. But this isn't the reason I hate it.</p>
-<p>The reason I hate reflection is that it is always this weird set of API's that feels all different than the rest of the language. And the process is different, because you never know if it actually works before you run it. And are very careful to limit the scope of the reflection bits very carefully you can end up with slow, fragile code that is hard to test, debug and work with. Or in some cases it isn't fragile. But this huge collection of code that just makes sure you don't send it unsupported data.</p>
-<p>Don't get me wrong. There are situations where reflection is the right (and usually the only) solution.</p>
-<p>But if you use it to make your code shorter, you should probably find a different programming language.</p>
-<p>I personally think that the only way to do reflection based code well, is to unit test the hell out of it.</p>
+<p>You have dynamic programming, like in Python or JavaScript. Where you don't work with types at all. Everything is just an value. And sometimes things crash or doesn't work as intended because someone sent a string instead of a integer or a list instead of a dictionary.
+And then you have langauges like Go, C# or Java that are statically typed. This means that a lot of the time you specify the type of things. Sometimes it can be inferred. If you try to send a string where you should use a integer it won't build or run.
+Most statically typed languages have something called reflection. Some of them might use a different name. But this is the name it has in Go, Java and C#. It is basically a way to do dynamic programming in a statically typed language.
+When you type statically a large part of the work can be validated during build, while dynamic typing usually rely on you actually running the code to discovering it. And reflection is the same way.
+Reflection is a lot slower than statically typed code, for the simple reason that, when you provide types the compiler can do a lot of work during build time to make it fast. And most of this isn't possible when you're looking at some random piece of data. But this isn't the reason I hate it.
+The reason I hate reflection is that it is always this weird set of API's that feels all different than the rest of the language. And the process is different, because you never know if it actually works before you run it. And are very careful to limit the scope of the reflection bits very carefully you can end up with slow, fragile code that is hard to test, debug and work with. Or in some cases it isn't fragile. But this huge collection of code that just makes sure you don't send it unsupported data.
+Don't get me wrong. There are situations where reflection is the right (and usually the only) solution.
+But if you use it to make your code shorter, you should probably find a different programming language.
+I personally think that the only way to do reflection based code well, is to unit test the hell out of it.</p>
 </div>
 <div></div>
 </article>
