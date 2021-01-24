@@ -33,17 +33,17 @@ If you don't figure out how to do this:</p>
 <li>Drag ruby to the full disk access list</li>
 </ul>
 <h1>Hide Desktop icons</h1>
-<pre><code class="language-{.bash}">defaults write com.apple.finder CreateDesktop false; killall Finder
+<pre><code class="language-bash">defaults write com.apple.finder CreateDesktop false; killall Finder
 </code></pre>
 <h1>Disable OSX icons</h1>
-<pre><code class="language-{.bash}">defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder
+<pre><code class="language-bash">defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder
 </code></pre>
 <h1>Hide Dock</h1>
-<pre><code class="language-{.bash}">defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock
+<pre><code class="language-bash">defaults write com.apple.dock tilesize -integer 1 &amp;&amp; killall Dock
 </code></pre>
 <h1>Show all files in Finder</h1>
 <p>This enables Finder to display hidden files</p>
-<pre><code class="language-{.bash}">defaults write com.apple.Finder AppleShowAllFiles true
+<pre><code class="language-bash">defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
 </code></pre>
 </div>

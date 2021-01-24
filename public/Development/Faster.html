@@ -19,22 +19,10 @@
 <li><a href="/Development/index.html">Development</a></li>
 <li><a href="/Notes/index.html">Notes</a></li>
 </ul>
-<p>Lets say you have some &quot;code&quot; for example an API endpoint or some user
-interface that you don't think is fast enough, and you'd like to
-improve it. Where do you start?
-I usually start by getting some numbers on how fast it is. If it is a
-API endpoint I try to test it more than once, noting response time. I
-usually re-start the service test it like 3 times and repeat a few
-times. Makes sure to invalidate caches if there are any outside the
-running applications.
-Then I write down exactly how I tested it, and the slowest, fastest and
-average.
-The next step for me is to first look for something obvious in the
-affected code. If there aren't anything I start adding logging to see
-how much time the different things take. And when I have a better
-understanding of how time I spent it is easy to see if there anything
-should be done with the code or if external factors are the cause. Like
-bad a database integration.</p>
+<p>Lets say you have some &quot;code&quot; for example an API endpoint or some user interface that you don't think is fast enough, and you'd like to improve it. Where do you start?</p>
+<p>I usually start by getting some numbers on how fast it is. If it is a API endpoint I try to test it more than once, noting response time. I usually re-start the service test it like 3 times and repeat a few times. Makes sure to invalidate caches if there are any outside the running applications.</p>
+<p>Then I write down exactly how I tested it, and the slowest, fastest and average.</p>
+<p>The next step for me is to first look for something obvious in the affected code. If there aren't anything I start adding logging to see how much time the different things take. And when I have a better understanding of how time I spent it is easy to see if there anything should be done with the code or if external factors are the cause. Like bad a database integration.</p>
 </div>
 <div></div>
 </article>

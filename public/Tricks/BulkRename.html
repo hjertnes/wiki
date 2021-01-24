@@ -21,7 +21,7 @@
 <li><a href="/Tricks/index.html">Tricks</a></li>
 </ul>
 <p>Example of how to bulk rename files in bash</p>
-<pre><code class="language-{.bash}">for file in *.html
+<pre><code class="language-bash">for file in *.html
 do
   mv &quot;$file&quot; &quot;${file%.html}.txt&quot;
   done

@@ -20,18 +20,9 @@
 <li><a href="/Development/index.html">Development</a></li>
 <li><a href="/Notes/index.html">Notes</a>]</li>
 </ul>
-<p>Entity Core is a ORM for .NET Core made by Microsoft. In constrast to
-previous versions of it, the Core version of EF is really great. Yeah, I
-mean it.
-There is two things you need to keep in mind while working with EF
-One query going on per &quot;request&quot; at a time; in other words, if you
-loop over some rest and then need to do some queries inside that loop,
-you need to do a .ToList() or similar before starting the loop.
-If you a .ToList, ToArray, First or anything like that it will query the
-database, and if you run SaveChanges or SaveChanges async it will write
-data to the database. You want to make sure you only query the database
-as late as possible and that you save the context as infrequent as
-possible. I usually do it once per API request.</p>
+<p>Entity Core is a ORM for .NET Core made by Microsoft. In constrast to previous versions of it, the Core version of EF is really great. Yeah, I mean it.</p>
+<p>There is two things you need to keep in mind while working with EF. One query going on per &quot;request&quot; at a time; in other words, if you loop over some rest and then need to do some queries inside that loop, you need to do a .ToList() or similar before starting the loop.</p>
+<p>If you a .ToList, ToArray, First or anything like that it will query the database, and if you run SaveChanges or SaveChanges async it will write data to the database. You want to make sure you only query the database as late as possible and that you save the context as infrequent as possible. I usually do it once per API request.</p>
 </div>
 <div></div>
 </article>

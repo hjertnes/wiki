@@ -23,7 +23,7 @@
 <p>This works with most images, but it will not work with raw files because
 they are not really images, but rather something you can create a image
 with</p>
-<pre><code class="language-{.bash}">for f in $(find . -iname '*.HEIC'); do convert $f $(sed &quot;s/HEIC/JPG/g&quot; &lt;&lt;&lt; &quot;$f&quot;); done
+<pre><code class="language-bash">for f in $(find . -iname '*.HEIC'); do convert $f $(sed &quot;s/HEIC/JPG/g&quot; &lt;&lt;&lt; &quot;$f&quot;); done
 </code></pre>
 <p>Just rename HEIC to what ever you are converting from and JPG to what
 ever you are converting to. The only thing you need to have installed is
