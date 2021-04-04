@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://wiki.hjertnes.website/*"
+  to = "https://publish.obsidian.md/serve?url=wiki.hjertnes.website/:splat"
+  status = 200
+  force = true
